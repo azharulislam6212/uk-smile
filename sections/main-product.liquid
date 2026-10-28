@@ -201,6 +201,18 @@
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
+        {%- liquid
+          assign personalisation_block = section.blocks | where: 'type', 'personalisation' | first
+          assign personalisation_fields = section.blocks | where: 'type', 'personalisation_field'
+          assign personalisation_has_required = false
+          if personalisation_block
+            for field in personalisation_fields
+              if field.settings.required
+                assign personalisation_has_required = true
+              endif
+            endfor
+          endif
+        -%}
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
@@ -353,6 +365,10 @@
                 </button>
               </quantity-input>
             </div>
+          {%- when 'personalisation' -%}
+            {% render 'personalisation', block: block, fields: personalisation_fields, form_id: product_form_id %}
+          {%- when 'personalisation_field' -%}
+            {%- comment -%} Rendered inside the 'personalisation' block {%- endcomment -%}
           {%- when 'popup' -%}
               <modal-opener class="product-popup-modal__opener no-js-hidden quick-add-hidden" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog">{{ block.settings.text | default: block.settings.page.title }}</button>
@@ -508,6 +524,13 @@
               </div>
             </noscript>
           {%- when 'buy_buttons' -%}
+            {%- liquid
+              # Dynamic checkout skips form validation, so it is hidden while personalisation has required fields
+              assign show_dynamic_checkout = block.settings.show_dynamic_checkout
+              if personalisation_has_required
+                assign show_dynamic_checkout = false
+              endif
+            -%}
             <div {{ block.shopify_attributes }}>
               <product-form class="product-form" data-cart-type="{{ settings.cart_type }}">
                 <div class="product-form__error-message-wrapper" role="alert" hidden>
@@ -520,13 +543,14 @@
                   <span class="product-form__error-message"></span>
                 </div>
 
+                {%- capture product_form_markup -%}
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                   <div class="product-form__buttons">
                     <button
                       type="submit"
                       name="add"
-                      class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                      class="product-form__submit button button--full-width {% if show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                       {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
                         <span>
@@ -542,11 +566,19 @@
                           </svg>
                         </div>
                     </button>
-                    {%- if block.settings.show_dynamic_checkout -%}
+                    {%- if show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}
                   </div>
                 {%- endform -%}
+                {%- endcapture -%}
+
+                {%- comment -%} Personalisation fields need native validation to block add to cart, even without JavaScript {%- endcomment -%}
+                {%- if personalisation_block -%}
+                  {{ product_form_markup | remove_first: ' novalidate="novalidate"' }}
+                {%- else -%}
+                  {{ product_form_markup }}
+                {%- endif -%}
               </product-form>
 
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
@@ -790,6 +822,174 @@
       "type": "quantity_selector",
       "name": "t:sections.main-product.blocks.quantity_selector.name",
       "limit": 1
+    },
+    {
+      "type": "personalisation",
+      "name": "Personalisation",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Shows every Personalisation Field block in this section, in their block order. Values are added to the cart as line item properties. While any field is required, the Buy it now button is hidden because it skips form validation."
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Add Personalisation"
+        },
+        {
+          "type": "richtext",
+          "id": "intro",
+          "label": "Introductory text"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_by_default",
+          "label": "Open by default",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "min_date_offset",
+          "min": 0,
+          "max": 30,
+          "step": 1,
+          "unit": "d",
+          "label": "Earliest date for date fields",
+          "info": "Days from today. 0 allows today.",
+          "default": 0
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "select",
+          "id": "desktop_layout",
+          "label": "Desktop layout",
+          "options": [
+            {
+              "value": "one-column",
+              "label": "One column"
+            },
+            {
+              "value": "two-columns",
+              "label": "Two columns"
+            }
+          ],
+          "default": "one-column",
+          "info": "Message and checkbox fields always use the full width."
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "min": 0,
+          "max": 48,
+          "step": 4,
+          "unit": "px",
+          "label": "Space above",
+          "default": 16
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "min": 0,
+          "max": 48,
+          "step": 4,
+          "unit": "px",
+          "label": "Space below",
+          "default": 16
+        }
+      ]
+    },
+    {
+      "type": "personalisation_field",
+      "name": "Personalisation Field",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Rendered inside the Personalisation block. Reorder field blocks to change their order."
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Field label"
+        },
+        {
+          "type": "text",
+          "id": "property_name",
+          "label": "Property name",
+          "default": "Field",
+          "info": "Saved on the order exactly as entered, including capitals. Must be unique. Start with an underscore to hide it from the cart."
+        },
+        {
+          "type": "select",
+          "id": "field_type",
+          "label": "Field type",
+          "options": [
+            {
+              "value": "text",
+              "label": "Text"
+            },
+            {
+              "value": "email",
+              "label": "Email"
+            },
+            {
+              "value": "textarea",
+              "label": "Multi-line text"
+            },
+            {
+              "value": "date",
+              "label": "Date"
+            },
+            {
+              "value": "select",
+              "label": "Select"
+            },
+            {
+              "value": "checkbox",
+              "label": "Checkbox"
+            }
+          ],
+          "default": "text"
+        },
+        {
+          "type": "checkbox",
+          "id": "required",
+          "label": "Required",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "placeholder",
+          "label": "Placeholder",
+          "info": "For Select fields, this is the empty first option."
+        },
+        {
+          "type": "text",
+          "id": "help_text",
+          "label": "Help text"
+        },
+        {
+          "type": "text",
+          "id": "options",
+          "label": "Select options",
+          "info": "Comma-separated, e.g. Birthday, Thank you, Congratulations. Select fields only."
+        },
+        {
+          "type": "range",
+          "id": "max_length",
+          "min": 0,
+          "max": 500,
+          "step": 10,
+          "label": "Character limit",
+          "info": "Text and multi-line text fields. 0 means no limit. Multi-line fields show a counter.",
+          "default": 0
+        }
+      ]
     },
     {
       "type": "custom_tags",

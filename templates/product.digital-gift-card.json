@@ -94,6 +94,70 @@
             "is_open_default": true
           }
         },
+        "personalisation": {
+          "type": "personalisation",
+          "settings": {
+            "heading": "Add Personalisation",
+            "intro": "",
+            "open_by_default": true,
+            "min_date_offset": 0,
+            "desktop_layout": "one-column",
+            "margin_top": 16,
+            "margin_bottom": 16
+          }
+        },
+        "personalisation_recipient_name": {
+          "type": "personalisation_field",
+          "settings": {
+            "label": "Recipient Name",
+            "property_name": "Recipient name",
+            "field_type": "text",
+            "required": true,
+            "placeholder": "",
+            "help_text": "",
+            "options": "",
+            "max_length": 0
+          }
+        },
+        "personalisation_recipient_email": {
+          "type": "personalisation_field",
+          "settings": {
+            "label": "Recipient Email",
+            "property_name": "Recipient email",
+            "field_type": "email",
+            "required": true,
+            "placeholder": "name@example.com",
+            "help_text": "",
+            "options": "",
+            "max_length": 0
+          }
+        },
+        "personalisation_message": {
+          "type": "personalisation_field",
+          "settings": {
+            "label": "Message (optional)",
+            "property_name": "Message",
+            "field_type": "textarea",
+            "required": false,
+            "placeholder": "",
+            "help_text": "",
+            "options": "",
+            "max_length": 250
+          }
+        },
+        "personalisation_send_on": {
+          "type": "personalisation_field",
+          "settings": {
+            "label": "Send on date",
+            "property_name": "Send on",
+            "field_type": "date",
+            "required": false,
+            "placeholder": "",
+            "help_text": "",
+            "options": "",
+            "max_length": 0
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -151,6 +215,11 @@
         "rating",
         "variant_picker",
         "a_d_scheduled_gift_cards_recipient_form_3UWBjj",
+        "personalisation",
+        "personalisation_recipient_name",
+        "personalisation_recipient_email",
+        "personalisation_message",
+        "personalisation_send_on",
         "quantity_selector",
         "custom_liquid_H7Gkbx",
         "buy_buttons",

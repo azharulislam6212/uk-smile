@@ -1,0 +1,285 @@
+.personalisation {
+  --personalisation-error: 179, 38, 30;
+  display: block;
+  margin: var(--personalisation-margin-top, 1.6rem) 0 var(--personalisation-margin-bottom, 1.6rem);
+  border-top: 0.1rem solid rgba(var(--color-foreground), 0.12);
+  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.12);
+}
+
+.personalisation__heading {
+  margin: 0;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+.personalisation__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  width: 100%;
+  margin: 0;
+  padding: 1.6rem 0;
+  border: 0;
+  background: none;
+  color: rgb(var(--color-foreground));
+  font: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.personalisation__toggle .icon-caret {
+  flex-shrink: 0;
+  width: 1.2rem;
+  height: 0.8rem;
+  transition: transform 0.35s ease;
+}
+
+.personalisation[open] .personalisation__toggle .icon-caret {
+  transform: rotate(180deg);
+}
+
+.personalisation__toggle:focus-visible,
+.personalisation__checkbox-input:focus-visible {
+  outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
+  outline-offset: 0.3rem;
+}
+
+/* Animates to the content's natural height; collapsed fields stay in the form and keep submitting */
+.personalisation__panel {
+  display: grid;
+  grid-template-rows: 1fr;
+  /* Visible instantly on open, so validation can focus a field straight away */
+  transition: grid-template-rows 0.35s ease, visibility 0s;
+}
+
+html.js .personalisation:not([open]) .personalisation__panel {
+  grid-template-rows: 0fr;
+  visibility: hidden;
+  /* Hidden only once the collapse has finished */
+  transition: grid-template-rows 0.35s ease, visibility 0s linear 0.35s;
+}
+
+.personalisation__panel-inner {
+  min-height: 0;
+  margin: 0 -0.2rem;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.25s ease 0.1s;
+}
+
+html.js .personalisation:not([open]) .personalisation__panel-inner {
+  opacity: 0;
+  transition-delay: 0s;
+}
+
+/* Side padding keeps input focus rings clear of the clipped edge */
+.personalisation__content {
+  padding: 0 0.2rem 2rem;
+}
+
+.personalisation__intro {
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.personalisation__intro > :first-child {
+  margin-top: 0;
+}
+
+.personalisation__intro > :last-child {
+  margin-bottom: 0;
+}
+
+.personalisation__fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.6rem;
+}
+
+.personalisation__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.personalisation__label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgb(var(--color-foreground));
+}
+
+.personalisation__required {
+  color: rgba(var(--color-foreground), 0.6);
+}
+
+.personalisation__input {
+  width: 100%;
+  min-height: 4.8rem;
+  margin: 0;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.25);
+  border-radius: var(--inputs-radius);
+  background-color: rgb(var(--color-background));
+  box-shadow: none;
+  color: rgb(var(--color-foreground));
+  font: inherit;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 0.04rem;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.personalisation__input::placeholder {
+  color: rgba(var(--color-foreground), 0.45);
+  opacity: 1;
+}
+
+.personalisation__input:hover {
+  border-color: rgba(var(--color-foreground), 0.45);
+}
+
+.personalisation__input:focus {
+  outline: none;
+}
+
+.personalisation__input:focus-visible,
+.personalisation__input:focus {
+  border-color: rgb(var(--color-foreground));
+  box-shadow: 0 0 0 0.1rem rgb(var(--color-foreground));
+}
+
+.personalisation__input[aria-invalid='true'] {
+  border-color: rgb(var(--personalisation-error));
+}
+
+.personalisation__input[aria-invalid='true']:focus {
+  box-shadow: 0 0 0 0.1rem rgb(var(--personalisation-error));
+}
+
+.personalisation__input--textarea {
+  min-height: 11rem;
+  resize: vertical;
+}
+
+.personalisation__input--date::-webkit-date-and-time-value {
+  text-align: left;
+}
+
+.personalisation__select {
+  position: relative;
+}
+
+.personalisation__input--select {
+  padding-right: 4rem;
+  cursor: pointer;
+}
+
+.personalisation__select .icon-caret {
+  position: absolute;
+  top: 50%;
+  right: 1.6rem;
+  width: 1rem;
+  height: 0.6rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.personalisation__checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.personalisation__checkbox-input {
+  flex-shrink: 0;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0.1rem 0 0;
+  accent-color: rgb(var(--color-foreground));
+  cursor: pointer;
+}
+
+.personalisation__checkbox .personalisation__label {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.personalisation__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.personalisation__help,
+.personalisation__counter {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: rgba(var(--color-foreground), 0.65);
+}
+
+.personalisation__counter {
+  flex-shrink: 0;
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.personalisation__error {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: rgb(var(--personalisation-error));
+}
+
+.personalisation__error[hidden] {
+  display: none;
+}
+
+.personalisation__error .icon-error {
+  flex-shrink: 0;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-top: 0.2rem;
+}
+
+.personalisation__config-warning {
+  margin: 0;
+  padding: 1rem 1.2rem;
+  border: 0.1rem dashed rgb(var(--personalisation-error));
+  border-radius: var(--inputs-radius);
+  font-size: 1.3rem;
+  color: rgb(var(--personalisation-error));
+}
+
+@media screen and (min-width: 990px) {
+  .personalisation--two-columns .personalisation__fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .personalisation--two-columns .personalisation__field--textarea,
+  .personalisation--two-columns .personalisation__field--checkbox,
+  .personalisation--two-columns .personalisation__config-warning {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .personalisation__toggle .icon-caret,
+  .personalisation__panel,
+  .personalisation__panel-inner,
+  .personalisation__input {
+    transition: none;
+  }
+}

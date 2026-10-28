@@ -1,0 +1,236 @@
+{% comment %}
+  Renders the Personalisation accordion inside the main product section.
+  Fields come from 'personalisation_field' blocks (in theme editor order) and are
+  linked to the product form with the `form` attribute, so their values are sent
+  as line item properties without nesting forms.
+
+  Accepts:
+  - block: {Object} The 'personalisation' block
+  - fields: {Array} The section's 'personalisation_field' blocks
+  - form_id: {String} ID of the product form the fields submit with
+
+  Usage:
+  {% render 'personalisation', block: block, fields: personalisation_fields, form_id: product_form_id %}
+{% endcomment %}
+
+{%- liquid
+  assign panel_id = 'Personalisation-' | append: block.id
+  assign toggle_id = panel_id | append: '-toggle'
+  assign min_offset_seconds = block.settings.min_date_offset | times: 86400
+  assign min_date = 'now' | date: '%s' | plus: min_offset_seconds | date: '%Y-%m-%d'
+  assign used_property_names = '|'
+-%}
+
+{{ 'component-personalisation.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'personalisation.js' | asset_url }}" defer="defer"></script>
+<script>
+  // Registered inline so it runs before app scripts that take over the add to cart click
+  // and add the product themselves, which would otherwise skip form validation.
+  (function () {
+    var formId = {{ form_id | json }};
+
+    function guard(event) {
+      var form = document.getElementById(formId);
+      if (!form || !event.target.closest) return;
+
+      if (event.type === 'click') {
+        var button = event.target.closest('button, input[type="submit"]');
+        if (!button || button.form !== form || button.type !== 'submit') return;
+      } else if (event.target !== form) {
+        return;
+      }
+
+      var fields = document.querySelector('personalisation-fields[data-form-id="' + formId + '"]');
+      if (!fields || typeof fields.validate !== 'function' || fields.validate()) return;
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+    }
+
+    window.addEventListener('click', guard, true);
+    window.addEventListener('submit', guard, true);
+  })();
+</script>
+
+<personalisation-fields
+  class="personalisation personalisation--{{ block.settings.desktop_layout }}"
+  data-form-id="{{ form_id }}"
+  data-min-offset="{{ block.settings.min_date_offset }}"
+  style="--personalisation-margin-top: {{ block.settings.margin_top | divided_by: 10.0 }}rem; --personalisation-margin-bottom: {{ block.settings.margin_bottom | divided_by: 10.0 }}rem;"
+  {% if block.settings.open_by_default %}open{% endif %}
+  {{ block.shopify_attributes }}
+>
+  <h2 class="personalisation__heading">
+    <button
+      type="button"
+      id="{{ toggle_id }}"
+      class="personalisation__toggle"
+      aria-expanded="{{ block.settings.open_by_default }}"
+      aria-controls="{{ panel_id }}"
+    >
+      <span>{{ block.settings.heading | escape }}</span>
+      {% render 'icon-caret' %}
+    </button>
+  </h2>
+
+  <div id="{{ panel_id }}" class="personalisation__panel" role="region" aria-labelledby="{{ toggle_id }}">
+    <div class="personalisation__panel-inner">
+      <div class="personalisation__content">
+        {%- if block.settings.intro != blank -%}
+          <div class="personalisation__intro rte">{{ block.settings.intro }}</div>
+        {%- endif -%}
+
+        <div class="personalisation__fields">
+          {%- for field in fields -%}
+            {%- liquid
+              assign label = field.settings.label | strip
+              assign property_name = field.settings.property_name | remove: '[' | remove: ']' | strip
+              assign field_type = field.settings.field_type
+              assign property_key = '|' | append: property_name | append: '|'
+              assign select_options = field.settings.options | split: ','
+
+              assign config_error = ''
+              if label == blank or property_name == blank
+                assign config_error = 'needs a label and a property name'
+              elsif used_property_names contains property_key
+                assign config_error = 'uses the same property name as another field'
+              elsif field_type == 'select' and field.settings.options == blank
+                assign config_error = 'needs at least one select option'
+              endif
+            -%}
+
+            {%- if config_error != '' -%}
+              {%- if request.design_mode -%}
+                <p class="personalisation__config-warning" {{ field.shopify_attributes }}>
+                  “{{ label | default: 'Untitled field' | escape }}” is hidden because it {{ config_error }}.
+                </p>
+              {%- endif -%}
+              {%- continue -%}
+            {%- endif -%}
+
+            {%- liquid
+              assign used_property_names = used_property_names | append: property_name | append: '|'
+              assign input_id = panel_id | append: '-' | append: field.id
+              assign help_id = input_id | append: '-help'
+              assign counter_id = input_id | append: '-counter'
+              assign error_id = input_id | append: '-error'
+              assign show_counter = false
+              if field_type == 'textarea' and field.settings.max_length > 0
+                assign show_counter = true
+              endif
+
+              assign described_by = error_id
+              if field.settings.help_text != blank
+                assign described_by = help_id | append: ' ' | append: described_by
+              endif
+              if show_counter
+                assign described_by = described_by | append: ' ' | append: counter_id
+              endif
+
+              case field_type
+                when 'checkbox'
+                  assign required_message = 'Please tick this box to continue.'
+                when 'select'
+                  assign required_message = 'Please choose an option for ' | append: label | append: '.'
+                when 'date'
+                  assign required_message = 'Please choose a date for ' | append: label | append: '.'
+                else
+                  assign required_message = label | append: ' is required.'
+              endcase
+            -%}
+
+            {%- capture control_attributes -%}
+              id="{{ input_id }}"
+              name="properties[{{ property_name | escape }}]"
+              form="{{ form_id }}"
+              aria-describedby="{{ described_by }}"
+              data-personalisation-control
+              data-error-required="{{ required_message | escape }}"
+              {% if field.settings.required %}required{% endif %}
+            {%- endcapture -%}
+
+            <div class="personalisation__field personalisation__field--{{ field_type }}" {{ field.shopify_attributes }}>
+              {%- if field_type == 'checkbox' -%}
+                <div class="personalisation__checkbox">
+                  <input type="checkbox" class="personalisation__checkbox-input" value="Yes" {{ control_attributes }}>
+                  <label class="personalisation__label" for="{{ input_id }}">
+                    {{- label | escape -}}
+                    {%- if field.settings.required %}<span class="personalisation__required" aria-hidden="true"> *</span>{% endif -%}
+                  </label>
+                </div>
+              {%- else -%}
+                <label class="personalisation__label" for="{{ input_id }}">
+                  {{- label | escape -}}
+                  {%- if field.settings.required %}<span class="personalisation__required" aria-hidden="true"> *</span>{% endif -%}
+                </label>
+
+                {%- case field_type -%}
+                  {%- when 'textarea' -%}
+                    <textarea
+                      class="personalisation__input personalisation__input--textarea"
+                      rows="4"
+                      autocomplete="off"
+                      {% if field.settings.placeholder != blank %}placeholder="{{ field.settings.placeholder | escape }}"{% endif %}
+                      {% if field.settings.max_length > 0 %}maxlength="{{ field.settings.max_length }}"{% endif %}
+                      {{ control_attributes }}
+                    ></textarea>
+                  {%- when 'select' -%}
+                    <div class="personalisation__select">
+                      <select class="personalisation__input personalisation__input--select" {{ control_attributes }}>
+                        <option value="">{{ field.settings.placeholder | default: 'Please select' | escape }}</option>
+                        {%- for option in select_options -%}
+                          {%- assign option_value = option | strip -%}
+                          {%- if option_value != blank -%}
+                            <option value="{{ option_value | escape }}">{{ option_value | escape }}</option>
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </select>
+                      {% render 'icon-caret' %}
+                    </div>
+                  {%- else -%}
+                    <input
+                      type="{{ field_type }}"
+                      class="personalisation__input personalisation__input--{{ field_type }}"
+                      autocomplete="off"
+                      {% if field.settings.placeholder != blank %}placeholder="{{ field.settings.placeholder | escape }}"{% endif %}
+                      {%- case field_type -%}
+                        {%- when 'email' %}
+                          inputmode="email"
+                          spellcheck="false"
+                          pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                          data-error-invalid="Enter a valid email address, for example name@example.com."
+                        {%- when 'date' %}
+                          min="{{ min_date }}"
+                        {%- else %}
+                          {% if field.settings.required %}pattern=".*\S.*"{% endif %}
+                      {%- endcase %}
+                      {% if field_type != 'date' and field.settings.max_length > 0 %}maxlength="{{ field.settings.max_length }}"{% endif %}
+                      {{ control_attributes }}
+                    >
+                {%- endcase -%}
+              {%- endif -%}
+
+              <p id="{{ error_id }}" class="personalisation__error" hidden>
+                {%- render 'icon-error' -%}
+                <span data-personalisation-error-text></span>
+              </p>
+
+              {%- if field.settings.help_text != blank or show_counter -%}
+                <div class="personalisation__meta">
+                  {%- if field.settings.help_text != blank -%}
+                    <p id="{{ help_id }}" class="personalisation__help">{{ field.settings.help_text | escape }}</p>
+                  {%- endif -%}
+                  {%- if show_counter -%}
+                    <p id="{{ counter_id }}" class="personalisation__counter">
+                      <span data-personalisation-count>0</span> / {{ field.settings.max_length }} characters
+                    </p>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</personalisation-fields>
