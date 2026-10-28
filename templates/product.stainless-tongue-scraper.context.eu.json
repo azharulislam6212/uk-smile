@@ -1,0 +1,28 @@
+{
+  "parent": "product.stainless-tongue-scraper.json",
+  "context": {
+    "market": "eu"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "d085ccc6-68e6-4675-9db1-c7ba62c9278c": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    },
+    "16631668754f796b02": {
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express 1-3 Working Days Delivery"
+          }
+        }
+      }
+    }
+  }
+}

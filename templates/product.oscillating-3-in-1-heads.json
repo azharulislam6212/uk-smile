@@ -1,0 +1,333 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_yYfgjW": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "1fc7d345-e3bb-480a-af2c-a56c6cee74e3": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo.png",
+            "clearpay_text": "or 4 interest-free payments with £1.99",
+            "klarna_img": "shopify:\/\/shop_images\/klarna.png",
+            "klarna_text": "or pay later, get it tomorrow with"
+          }
+        },
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY | NO MINIMUM SPEND",
+            "second_tag": ""
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_yYfgjW",
+        "price",
+        "1fc7d345-e3bb-480a-af2c-a56c6cee74e3",
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a",
+        "caption",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 8,
+        "padding_bottom": 20
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>“PERFECT FOR MY 6-YEAR-OLD! THEY’RE SUPER EASY TO SWAP OUT, REALLY GENTLE, AND LAST A LONG TIME. MY DAUGHTER ACTUALLY LOOKS FORWARD TO BRUSHING NOW.”<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sarah T.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 20,
+        "padding_bottom": 8
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Features:",
+            "icon": "lightning_bolt",
+            "row_content": "<p>✓ Compatible with Smile Therapy 3-in-1 Kids Oscillating Toothbrush<br\/><br\/> ✓ Works seamlessly with all 3 brushing modes (Normal, Soft, Pulse)<br\/><br\/> ✓ Rounded DuPont bristles – gentle on young gums<br\/><br\/> ✓ Kid-friendly size and ergonomic design for smaller mouths<br\/><br\/> ✓ Easy to rinse, quick to replace, hygienic and safe<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When should I replace the brush head?",
+            "icon": "box",
+            "row_content": "<p>For best results, we recommend changing your child’s brush head <strong>every 2 months<\/strong>.<br\/>Fresh heads ensure a safe, effective clean, help protect gum health, and keep brushing fun and comfortable.<\/p>",
+            "page": ""
+          }
+        },
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Care Tips",
+            "icon": "clipboard",
+            "row_content": "<p> ✓ Rinse thoroughly after each use<br\/> ✓ Store upright in a dry place<br\/> ✓ Replace heads regularly for maximum plaque removal<br\/> ✗ Do not share heads between children<\/p>",
+            "page": ""
+          }
+        },
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": " What’s in the box?",
+            "icon": "question_mark",
+            "row_content": "<ul><li>4X Oscillating Kids Electric Toothbrush Heads<\/li><\/ul><p><em>(Toothbrush handle sold separately)<\/em><\/p>",
+            "page": ""
+          }
+        },
+        "4629f7ef-2bd9-46e7-a3d7-291adcdb936a": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Long-Lasting Battery",
+            "icon": "check_mark",
+            "row_content": "<p>Up to 3 weeks use per charge<\/p><p>Quick, convenient USB-C charging<\/p>",
+            "page": ""
+          }
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "How to use the electric dental cleaning kit?",
+            "icon": "washing",
+            "row_content": "<p>1. Select your desired attachment based on your oral needs.<\/p><p>2. Turn on the device and alter between modes based on your cleaning needs.<\/p><p>3. Alter between heads if necessary.<\/p><p>4. Clean the device and the tip after use. <\/p>",
+            "page": ""
+          }
+        },
+        "b156cbed-7093-4197-84e3-0ced68818bea": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Made for Kids (Aged 3–12)",
+            "icon": "leaf",
+            "row_content": "<p>Safe, gentle, and fun. Perfect start to healthy habits.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Smart 2-Min Timer",
+            "icon": "question_mark",
+            "row_content": "<p><strong>2-Minute Auto Shutoff<\/strong> ensures proper brushing time<br\/><strong>30-Second Quad Alerts<\/strong> guide kids through all 4 quadrants<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-3",
+        "collapsible-row-1",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975",
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523",
+        "4629f7ef-2bd9-46e7-a3d7-291adcdb936a",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "b156cbed-7093-4197-84e3-0ced68818bea",
+        "collapsible-row-0"
+      ],
+      "settings": {
+        "caption": "Oscillating 3-In-1 Kids Electric Toothbrush - Heads",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "500,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_aa29138a-e959-4c87-83fd-cf781575941c.png"
+      }
+    },
+    "1664870774e164b7b9": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_6bbffq": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_6bbffq"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664870774e164b7b9",
+    "product-recommendations"
+  ]
+}

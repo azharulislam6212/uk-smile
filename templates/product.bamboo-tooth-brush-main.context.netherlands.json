@@ -1,0 +1,42 @@
+{
+  "parent": "product.bamboo-tooth-brush-main.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "0ceaf9e4-6823-40be-af96-8ce4a4ee3656": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET! | EXPRESS DELIVERY IN NETHERLANDS!"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "0ceaf9e4-6823-40be-af96-8ce4a4ee3656",
+        "b7088e04-7372-473e-9cec-e269f00c66e1",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "loox-product-reviews-app-section",
+    "product-recommendations",
+    "166469373771a677b6"
+  ]
+}

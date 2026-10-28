@@ -1,0 +1,50 @@
+{
+  "parent": "product.kids-u-brush.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "c65d22aa-93e1-4a2d-b0dd-122b4b3d269f": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET! | EXPRESS DELIVERY IN IRELAND!"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "c65d22aa-93e1-4a2d-b0dd-122b4b3d269f",
+        "ec2dee85-24ba-43f8-bd23-1beee0845fba",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1684170805803e96bc",
+    "product-recommendations",
+    "multicolumn",
+    "rich-text-1",
+    "image-with-text-0",
+    "image-with-text-1",
+    "image-with-text-2",
+    "newsletter",
+    "16631908844b141995",
+    "16631915046fd0af22",
+    "16648716444036e5ca"
+  ]
+}

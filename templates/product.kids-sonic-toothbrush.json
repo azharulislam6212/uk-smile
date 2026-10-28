@@ -1,0 +1,341 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_yYfgjW": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "1fc7d345-e3bb-480a-af2c-a56c6cee74e3": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo.png",
+            "clearpay_text": "or 4 interest-free payments with £5.00",
+            "klarna_img": "shopify:\/\/shop_images\/klarna.png",
+            "klarna_text": "or pay later, get it tomorrow with"
+          }
+        },
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "BUY 2 FOR £35! JUST ADD 2 TO CART WITH CODE \"KIDSDUO\"",
+            "second_tag": ""
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_yYfgjW",
+        "price",
+        "1fc7d345-e3bb-480a-af2c-a56c6cee74e3",
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a",
+        "caption",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 8,
+        "padding_bottom": 20
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"MY DENTIST LITERALLY TOLD ME TO BUY THIS TOOTHBRUSH & WE'VE BOTH SEEN AMAZING RESULTS IN MY CHILDRENS TEETH\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Jen. T<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 20,
+        "padding_bottom": 8
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Features:",
+            "icon": "lightning_bolt",
+            "row_content": "<p>✓ 3 cleaning modes for all brushing needs<br\/><br\/>✓ Up to 6000 Rotations-Per-Minute<\/p><p>✓ Soft DuPont Bristles gentle on teeth and gums<\/p><p>✓ Built-in 30-seconds and 2-minute smart timer<\/p><p>✓ Waterproof design for easy cleaning and shower use<\/p><p>✓ Long-lasting battery, up to 100+ uses on one full charge<\/p><p>✓ Fast USB-C charging for convenience<\/p><p>✓ Lightweight, kid-friendly with an ergonomic grip!<\/p><p>✓ LED indicators for easy mode selection<\/p><p>✓ Designed by Dentists for Children<br\/><br\/>✓ Recommended for children aged 3 to 14 years<br\/><br\/>✓ 180 Days Standby Time<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<p>Each package contains:<\/p><p>1x Sonic Electric Toothbrush<\/p><p>2x Additional Heads<\/p><p>1x USB-C Charging Cable<\/p><p>1x Manual<\/p>",
+            "page": ""
+          }
+        },
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Specifications",
+            "icon": "clipboard",
+            "row_content": "<p><strong>Material<\/strong>: ABS main body, DuPont bristles<\/p><p><strong>Product Size<\/strong>: 220mm x 29mm<\/p><p><strong>Motor<\/strong>: Mechanical gear transmission<\/p><p><strong>Speed<\/strong>: 3 modes - Low (3900 RPM), Medium (4800 RPM), High (6000 RPM)<\/p><p><strong>Timer<\/strong>: 2-minute auto timer with 30-second quadrant reminder<\/p><p><strong>Waterproof Level<\/strong>: IP67-rated<\/p><p><strong>Battery Capacity<\/strong>: 800mAh<\/p><p><strong>Charging Method<\/strong>: USB-C direct charging<\/p><p><strong>Usage Time<\/strong>: 100+ days on a full 3-hour charge<\/p><p><strong>Working Voltage<\/strong>: DC 3.7V<\/p>",
+            "page": ""
+          }
+        },
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Electric Toothbrush vs Manual Toothbrush?",
+            "icon": "question_mark",
+            "row_content": "<p>Electric toothbrush bristles vibrate or rotate to help you remove plaque buildup from your teeth and gums. The vibration allows for more micro-movements every time you move your toothbrush across your teeth.<\/p><p>This is the main difference between electric and manual toothbrushes. <strong>Manual toothbrushes rely on your ability to effectively brush away plaque and food; electric toothbrushes do the work for you<\/strong>, which has statistically been proven to result in cleaner and whiter teeth.<\/p>",
+            "page": ""
+          }
+        },
+        "4629f7ef-2bd9-46e7-a3d7-291adcdb936a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I deep clean the Electric Toothbrush",
+            "icon": "check_mark",
+            "row_content": "<p>1) Remove the brush head.<\/p><p>2) Rinse the bottom of the brush head with warm water.<\/p><p>3) Rinse the metal shaft area with warm water.<\/p><p>4) Clean the bottom of the toothbrush handle with a damp cotton swab to remove any residue.<\/p><p>5) Wipe the entire surface of the handle with a wet cloth.<\/p>",
+            "page": ""
+          }
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "How to use the electric dental cleaning kit?",
+            "icon": "washing",
+            "row_content": "<p>1. Select your desired attachment based on your oral needs.<\/p><p>2. Turn on the device and alter between modes based on your cleaning needs.<\/p><p>3. Alter between heads if necessary.<\/p><p>4. Clean the device and the tip after use. <\/p>",
+            "page": ""
+          }
+        },
+        "b156cbed-7093-4197-84e3-0ced68818bea": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cautions",
+            "icon": "leaf",
+            "row_content": "<p>Please note this product is not recommended for children under 3 years of age.<\/p><p>Avoid pressing too hard on teeth and gums to prevent irritation or damage.<\/p><p>Recommended to replace the brush head every 3 months or sooner if the bristles are worn.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wL8QGg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Maintenance & Care",
+            "icon": "return",
+            "row_content": "<p><strong>Cleaning<\/strong>: After each use, rinse the brush head under running water to remove toothpaste and debris. Shake off excess water to aid drying.<\/p><p><strong>Brush Head Replacement<\/strong>: Replace the brush head every 3 months or sooner if the bristles are frayed. This ensures optimal cleaning performance and hygiene.<\/p><p><strong>Storage<\/strong>: Store the toothbrush in a clean, dry place to prevent bacterial growth. Avoid leaving the toothbrush immersed in water.<\/p><p><strong>Charging<\/strong>: Ensure the toothbrush is fully charged using the provided USB-C cable. A full charge lasts up to 100+ uses<\/p><p><strong>Battery Care<\/strong>: Charge the toothbrush fully before the first use. Avoid overcharging and do not leave it plugged in unnecessarily.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KmqVci": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why is this Toothbrush the best choice for your child's oral care?",
+            "icon": "heart",
+            "row_content": "<p><strong>Tailored Cleaning Modes<\/strong><br\/>Three adjustable modes ensure the perfect clean for your child’s needs, from gentle to deep cleaning.<\/p><p><strong>Soft, Safe Bristles<\/strong><br\/>DuPont bristles are gentle yet effective, designed for young teeth and gums without causing irritation.<\/p><p><strong>Smart Timer for Proper Brushing<\/strong><br\/>A built-in 2-minute timer with 30-second alerts encourages healthy brushing habits every time.<\/p><p><strong>Kid-Friendly Design<\/strong><br\/>Lightweight and ergonomic, it's easy for small hands to hold, making brushing fun and comfortable.<\/p><p><strong>Certified and Tested<\/strong><br\/>Certified, safe and tested to ensure optimal performance and comfort.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-3",
+        "collapsible-row-1",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975",
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523",
+        "4629f7ef-2bd9-46e7-a3d7-291adcdb936a",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "b156cbed-7093-4197-84e3-0ced68818bea",
+        "collapsible_row_wL8QGg",
+        "collapsible_row_KmqVci"
+      ],
+      "settings": {
+        "caption": "Sonic kids 3-in-1 electric toothbrush",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_aa29138a-e959-4c87-83fd-cf781575941c.png"
+      }
+    },
+    "1664870774e164b7b9": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_6bbffq": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_6bbffq"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664870774e164b7b9",
+    "product-recommendations"
+  ]
+}

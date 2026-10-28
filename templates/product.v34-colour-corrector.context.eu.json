@@ -1,0 +1,33 @@
+{
+  "parent": "product.v34-colour-corrector.json",
+  "context": {
+    "market": "eu"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "ab7de9f4-c9dd-4d1e-aa41-5a27fafea637": {
+          "disabled": true,
+          "settings": {}
+        },
+        "1583d093-4524-450d-8e18-5220e338f1df": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE NOW LIVE!"
+          }
+        }
+      }
+    },
+    "16631668754f796b02": {
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express 1-3 Working Days Delivery"
+          }
+        }
+      }
+    }
+  }
+}

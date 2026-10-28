@@ -1,0 +1,18 @@
+{
+  "parent": "product.denture-tablets.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "collapsible_content_tPNUEE": {
+      "settings": {},
+      "blocks": {
+        "collapsible_row_hzHdz3": {
+          "settings": {
+            "row_content": "<p><strong>Key Ingredients:<\/strong><\/p><p>Citric Acid, Sodium Carbonate, Tetraacetylethylenediamine, Adhesive, Surfactant, Sodium Percarbonate, Sodium Chloride.<\/p>"
+          }
+        }
+      }
+    }
+  }
+}

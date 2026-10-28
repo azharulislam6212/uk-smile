@@ -1,0 +1,339 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_yYfgjW": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "1fc7d345-e3bb-480a-af2c-a56c6cee74e3": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo.png",
+            "clearpay_text": "or 4 interest-free payments with £6.25",
+            "klarna_img": "shopify:\/\/shop_images\/klarna.png",
+            "klarna_text": "or pay later, get it tomorrow with"
+          }
+        },
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY | NO MINIMUM SPEND",
+            "second_tag": ""
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "custom_liquid_FimQGw": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"social-proof-badge\">\n  <p id=\"social-proof-text\">\n    <strong class=\"name-block\">\n      <span id=\"full-name\" aria-live=\"polite\">Jack<\/span>\n      <!-- Blue verified tick -->\n      <svg class=\"verified-tick\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" role=\"img\" aria-label=\"verified\">\n        <circle cx=\"12\" cy=\"12\" r=\"12\" fill=\"#1DA1F2\"\/>\n        <path fill=\"#fff\" d=\"M10.2 15.6l-3.1-3.1 1.1-1.1 2 2 4.7-4.7 1.1 1.1z\"\/>\n      <\/svg>\n    <\/strong>\n    &nbsp;and <strong>300+ others<\/strong> bought this product last month!\n  <\/p>\n<\/div>\n\n<style>\n  .social-proof-badge {\n    display:flex;\n    align-items:center;\n    padding:8px 12px;\n    margin:12px 0;\n    font-size:14px;\n    line-height:1.4;\n    color:#333;\n    background: transparent;\n  }\n\n  .social-proof-badge p { margin:0; }\n\n  .name-block {\n    display:inline-flex;\n    align-items:center;\n    gap:2px;\n  }\n\n  #full-name {\n    transition: opacity 300ms ease;\n    opacity:1;\n  }\n\n  .verified-tick {\n    display:inline-block;\n    margin:0;\n    vertical-align: middle;\n  }\n<\/style>\n\n<script>\n  (function(){\n    const names = [\n      \"Jack\", \"Grace\", \"Sophia\", \"Ethan\", \"Olivia\",\n      \"Mason\", \"Sophie\", \"Daniel\", \"Emma\", \"Liam\",\n      \"Elijah\", \"James\", \"Ava\", \"Lucas\", \"Isabella\",\n      \"Mia\", \"Logan\", \"Amelia\", \"Harper\"\n    ];\n\n    const CHANGE_INTERVAL_MS = 3000;\n    const FADE_MS = 300;\n\n    const nameEl = document.getElementById('full-name');\n\n    let idx = 0;\n    nameEl.textContent = names[idx];\n    idx = (idx + 1) % names.length;\n\n    function updateName() {\n      nameEl.style.opacity = '0';\n      setTimeout(() => {\n        nameEl.textContent = names[idx];\n        idx = (idx + 1) % names.length;\n        nameEl.style.opacity = '1';\n      }, FADE_MS);\n    }\n\n    const intervalId = setInterval(updateName, CHANGE_INTERVAL_MS);\n\n    const observer = new MutationObserver(() => {\n      if (!document.body.contains(nameEl)) {\n        clearInterval(intervalId);\n        observer.disconnect();\n      }\n    });\n    observer.observe(document.body, { childList: true, subtree: true });\n  })();\n<\/script>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_yYfgjW",
+        "price",
+        "1fc7d345-e3bb-480a-af2c-a56c6cee74e3",
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a",
+        "caption",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "custom_liquid_FimQGw",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 8,
+        "padding_bottom": 20
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"I HAVE HAD MANY ELECTRIC TOOTHBRUSHES BUT THIS IS ONE THAT'S LASTED ME OVER 1 YEAR, LOVE THIS TOOTHBRUSH\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Tom. D<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 20,
+        "padding_bottom": 8
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Features:",
+            "icon": "lightning_bolt",
+            "row_content": "<p>✓ 100% Waterproof - Entire Toothbrush!<br\/><br\/>✓ Powerful stain removal (includes an enhanced powerful magnetic movement)<br\/><br\/>✓ 18 unique cleaning modes to choose from<br\/><br\/>✓ Long lasting battery life<br\/><br\/>✓ Acoustic Motor<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<p>Each package contains:<\/p><ul><li>1x Electric Toothbrush<\/li><li>4x Additional Heads<\/li><li>1x Charging Cable<\/li><li>1x Manual<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Specifications",
+            "icon": "clipboard",
+            "row_content": "<p><\/p><ul><li>Dimensions: 16.8cm x 2.4cm<\/li><li>18 gears to choose from<\/li><li>IPX7 - 100% waterproof!<\/li><li>180 days standby time<\/li><\/ul><p><\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Electric Toothbrush vs Manual Toothbrush?",
+            "icon": "question_mark",
+            "row_content": "<p>Electric toothbrush bristles vibrate or rotate to help you remove plaque buildup from your teeth and gums. The vibration allows for more micro-movements every time you move your toothbrush across your teeth.<\/p><p>This is the main difference between electric and manual toothbrushes. <strong>Manual toothbrushes rely on your ability to effectively brush away plaque and food; electric toothbrushes do the work for you<\/strong>, which has statistically been proven to result in cleaner and whiter teeth.<\/p>",
+            "page": ""
+          }
+        },
+        "4629f7ef-2bd9-46e7-a3d7-291adcdb936a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I deep clean the Electric Toothbrush",
+            "icon": "check_mark",
+            "row_content": "<p>1. Remove the brush head.<\/p><p>2. Rinse the bottom of the brush head with warm water.<\/p><p>3. Rinse the metal shaft area with warm water.<\/p><p>4. Clean the bottom of the toothbrush handle with a damp cotton swab to remove any residue.<\/p><p>5. Wipe the entire surface of the handle with a wet cloth.<\/p>",
+            "page": ""
+          }
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "How to use the electric dental cleaning kit?",
+            "icon": "washing",
+            "row_content": "<p>1. Select your desired attachment based on your oral needs.<\/p><p>2. Turn on the device and alter between modes based on your cleaning needs.<\/p><p>3. Alter between heads if necessary.<\/p><p>4. Clean the device and the tip after use. <\/p>",
+            "page": ""
+          }
+        },
+        "b156cbed-7093-4197-84e3-0ced68818bea": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cautions",
+            "icon": "leaf",
+            "row_content": "<p><\/p><p>1. Please note this product is suitable for children over 6 years of age.<\/p><p>2. If you have or had oral or gum surgery in the last 2 months please do not use this product unless approved by your dentist.<\/p><p>3. If your gums bleed heavily after using the Electric Toothbrush, please discontinue use and consult your dentist. <\/p><p>4. This product is strictly designed for oral care (cleaning teeth, gums and tongue) please do not use for other purposes. If you feel any discomfort or pain, please consult your dentist.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Can the Electric Toothbrush be used on composite bonding, veneers or fillings?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, the Electric Toothbrush is suitable for use on composite bonding, veneers, and fillings. It has been designed to be gentle yet effective, ensuring thorough cleaning without causing damage to these dental materials. The advanced bristle technology and multiple brushing modes help maintain oral hygiene and remove plaque, providing a comprehensive clean even with these dental restorations.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-3",
+        "collapsible-row-1",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975",
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523",
+        "4629f7ef-2bd9-46e7-a3d7-291adcdb936a",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "b156cbed-7093-4197-84e3-0ced68818bea",
+        "collapsible-row-0"
+      ],
+      "settings": {
+        "caption": "6 IN 1 Sonic Electric Toothbrush",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "500,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_aa29138a-e959-4c87-83fd-cf781575941c.png"
+      }
+    },
+    "1664870774e164b7b9": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_6bbffq": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_6bbffq"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664870774e164b7b9",
+    "product-recommendations"
+  ]
+}

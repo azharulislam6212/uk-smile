@@ -1,0 +1,38 @@
+{
+  "parent": "product.water-flosser-attachments.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "26ca8973-c087-43a6-a555-d17296f7e2ba": {
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "26ca8973-c087-43a6-a555-d17296f7e2ba",
+        "1ed15949-a525-40fc-8d07-2868b613f63a",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "1664870774e164b7b9",
+    "product-recommendations"
+  ]
+}

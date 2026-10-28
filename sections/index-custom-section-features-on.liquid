@@ -1,0 +1,48 @@
+  <!-- Featured On -->
+  <section id="partners">
+    <div class="custom-container">
+      <div id="slick-partner">
+        {% for block in section.blocks %}
+          {% if block.settings.img-icon != blank %}
+            <div class="items">
+              <div class="fig_blk">
+                <img src="{{block.settings.img-icon | img_url:'' }}" alt="">
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+{% schema %}
+{
+  "name": "Featured on",
+   "blocks":[
+        {
+        "type":"icons",
+        "name":"Featured on icons",
+        "settings":
+          [
+              {
+              "type": "image_picker",
+              "id": "img-icon",
+              "label": "Featured On Icons"
+              }
+          ]
+        }
+    ],
+    "presets": [
+      {
+      "name": "Featured on",
+      "category": "Custom Sections"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

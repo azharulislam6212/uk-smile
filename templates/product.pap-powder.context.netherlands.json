@@ -1,0 +1,22 @@
+{
+  "parent": "product.pap-powder.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "c65d22aa-93e1-4a2d-b0dd-122b4b3d269f": {
+          "settings": {
+            "first_tag": "SPECIAL OFFER: BUY 2 FOR €36 + FREE DELIVERY | JUST ADD 2 TO CART!"
+          }
+        },
+        "c69768a2-854d-47fb-b1f8-e8f4f2d9404a": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    }
+  }
+}

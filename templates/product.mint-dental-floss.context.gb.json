@@ -1,0 +1,17 @@
+{
+  "parent": "product.mint-dental-floss.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "b5cc6647-9112-41bd-a083-8e750cc06758": {
+          "settings": {}
+        }
+      }
+    }
+  }
+}

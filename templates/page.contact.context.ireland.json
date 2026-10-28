@@ -1,0 +1,30 @@
+{
+  "parent": "page.contact.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "main": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "1664801786a6a99521": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "1664801786216c70de-1": {
+          "settings": {
+            "text": "<p>Please contact us to confirm our return address. Our business address <strong>IS NOT<\/strong> our return address. You are responsible for ensuring your item is returned to the correct address. We are not held liable for any loss that may occur if your return item is sent to a wrong address. Items returned to us without first requesting a return will not be accepted.<\/p><p>Please fill out the form below and we will get back to you within 24 hours.<\/p><p>Alternatively you can contact us through one of the methods below:<\/p><p><strong>Business Address:<\/strong> AJ Sells LTD, 77 Lower Camden Street, Dublin D02 XE80, Ireland<\/p><p><strong>Email Address: support@smile-therapy.ie<\/strong><\/p>"
+          }
+        }
+      }
+    }
+  },
+  "order": [
+    "1664801786a6a99521",
+    "main",
+    "form",
+    "newsletter"
+  ]
+}

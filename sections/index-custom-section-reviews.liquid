@@ -1,0 +1,127 @@
+<!-- Review  -->
+<div id="reviews">
+  <div class="custom-container">
+    <div class="title">
+      <h2 class="heading">{{ section.settings.heading }}</h2>
+      <div class="reviews">
+        {% if section.settings.review_all %}
+            <div class="star">
+               <i class="fas fa-star"></i>
+            </div>
+            <div class="text">
+              {{ section.settings.rating }} <span>  {{ section.settings.Total_Review }}</span>
+            </div>
+        {% endif %}
+      </div>
+    </div>
+    <div id="slick-review">
+      {% for block in section.blocks %}
+           <div class="items">
+            <div class="content">
+               {% if block.settings.quote1 %}
+                  <img src="{{ block.settings.quote | img_url:'small' }}">
+               {% endif %}
+              <div class="text-blk">
+                <div class="user-msg">
+                  {% if block.settings.content != blank %}
+                    <p>{{ block.settings.content }}</p>
+                  {% endif %}
+                </div>
+                {% if block.settings.review_star %}
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                {% endif %}
+                <div class="user-info">
+                  {{ block.settings.review_name }} <span>{{ block.settings.review_country }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Testimonials",
+    "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "review_all",
+          "label": "Show/Hide Overall Review",
+           "default": true
+         },
+         {
+          "type": "text",
+          "id": "rating",
+          "label": "Rating"
+         },
+         {
+          "type": "text",
+          "id": "Total_Review",
+          "label": "Total Review"
+         }
+    ],
+   "blocks":[
+        {
+        "type":"Testimonial",
+        "name":"Add Testimonial",
+        "settings":
+          [
+              {
+                "type": "checkbox",
+                "id": "quote1",
+                "label": "Icon Title"
+              },
+              {
+                "type": "image_picker",
+                "id": "quote",
+                "label": "Icon Image"
+              },
+              {
+                "type": "textarea",
+                "id": "content",
+                "label": "Add Reviews"
+              },
+              {
+                "type": "checkbox",
+                "id": "review_star",
+                "label": "Show / Hide Review Star "
+               },
+              {
+                "type": "text",
+                "id": "review_name",
+                "label": "Reviewer's Name"
+               },
+              {
+                "type": "text",
+                "id": "review_country",
+                "label": "Reviewer's Country "
+              }       
+          ]
+        }
+    ],
+    "presets": [
+      {
+      "name": "Testimonials",
+      "category": "Custom Sections"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

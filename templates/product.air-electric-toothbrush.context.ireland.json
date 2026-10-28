@@ -1,0 +1,49 @@
+{
+  "parent": "product.air-electric-toothbrush.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "7dfde805-884e-4bda-9a20-aaca40ebb42f": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET + FREE IRELAND TRACKED DELIVERY"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "7dfde805-884e-4bda-9a20-aaca40ebb42f",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1684170805803e96bc",
+    "product-recommendations",
+    "multicolumn",
+    "rich-text-1",
+    "image-with-text-0",
+    "image-with-text-1",
+    "image-with-text-2",
+    "newsletter",
+    "16631908844b141995",
+    "16631915046fd0af22",
+    "16648716444036e5ca"
+  ]
+}

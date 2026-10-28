@@ -1,0 +1,10 @@
+
+<script async src="https://api.revy.io/upsell.js?shop=uk-smile.myshopify.com" type="text/javascript"></script>
+<script>
+      window.revyUpsellDataLayer = window.revyUpsellDataLayer || [];
+      window.revyUpsellDataLayer.push({onClosePopupCallbacks: function() {
+        console.log('onClosePopupCallbacks Callback running!');
+        var ele = document.getElementById("corner-cowi-close-btn");
+        if(ele) ele.click();
+      }});
+    </script>

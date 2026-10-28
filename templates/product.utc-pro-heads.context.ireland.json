@@ -1,0 +1,39 @@
+{
+  "parent": "product.utc-pro-heads.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "62d52e82-023b-4368-9e1c-7139d71fca48": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET! | EXPRESS DELIVERY IN IRELAND!"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "1ed15949-a525-40fc-8d07-2868b613f63a",
+        "62d52e82-023b-4368-9e1c-7139d71fca48",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "1664870774e164b7b9",
+    "product-recommendations"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "parent": "index.json",
+  "context": {
+    "market": "eu"
+  },
+  "sections": {
+    "166242685262a76ffb": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "6eaf84c8-a921-4ce8-a2fa-310f4f733c94": {
+          "settings": {
+            "title": "2-4 Working Days Delivery"
+          }
+        }
+      }
+    },
+    "16624988494b33b521": {
+      "settings": {},
+      "blocks": {
+        "44809b0d-f946-436e-a7ac-6bbc4566f0c8": {
+          "settings": {
+            "heading": "<b>Voted  #1 Oral Care Company with 250,000+ customers worldwide<\/b>"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "parent": "product.water-flosser-attachments.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "47c20f18-158d-4364-a174-918b2836d7d4": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY | NO MINIMUM SPEND"
+          }
+        },
+        "26ca8973-c087-43a6-a555-d17296f7e2ba": {
+          "settings": {
+            "clearpay_text": "or 4 interest-free payments of £2.50 with"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "product.stainless-tongue-scraper.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "c8cbade7-3d3a-4dcd-b251-831c71e20441": {
+          "settings": {
+            "first_tag": "SPECIAL DEAL: BUY 2 FOR £8.99! JUST ADD 2 TO CART!"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "parent": "product.flavoured-toothpaste.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "c65d22aa-93e1-4a2d-b0dd-122b4b3d269f": {
+          "settings": {
+            "first_tag": "MIX & MATCH - BUY 3 FOR €22.97 - JUST ADD 3 TO CART!"
+          }
+        }
+      }
+    }
+  }
+}

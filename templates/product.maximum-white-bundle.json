@@ -1,0 +1,320 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "bd04e2a1-ba96-495c-a840-db1be279a6ed": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo.png",
+            "clearpay_text": "or 4 interest-free payments of £7.50 with",
+            "klarna_img": "shopify:\/\/shop_images\/klarna.png",
+            "klarna_text": "or pay later, get it tomorrow with"
+          }
+        },
+        "bc448653-f59e-4762-a1a9-f2c9f6e68c8e": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY | NO MINIMUM SPEND",
+            "second_tag": ""
+          }
+        },
+        "5dbac801-6b35-4111-8744-ae86781729d0": {
+          "type": "shopify:\/\/apps\/clearpay-on-site-messaging\/blocks\/payments-messaging\/5d763983-d3e6-4888-9966-4e1170b26ae9",
+          "disabled": true,
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 16,
+            "margin_bottom": 16,
+            "color": "",
+            "size": "md",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": "maximum-white-bundle"
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "bd04e2a1-ba96-495c-a840-db1be279a6ed",
+        "bc448653-f59e-4762-a1a9-f2c9f6e68c8e",
+        "5dbac801-6b35-4111-8744-ae86781729d0",
+        "caption",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 12
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"This bundle worked wonders for me. Made a noticeable difference after just a couple of applications.\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Jojo W.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 20,
+        "padding_bottom": 16
+      }
+    },
+    "1664872804da9fcc65": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the bundle?",
+            "icon": "box",
+            "row_content": "<p>Maimum White Bundle Includes:<\/p><p>1x V34 Colour Corrector Serum<\/p><p>1 x Teeth Whitening Pen<\/p><p>1 x Teeth Whitening Strips (14 Treatments)<\/p><p>1 x Bamboo Toothbrush<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does the bundle help whiten my teeth?",
+            "icon": "lightning_bolt",
+            "row_content": "<p><strong>✔ <\/strong>V34 Colour Corrector utilises colour correcting technology. Purple is directly opposite yellow on the colour wheel and is therefore its complementary colour, so a water soluble purple dye is applied to your teeth to cancel out any yellow undertones<\/p><p><strong>✔ <\/strong>Oxidising tooth stains with PAP+ increases the lightness and reduces the saturation of yellow stains, whereas V34 balances the warm and cool tones (hue) in your teeth to reveal a more vibrant shade of white<\/p><p><strong>✔ <\/strong>Contains mineral ingredients, which can help replenish lost minerals and reduce sensitivity.<\/p><p><strong>✔ <\/strong>Teeth Whitening Strips: When applied to your teeth, each strip firmly adheres to the tooth surface and releases the active ingredients of the whitening formula into the tooth’s structure to provide fast whitening, desensitising, and remineralising benefits.<\/p>",
+            "page": ""
+          }
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "How to use the electric dental cleaning kit?",
+            "icon": "washing",
+            "row_content": "<p>1. Select your desired attachment based on your oral needs.<\/p><p>2. Turn on the device and alter between modes based on your cleaning needs.<\/p><p>3. Alter between heads if necessary.<\/p><p>4. Clean the device and the tip after use. <\/p>",
+            "page": ""
+          }
+        },
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "List Of Ingredients",
+            "icon": "question_mark",
+            "row_content": "<p> <strong>V34 Colour Corrector:<\/strong> Glycerin, Aqua\/Water, Sorbitol, Hydrated Silica, Xylitol, Polysorbate 80, Cellulose Gum, Mentha Piperita,(Peppermint) Oil, Phenoxyethanol, Sucralose, Tetrasodium, Pyrophosphate, CI17200\/D&C, Red No. 33, CI42090\/FD&C Blue No.1, Ethylhexylglycerin.<\/p><p><\/p><p><strong>Teeth Whitening Strips: <\/strong>Glycerin, Propylene Glycol, Deionized Water, Sodium Phytate, Carbomer, Carboxymethyl, Polyvinylpyrrolidone, Menthol<\/p>",
+            "page": ""
+          }
+        },
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cautions",
+            "icon": "clipboard",
+            "row_content": "<p>Not recommended for children under the age of 8.<\/p><p>Only buy CE & UL certified Whitening Products<\/p><p>Please make sure to wash your mouth with warm water after use.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Cons of not using an Ultra Sonic Tooth Cleaner",
+            "icon": "star",
+            "row_content": "<p>Bad dental hygiene can be devastating on teeth and gums. Not only can it be expensive, but it can also lead to bad breath, gum disease, receding gums, dental decay, and even tooth loss.<\/p><p>This product may also be reffered to as one of the following:<\/p><p><\/p><p><em>Calculus remover, Dental irrigator, Dental scaler, Oral irrigator, Plaque remover, Tartar removal tool, Tartar remover, Tooth cleaner, Tooth stain remover, Ultrasonic dental cleaner, Ultrasonic scaler, Ultrasonic tooth cleaner.<\/em><\/p><p><\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-1",
+        "collapsible-row-3",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975",
+        "collapsible-row-0"
+      ],
+      "settings": {
+        "caption": "MAXIMUM WHITE BUNDLE",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 16,
+        "padding_bottom": 32
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_aa29138a-e959-4c87-83fd-cf781575941c.png"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "1664872804da9fcc65",
+    "collapsible-content",
+    "16631668754f796b02",
+    "product-recommendations"
+  ]
+}

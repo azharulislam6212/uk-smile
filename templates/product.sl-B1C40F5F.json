@@ -1,0 +1,548 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_fecMge": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "629dcd9c-001d-4602-bdc4-ee2fca07367a": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo.png",
+            "clearpay_text": "or 4 interest-free payments of £8.75 with",
+            "klarna_img": "shopify:\/\/shop_images\/klarna.png",
+            "klarna_text": "or pay later, get it tomorrow with"
+          }
+        },
+        "4b5187ef-6563-4eaf-8d8d-6415e52c432d": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "SPECIAL DEAL: BUY 2 FOR £64.99!  BUY 3 FOR £89.99  JUST ADD TO CART",
+            "second_tag": ""
+          }
+        },
+        "afd89eef-d714-4619-92db-f3bbd46dfcb7": {
+          "type": "shopify:\/\/apps\/clearpay-on-site-messaging\/blocks\/payments-messaging\/5d763983-d3e6-4888-9966-4e1170b26ae9",
+          "disabled": true,
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 14,
+            "margin_bottom": 14,
+            "color": "",
+            "size": "md",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": "water-flosser"
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "custom_liquid_LPBJ3h": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"social-proof-badge\">\n  <p id=\"social-proof-text\">\n    <strong class=\"name-block\">\n      <span id=\"full-name\" aria-live=\"polite\">Leo<\/span>\n      <!-- Blue verified tick -->\n      <svg class=\"verified-tick\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" role=\"img\" aria-label=\"verified\">\n        <circle cx=\"12\" cy=\"12\" r=\"12\" fill=\"#1DA1F2\"\/>\n        <path fill=\"#fff\" d=\"M10.2 15.6l-3.1-3.1 1.1-1.1 2 2 4.7-4.7 1.1 1.1z\"\/>\n      <\/svg>\n    <\/strong>\n    &nbsp;and <strong>500+ others<\/strong> bought this product last month!\n  <\/p>\n<\/div>\n\n<style>\n  .social-proof-badge {\n    display:flex;\n    align-items:center;\n    padding:8px 12px;\n    margin:12px 0;\n    font-size:14px;\n    line-height:1.4;\n    color:#333;\n    background: transparent;\n  }\n\n  .social-proof-badge p { margin:0; }\n\n  .name-block {\n    display:inline-flex;\n    align-items:center;\n    gap:2px;\n  }\n\n  #full-name {\n    transition: opacity 300ms ease;\n    opacity:1;\n  }\n\n  .verified-tick {\n    display:inline-block;\n    margin:0;\n    vertical-align: middle;\n  }\n<\/style>\n\n<script>\n  (function(){\n    const names = [\n      \"Leo\", \"Henry\", \"Jack\", \"Grace\", \"Sophia\", \"Ethan\",\n      \"Olivia\", \"Mason\", \"Sophie\", \"Daniel\", \"Emma\",\n      \"Liam\", \"Elijah\", \"James\", \"Ava\", \"Lucas\",\n      \"Isabella\", \"Mia\", \"Logan\", \"Amelia\", \"Harper\"\n    ];\n\n    const CHANGE_INTERVAL_MS = 3000;\n    const FADE_MS = 300;\n\n    const nameEl = document.getElementById('full-name');\n\n    let idx = 0;\n    nameEl.textContent = names[idx];\n    idx = (idx + 1) % names.length;\n\n    function updateName() {\n      nameEl.style.opacity = '0';\n      setTimeout(() => {\n        nameEl.textContent = names[idx];\n        idx = (idx + 1) % names.length;\n        nameEl.style.opacity = '1';\n      }, FADE_MS);\n    }\n\n    const intervalId = setInterval(updateName, CHANGE_INTERVAL_MS);\n\n    const observer = new MutationObserver(() => {\n      if (!document.body.contains(nameEl)) {\n        clearInterval(intervalId);\n        observer.disconnect();\n      }\n    });\n    observer.observe(document.body, { childList: true, subtree: true });\n  })();\n<\/script>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "custom_liquid_cMU4LN": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div id='ss-product-videos'><\/div>"
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_fecMge",
+        "price",
+        "629dcd9c-001d-4602-bdc4-ee2fca07367a",
+        "4b5187ef-6563-4eaf-8d8d-6415e52c432d",
+        "afd89eef-d714-4619-92db-f3bbd46dfcb7",
+        "caption",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "custom_liquid_LPBJ3h",
+        "buy_buttons",
+        "description",
+        "custom_liquid_cMU4LN",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 12
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"PREMIUM IS AN UNDERSTATEMENT! AMAZING FLOSSER WISH I HAD THIS SOONER, SO MUCH BITS AND JUNKS COMES OUT!\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Mario. W<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 20,
+        "padding_bottom": 16
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Features:",
+            "icon": "lightning_bolt",
+            "row_content": "<p>✓ Designed to help remove plaque, surface stains, and food particles.<br\/>✓ Built with anti-leak technology to prevent spillage.<br\/>✓ Long-lasting battery for extended use.<br\/>✓ Five cleaning modes to suit different needs.<br\/>✓ 360° rotating nozzle for targeted cleaning.<br\/>✓ Supports a cleaner, fresher smile.<br\/>✓ Suitable for ages 12 and above.<br\/>✓ Includes multiple nozzles for varied oral care routines.<br\/>✓ Delivers up to 1200 water pulses per minute.<br\/>✓ Gravity ball ensures consistent water flow.<br\/>✓ Helps reduce build-up between teeth.<br\/>✓ Reaches areas around braces and dental appliances.<br\/>✓ Designed to support gum freshness.<br\/>✓ 300ml water tank for fewer refills.<br\/>✓ Shown to clean more thoroughly than manual flossing.<br\/>✓ Boasts the largest water tank on the market.<br\/>✓ Compatible with braces, implants, and dental work.<\/p>",
+            "page": ""
+          }
+        },
+        "4e1e68e5-34de-4433-a8e4-3c411e567aaf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Benefits",
+            "icon": "heart",
+            "row_content": "<p>✓ Designed to clean more effectively than traditional floss and other water flossers.<br\/>✓ Helps reduce build-up between teeth.<br\/>✓ Targets contributors to bad breath.<br\/>✓ Reaches below the gumline for a deeper clean.<br\/>✓ Gentle alternative to traditional floss.<br\/>✓ Specialised tip designed to clean around braces and veneers.<br\/>✓ Cleans where brushing and standard flossing may miss.<br\/>✓ Offers a gentle massage for gum comfort.<br\/>✓ Compatible with implants, crowns, bridges, and veneers.<br\/>✓ Leaves your mouth feeling clean and refreshed.<br\/><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<ul><li>Water Flosser Pro<\/li><li>Premium Travel Carry Case<\/li><li>1x Tongue Scrapper Tip<\/li><li>1x Orthodontic Tip<\/li><li>1x Periodontal Tip<\/li><li>2x Standard Jet Tip<\/li><li>USB Charging Cable<\/li><li>Manual<\/li><li>Smile Therapy Packaging Box<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "How to use the electric dental cleaning kit?",
+            "icon": "washing",
+            "row_content": "<p>1. Select your desired attachment based on your oral needs.<\/p><p>2. Turn on the device and alter between modes based on your cleaning needs.<\/p><p>3. Alter between heads if necessary.<\/p><p>4. Clean the device and the tip after use. <\/p>",
+            "page": ""
+          }
+        },
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cautions",
+            "icon": "clipboard",
+            "row_content": "<p>Not recommended for children under the age of 12.<br\/><br\/>Avoid using hot or boiling water in the water reservoir to prevent potential burns or damage to the device.<br\/><br\/>Do not direct the water jet at your eyes or ears to avoid injury or discomfort.<br\/><br\/>Only buy certified Water Flossers.<br\/><br\/>Please make sure to rinse your mouth with warm water after use.<br\/><br\/>Children should only use the water flosser pro under adult supervision to ensure proper usage and prevent accidents.<\/p>",
+            "page": ""
+          }
+        },
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Instructions & Tips",
+            "icon": "question_mark",
+            "row_content": "<p>Simply ensure you have charged your Water Flosser, one quick full charge will last you a few weeks!<br\/><br\/>1. Place water into the 300ml water tank, we recommend lukewarm.<br\/><br\/>2. Aim the 360 tip directly into your mouth.<br\/><br\/>3. Turn on your device and select the mode you would like, whether weak or full blast (5 modes) we recommend starting low.<br\/><br\/>4. Target those hard to reach areas<br\/><br\/>We recommend using the Water Flosser prior to toothbrushing: Removing food and debris enhances the effectiveness of both toothbrushing and toothpaste.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Can the Water Flosser Pro be used on composite bonding, veneers or fillings?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, the Water Flosser Pro is suitable for use on composite bonding, veneers, and fillings. This device is designed to provide a thorough yet gentle clean, effectively removing plaque and debris from between your teeth and around dental restorations. It’s safe to use on all types of dental work, helping you maintain optimal oral hygiene without compromising the integrity of your composite bonding, veneers, or fillings.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_3MQ3H9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Specifications",
+            "icon": "chat_bubble",
+            "row_content": "<h3>Technical Specifications<\/h3><p><strong>Model<\/strong>: Smile Therapy Water Flosser Pro 5-In-1<\/p><p><strong>Materials<\/strong>: ABS<\/p><p><strong>Power Source<\/strong>: Rechargeable Battery<\/p><p><strong>Charging Input<\/strong>: 5V 1A<\/p><p><strong>Charging Time<\/strong>: 3-5 hours<\/p><p><strong>Waterproof Level<\/strong>: IPX7 (Suitable for bathroom use)<\/p><p><strong>Reservoir Capacity<\/strong>: 300 ml<br\/><\/p><p><strong>Modes<\/strong>: 5 pressure settings with the following PSI levels:<\/p><ul><li>Mode 1: 40 PSI<\/li><li>Mode 2: 60 PSI<\/li><li>Mode 3: 80 PSI<\/li><li>Mode 4: 95 PSI<\/li><li>Mode 5: 110 PSI<\/li><\/ul><p>Mode & Charging Indicators for real-time status updates.<\/p><p><strong>Warranty<\/strong>: 12 months for repair or replacement, excluding misuse or unauthorised repairs.<\/p><p><\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-3",
+        "4e1e68e5-34de-4433-a8e4-3c411e567aaf",
+        "collapsible-row-1",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975",
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523",
+        "collapsible-row-0",
+        "collapsible_row_3MQ3H9"
+      ],
+      "settings": {
+        "caption": "WATER FLOSSER PRO",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 16,
+        "padding_bottom": 32
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_aa29138a-e959-4c87-83fd-cf781575941c.png"
+      }
+    },
+    "1664872804da9fcc65": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_YV3BeJ": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_YV3BeJ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {}
+    },
+    "ss_product_vidoes_NM6gKd": {
+      "type": "ss-product-vidoes",
+      "blocks": {
+        "video_8ViMPV": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/03-31 - H1 - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        },
+        "video_mV6tPh": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/11-18 - [WF] Josie UGC Waterglass H2 - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        },
+        "video_dhXqbX": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/06-25 - H4 - 9_16(SMD).mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        },
+        "video_rtxqBe": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/09-11 -RBY WFP - H1 - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        },
+        "video_fR3wzG": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/09-01 -Narrator Trend HLLY WFP - H2 - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "video_8ViMPV",
+        "video_mV6tPh",
+        "video_dhXqbX",
+        "video_rtxqBe",
+        "video_fR3wzG"
+      ],
+      "name": "SS - Product videos",
+      "settings": {
+        "videos_position": "above_description",
+        "use_metafield": false,
+        "heading": "<h2>Real people. Real smiles<\/h2>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "slider_view": 3,
+        "slider_view_mobile": 3,
+        "slider_gap": 16,
+        "slider_gap_mobile": 16,
+        "slider_mt": 20,
+        "slider_mt_mobile": 16,
+        "card_radius": 10,
+        "card_border_thickness": 0,
+        "video_ratio": "portrait",
+        "video_ratio_mobile": "portrait",
+        "video_overlay": 0.3,
+        "card_shadow": true,
+        "icon_size": 34,
+        "icon_size_mobile": 34,
+        "icon_border_thickness": 1,
+        "icon_position": "bottom_left",
+        "icon_position_mobile": "bottom_left",
+        "hide_icon": false,
+        "arrow_size": 35,
+        "arrow_size_mobile": 35,
+        "arrow_radius": 5,
+        "arrow_border_thickness": 0,
+        "arrow_hover_shadow": true,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "show_content": false,
+        "modal_width": 30,
+        "modal_width_mobile": 95,
+        "padding_advanced": false,
+        "modal_padding_vertical": 0,
+        "modal_padding_vertical_mobile": 0,
+        "modal_padding_horizontal": 0,
+        "modal_padding_horizontal_mobile": 0,
+        "modal_radius": 16,
+        "modal_border_thickness": 0,
+        "modal_overlay": 0.5,
+        "close_size": 42,
+        "close_size_mobile": 42,
+        "close_radius": 8,
+        "close_border_thickness": 0,
+        "buttons_size": 48,
+        "buttons_size_mobile": 48,
+        "buttons_radius": 8,
+        "buttons_border_thickness": 0,
+        "modal_video_radius": 0,
+        "modal_video_border_thickness": 0,
+        "modal_video_ratio": "portrait",
+        "modal_video_ratio_mobile": "portrait",
+        "modal_heading_custom": false,
+        "modal_heading_font": "josefin_sans_n4",
+        "modal_heading_size": 28,
+        "modal_heading_size_mobile": 28,
+        "modal_heading_height": 130,
+        "modal_heading_align": "center",
+        "modal_heading_align_mobile": "center",
+        "modal_text_custom": false,
+        "modal_text_font": "josefin_sans_n4",
+        "modal_text_size": 16,
+        "modal_text_size_mobile": 16,
+        "modal_text_height": 150,
+        "modal_text_align": "center",
+        "modal_text_align_mobile": "center",
+        "modal_text_mt": 16,
+        "modal_text_mt_mobile": 16,
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#000000",
+        "video_overlay_color": "#000000",
+        "card_shadow_color": "#000000",
+        "icon_color": "#ffffff",
+        "icon_bg_color": "#000000",
+        "icon_border_color": "#ffffff",
+        "arrow_icon_color": "#1c1c1c",
+        "arrow_icon_hover_color": "#1c1c1c",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#000000",
+        "modal_heading_color": "#000000",
+        "modal_text_color": "#000000",
+        "modal_content_bg_color": "#ffffff",
+        "modal_border_color": "#000000",
+        "modal_overlay_color": "#000000",
+        "modal_bg_color": "#ffffff",
+        "modal_video_border_color": "#000000",
+        "buttons_icon_color": "#ffffff",
+        "buttons_bg_color": "#ffffff",
+        "buttons_border_color": "#000000",
+        "close_icon_color": "#ffffff",
+        "close_bg_color": "#ffffff",
+        "close_border_color": "#000000",
+        "heading_color": "#000000",
+        "background_color": "",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664872804da9fcc65",
+    "product-recommendations",
+    "ss_product_vidoes_NM6gKd"
+  ]
+}

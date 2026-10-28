@@ -1,0 +1,58 @@
+{
+  "parent": "product.v34-colour-corrector.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "16631668754f796b02": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express Ireland 1-3 Working Day Delivery"
+          }
+        }
+      }
+    },
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "1583d093-4524-450d-8e18-5220e338f1df": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET! | EXPRESS DELIVERY IN IRELAND!"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_4nkgWb",
+        "price",
+        "1583d093-4524-450d-8e18-5220e338f1df",
+        "4740a20e-3758-409b-a8db-ee0d287c0e13",
+        "description",
+        "caption",
+        "rating",
+        "variant_picker",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664870899dbe351d1",
+    "product-recommendations",
+    "multicolumn",
+    "rich-text-1",
+    "image-with-text-0",
+    "image-with-text-1",
+    "image-with-text-2",
+    "newsletter"
+  ]
+}

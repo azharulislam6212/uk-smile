@@ -1,0 +1,42 @@
+{
+  "parent": "product.dental-cleaning-kit.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "fa23c5b4-2eed-4884-9e8e-3a54827e4078": {
+          "disabled": false,
+          "settings": {
+            "first_tag": "SPECIAL OFFER: BUY 2 FOR €103.99! | SAVE A FURTHER €26.00 | JUST ADD 2 TO CART"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "fa23c5b4-2eed-4884-9e8e-3a54827e4078",
+        "989bafa1-2d15-416b-9a70-828599c812f0",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "a26b587b-dece-4147-9e3f-87a8e6e6a410",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "166487234450a733f6",
+    "product-recommendations"
+  ]
+}

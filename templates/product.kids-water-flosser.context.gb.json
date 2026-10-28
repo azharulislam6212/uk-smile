@@ -1,0 +1,41 @@
+{
+  "context": {
+    "market": "gb"
+  },
+  "parent": "product.kids-water-flosser.json",
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a": {
+          "disabled": false,
+          "settings": {}
+        },
+        "rapi_rapi_bundle_kGxJw": {
+          "type": "shopify:\/\/apps\/rapi\/blocks\/rapi-bundle\/99617c17-a32b-4e70-a883-7a155610d032",
+          "disabled": false,
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_yYfgjW",
+        "price",
+        "1fc7d345-e3bb-480a-af2c-a56c6cee74e3",
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a",
+        "rapi_rapi_bundle_kGxJw",
+        "caption",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "custom_liquid_qb3aP7",
+        "buy_buttons",
+        "description",
+        "share"
+      ]
+    }
+  }
+}

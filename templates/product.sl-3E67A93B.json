@@ -1,0 +1,528 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_fecMge": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "629dcd9c-001d-4602-bdc4-ee2fca07367a": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo.png",
+            "clearpay_text": "or 4 interest-free payments of £12.50 with",
+            "klarna_img": "shopify:\/\/shop_images\/klarna.png",
+            "klarna_text": "or pay later, get it tomorrow with"
+          }
+        },
+        "4b5187ef-6563-4eaf-8d8d-6415e52c432d": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "OUR BIGGEST SALE YET + FREE NEXT DAY DELIVERY | 50% OFF ENDS TONIGHT!",
+            "second_tag": ""
+          }
+        },
+        "afd89eef-d714-4619-92db-f3bbd46dfcb7": {
+          "type": "shopify:\/\/apps\/clearpay-on-site-messaging\/blocks\/payments-messaging\/5d763983-d3e6-4888-9966-4e1170b26ae9",
+          "disabled": true,
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 14,
+            "margin_bottom": 14,
+            "color": "",
+            "size": "md",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": "water-flosser"
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "custom_liquid_X4Ceqa": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"social-proof-badge\">\n  <p id=\"social-proof-text\">\n    <strong class=\"name-block\">\n      <span id=\"full-name\" aria-live=\"polite\">Grace<\/span>\n      <!-- Blue verified tick -->\n      <svg class=\"verified-tick\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" role=\"img\" aria-label=\"verified\">\n        <circle cx=\"12\" cy=\"12\" r=\"12\" fill=\"#1DA1F2\"\/>\n        <path fill=\"#fff\" d=\"M10.2 15.6l-3.1-3.1 1.1-1.1 2 2 4.7-4.7 1.1 1.1z\"\/>\n      <\/svg>\n    <\/strong>\n    &nbsp;and <strong>750+ others<\/strong> bought this product last month!\n  <\/p>\n<\/div>\n\n<style>\n  .social-proof-badge {\n    display:flex;\n    align-items:center;\n    padding:8px 12px;\n    margin:12px 0;\n    font-size:14px;\n    line-height:1.4;\n    color:#333;\n    background: transparent;\n  }\n\n  .social-proof-badge p { margin:0; }\n\n  .name-block {\n    display:inline-flex;\n    align-items:center;\n    gap:2px;\n  }\n\n  #full-name {\n    transition: opacity 300ms ease;\n    opacity:1;\n  }\n\n  .verified-tick {\n    display:inline-block;\n    margin:0;\n    vertical-align: middle;\n  }\n<\/style>\n\n<script>\n  (function(){\n    const names = [\n      \"Grace\", \"Sophia\", \"Ethan\", \"Olivia\", \"Mason\",\n      \"Sophie\", \"Daniel\", \"Emma\", \"Liam\", \"Elijah\",\n      \"James\", \"Ava\", \"Lucas\", \"Isabella\", \"Mia\",\n      \"Logan\", \"Amelia\", \"Harper\"\n    ];\n\n    const CHANGE_INTERVAL_MS = 3000;\n    const FADE_MS = 300;\n\n    const nameEl = document.getElementById('full-name');\n\n    let idx = 0;\n    nameEl.textContent = names[idx];\n    idx = (idx + 1) % names.length;\n\n    function updateName() {\n      nameEl.style.opacity = '0';\n      setTimeout(() => {\n        nameEl.textContent = names[idx];\n        idx = (idx + 1) % names.length;\n        nameEl.style.opacity = '1';\n      }, FADE_MS);\n    }\n\n    const intervalId = setInterval(updateName, CHANGE_INTERVAL_MS);\n\n    const observer = new MutationObserver(() => {\n      if (!document.body.contains(nameEl)) {\n        clearInterval(intervalId);\n        observer.disconnect();\n      }\n    });\n    observer.observe(document.body, { childList: true, subtree: true });\n  })();\n<\/script>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_fecMge",
+        "price",
+        "629dcd9c-001d-4602-bdc4-ee2fca07367a",
+        "4b5187ef-6563-4eaf-8d8d-6415e52c432d",
+        "afd89eef-d714-4619-92db-f3bbd46dfcb7",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "custom_liquid_X4Ceqa",
+        "buy_buttons",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 12
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"THIS IS BY FAR THE BEST RETAINER CLEANER I'VE EVER HAD, I LITERALLY SEE A SPOTLESS CLEAN EVERY SINGLE TIME!\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Maria. L<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 20,
+        "padding_bottom": 16
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Features:",
+            "icon": "lightning_bolt",
+            "row_content": "<p>✔ 45,000Hz Ultrasonic Cleaning – High-frequency waves help lift surface stains, buildup, and odour with precision<br\/>✔ UV Function – Supports hygienic cleaning using UV light technology<br\/>✔ Quick 5-Minute Cycle – Efficient cleaning in minutes<br\/>✔ Compact Modern Design – Space-saving and sleek<br\/>✔ Non-Abrasive – Gentle yet effective on all dental appliances & even home items<br\/>✔ Wide Compatibility – Ideal for retainers, aligners, dentures, and household accessories<br\/>✔ Quiet Operation – Enjoy powerful cleaning with minimal noise<br\/>✔ Automatic Shut-off – Turns off automatically after cleaning<br\/>✔ Durable Build – High-quality materials ensure long-lasting use<br\/>✔ Energy Efficient – Consumes minimal power (rated A++)<\/p>",
+            "page": ""
+          }
+        },
+        "4e1e68e5-34de-4433-a8e4-3c411e567aaf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Benefits",
+            "icon": "heart",
+            "row_content": "<p>✔️ Enjoy a fresher, cleaner feeling from your sparkling dental appliances<br\/>✔️ Support daily oral hygiene by helping reduce buildup on your appliances<br\/>✔️ Save money by extending the life of your retainers, aligners, or dentures<br\/>✔️ Feel confident knowing your appliances are visibly clean and fresh<br\/>✔️ Help reduce surface stains and discolouration for a clear appearance<br\/>✔️ Minimise unpleasant odours, leaving your appliances feeling fresh<br\/>✔️ Spend less time cleaning and more time enjoying your day<br\/>✔️ Travel with ease thanks to its portable design, ensuring clean appliances anywhere<br\/>✔️ Reduce the need for professional cleaning with convenient at-home use<br\/>✔️ UV function adds an extra touch of hygienic care to your cleaning routine<\/p>",
+            "page": ""
+          }
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Modes",
+            "icon": "question_mark",
+            "row_content": "<p><strong>Short Clean Cycle (5 Minutes)<\/strong><\/p><ul><li><strong>Purpose:<\/strong> Designed for delicate items such as retainers, aligners, and other soft dental appliances. Temperatures can reach up to 55°C.<\/li><li><strong>How to Use:<br\/><\/strong> • Ensure the device is in standby mode (white ring light). Pour clean room temperature water <br\/> • <em>Short press<\/em> the main power button once — the ring light will turn <strong>blue<\/strong>, indicating the 5-minute cycle has started.<br\/> • Allow at least 30 minutes between cycles to prevent overheating.<\/li><li><strong>Key Benefit:<\/strong> Offers a gentle clean to help remove debris and surface build-up without risking heat damage to soft plastics.<\/li><\/ul><p><strong>Long Clean Cycle (10 Minutes)<\/strong><\/p><ul><li><strong>Purpose:<\/strong> Recommended for more durable items such as <strong>metal jewellery or keys<\/strong><\/li><li><strong>How to Use:<br\/><\/strong> • From standby mode (white ring light), <em>press and hold<\/em> the main power button — the ring light will <strong>flash blue<\/strong>, indicating the 10-minute cycle has started. Temperatures can reach up to 60°C.<br\/> • Avoid using this mode for plastic or heat-sensitive items. Let the device cool fully between cycles - at least 30 minutes.<\/li><li><strong>Key Benefit:<\/strong> Provides a deeper clean for tougher, solid items that can tolerate extended exposure to warm water.<\/li><\/ul><h4><strong>UV Sterilisation Mode<\/strong><\/h4><ul><li><strong>Purpose:<\/strong> Adds an extra sterilisation step using UV light to support hygiene.<br\/><strong>How to Use:<br\/><\/strong> • After the cleaning cycle ends, <em>press the button on the top of the lid<\/em>.<br\/> • The button will light <strong>green<\/strong> to indicate the UV mode is active.<br\/> • UV only activates when the lid is closed and the lights are facing downward.<\/li><li><strong>Key Benefit:<\/strong> Enhances cleanliness by introducing UV sterilisation to help reduce surface-level bacteria.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<p>Each package includes:<\/p><p>1x Ultrasonic Dental Cleaning Device<\/p><p>6x Cleaning Tablets <\/p><p>1x USB-C Cable & Plug<\/p><p>1x Cleaning Basket<\/p><p>1x UV Sterilisation Lid<\/p><p>1x Manual<\/p><p>1x Smile Therapy Gift Box<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gqhDxb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Specification",
+            "icon": "chat_bubble",
+            "row_content": "<p><strong>Ultrasonic Frequency<\/strong>: 45,000HZ<br\/><br\/><strong>Power<\/strong>: 24W<br\/><br\/><strong>Capacity<\/strong>: 200mL<br\/><br\/><strong>Cleaning Time<\/strong>: 5 minutes<br\/><br\/><strong>UV Sterilisation Time<\/strong>: 5 minutes<br\/><br\/><strong>Tank Size<\/strong>: 78 x 78 x 40 mm<br\/><br\/><strong>Product Size<\/strong>: 107 x 107 x 94.5 mm<br\/><br\/><strong>Rated Voltage<\/strong>: 12V \/ 2A<br\/><br\/><strong>Charging Port<\/strong>: Type-C<br\/><br\/><strong>Material<\/strong>: Stainless steel tank, ABS plastic exterior<\/p>",
+            "page": ""
+          }
+        },
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cautions",
+            "icon": "clipboard",
+            "row_content": "<p><strong>IMPORTANT:<\/strong>Please read and follow all instructions carefully. Failure to follow these guidelines can cause the device to overheat. Internal temperatures may rise close to 60°C, potentially damaging your dental appliances.<br\/><br\/>Do not use corrosive or hot liquids for cleaning.<\/p><p>Avoid exposing the UV light directly to your skin or eyes.<\/p><p>Aligners, retainers, and veneers may warp or discolour under these temperatures. Check with your dentist before use. We are not liable for damage to heat-sensitive items.<\/p><p>Use clean water for each cycle to ensure optimal results.<\/p><p>Use room temperature water 20 - 22°C.<\/p><p>Allow the device to cool down for at least 30 minutes between uses to prevent overheating.<\/p><p>Store the device in a dry, cool place after use for longevity.<\/p>",
+            "page": ""
+          }
+        },
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Instructions & Tips",
+            "icon": "question_mark",
+            "row_content": "<p>1. Fill the tank with clean water and add the cleaning tablet.<\/p><p>2. Place your dental appliance inside the tank.<\/p><p>3. Press the power button to start the ultrasonic cleaning.<\/p><p>4. Wait 5 minutes for the cleaning and UV sterilisation to complete.<\/p><p>5. Remove the appliance, rinse with water, and dry the device.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Can the Water Flosser Pro be used on composite bonding, veneers or fillings?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, the Water Flosser Pro is suitable for use on composite bonding, veneers, and fillings. This device is designed to provide a thorough yet gentle clean, effectively removing plaque and debris from between your teeth and around dental restorations. It’s safe to use on all types of dental work, helping you maintain optimal oral hygiene without compromising the integrity of your composite bonding, veneers, or fillings.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_YAbaWX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What can I use the Ultrasonic Cleaning Pod to clean?",
+            "icon": "return",
+            "row_content": "<p>The Ultrasonic Pod has been specifically designed to clean a wide range of oral appliances such as:<br\/><\/p><ul><li>Aligner\/Invisalign<\/li><li>Retainers<\/li><li>Mouth Guards<\/li><li>Dentures<\/li><li>Night Guards<\/li><li>Whitening Trays<\/li><li>Toothbrush Attachment Heads<\/li><li>Sports Guards<\/li><li>Dental Implants<\/li><\/ul><p>Not limited to dental appliances, the Pod can also be used for cleaning household items!<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-3",
+        "4e1e68e5-34de-4433-a8e4-3c411e567aaf",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "collapsible-row-1",
+        "collapsible_row_gqhDxb",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975",
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523",
+        "collapsible-row-0",
+        "collapsible_row_YAbaWX"
+      ],
+      "settings": {
+        "caption": "Ultrasonic Denture Cleaning Pod",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 16,
+        "padding_bottom": 32
+      }
+    },
+    "ss_feature_47_nBa86i": {
+      "type": "ss-feature-47",
+      "blocks": {
+        "sub_heading_yPc8MQ": {
+          "type": "sub_heading",
+          "disabled": true,
+          "settings": {
+            "sub_heading": "<p>Most people think they’re brushing correctly but the numbers tell a different story.<\/p>",
+            "sub_heading_custom": false,
+            "sub_heading_font": "josefin_sans_n4",
+            "sub_heading_size": 12,
+            "sub_heading_size_mobile": 12,
+            "sub_heading_height": 150,
+            "sub_heading_mt": 0,
+            "sub_heading_mt_mobile": 0,
+            "sub_heading_color": "#121212"
+          }
+        },
+        "heading_9nUeV7": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>A FRESHER CLEAN, MADE EASY<\/strong><\/h2>",
+            "heading_custom": true,
+            "heading_font": "archivo_n7",
+            "heading_size": 26,
+            "heading_size_mobile": 26,
+            "heading_height": 130,
+            "heading_mt": 12,
+            "heading_mt_mobile": 12,
+            "heading_color": "#0e1b4d"
+          }
+        },
+        "text_7GhdhF": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>The <strong>Ultrasonic Denture Cleaning Pod Pro<\/strong> combines ultrasonic power with UV sterilisation to give your dental accessories a spotless, hygienic clean in minutes.<\/p>",
+            "text_custom": true,
+            "text_font": "questrial_n4",
+            "text_size": 16,
+            "text_size_mobile": 16,
+            "text_height": 150,
+            "text_mt": 10,
+            "text_mt_mobile": 10,
+            "text_color": "#0e1b4d"
+          }
+        },
+        "feature_rzhH6V": {
+          "type": "feature",
+          "settings": {
+            "title": "Day 1",
+            "text": "<ul><li>Quick, effortless setup<br\/><\/li><li>Noticeably cleaner feel<\/li><\/ul>",
+            "feature_height": 50,
+            "feature_height_mobile": 30
+          }
+        },
+        "feature_hjJfRN": {
+          "type": "feature",
+          "settings": {
+            "title": "Day 3",
+            "text": "<ul><li>Removes buildup from dentures and retainers<br\/><\/li><li>Restores clarity and shine<\/li><\/ul>",
+            "feature_height": 100,
+            "feature_height_mobile": 50
+          }
+        },
+        "feature_hdLhGW": {
+          "type": "feature",
+          "settings": {
+            "title": "Day 7",
+            "text": "<ul><li>Consistent deep cleaning results<br\/><\/li><li>Everyday freshness made simple<\/li><\/ul>",
+            "feature_height": 160,
+            "feature_height_mobile": 80
+          }
+        },
+        "feature_Pb9VhJ": {
+          "type": "feature",
+          "settings": {
+            "title": "Day 14",
+            "text": "<ul><li>Reliable, hygienic routine<br\/><\/li><li>Confidence in every use<\/li><\/ul>",
+            "feature_height": 200,
+            "feature_height_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "sub_heading_yPc8MQ",
+        "heading_9nUeV7",
+        "text_7GhdhF",
+        "feature_rzhH6V",
+        "feature_hjJfRN",
+        "feature_hdLhGW",
+        "feature_Pb9VhJ"
+      ],
+      "name": "SS - Feature #47",
+      "settings": {
+        "content_max_width": 80,
+        "content_align": "center",
+        "content_align_mobile": "center",
+        "feature_width": 220,
+        "feature_width_mobile": 190,
+        "padding_advanced": false,
+        "feature_padding_horizontal": 20,
+        "feature_padding_horizontal_mobile": 20,
+        "feature_padding_vertical": 20,
+        "feature_padding_vertical_mobile": 20,
+        "feature_radius": 8,
+        "feature_border_thickness": 1,
+        "feature_bg_opacity": 0.2,
+        "feature_shadow": true,
+        "feature_item_align": "left",
+        "feature_item_align_mobile": "start",
+        "feature_align": "left",
+        "feature_align_mobile": "left",
+        "line_thickness": 1,
+        "title_custom": true,
+        "title_font": "archivo_n4",
+        "title_size": 26,
+        "title_size_mobile": 26,
+        "title_height": 130,
+        "text_custom": true,
+        "text_font": "questrial_n4",
+        "text_size": 16,
+        "text_size_mobile": 16,
+        "text_height": 150,
+        "text_mt": 12,
+        "text_mt_mobile": 4,
+        "title_color": "#ffffff",
+        "text_color": "#ffffff",
+        "feature_bg_color": "#c403fa",
+        "feature_border_color": "rgba(0,0,0,0)",
+        "feature_shadow_color": "rgba(0,0,0,0)",
+        "line_color": "#0e1b4d",
+        "background_style": "gradient",
+        "background_color": "#eaf4ff",
+        "background_gradient": "linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(148, 201, 249, 1) 2%, rgba(143, 219, 249, 1) 3%, rgba(195, 233, 255, 1) 4%, rgba(126, 148, 243, 1) 97%)",
+        "border_color": "#121212",
+        "margin_top": 60,
+        "margin_bottom": 60,
+        "margin_horizontal": 7,
+        "margin_horizontal_mobile": 1.5,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 20
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_aa29138a-e959-4c87-83fd-cf781575941c.png"
+      }
+    },
+    "1664872804da9fcc65": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_YV3BeJ": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_YV3BeJ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "ss_feature_47_nBa86i",
+    "16631668754f796b02",
+    "1664872804da9fcc65",
+    "product-recommendations"
+  ]
+}

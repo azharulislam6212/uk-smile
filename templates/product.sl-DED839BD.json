@@ -1,0 +1,779 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_YcM7xW": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "0c5cf657-a361-46ca-932d-8ff2f8383de6": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo.png",
+            "clearpay_text": "or 4 interest-free payments of £5 with  ",
+            "klarna_img": "shopify:\/\/shop_images\/klarna.png",
+            "klarna_text": "or pay later, get it tomorrow with"
+          }
+        },
+        "0aa65f75-5b0a-4bed-8504-73c5104500b1": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY | NO MINIMUM SPEND",
+            "second_tag": ""
+          }
+        },
+        "f28c594a-448a-4efc-9d87-769fe6e5f5d2": {
+          "type": "shopify:\/\/apps\/clearpay-on-site-messaging\/blocks\/payments-messaging\/5d763983-d3e6-4888-9966-4e1170b26ae9",
+          "disabled": true,
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 16,
+            "margin_bottom": 16,
+            "color": "",
+            "size": "md",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": "advanced-teeth-whitening-strips-14-treatments"
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_YcM7xW",
+        "price",
+        "0c5cf657-a361-46ca-932d-8ff2f8383de6",
+        "0aa65f75-5b0a-4bed-8504-73c5104500b1",
+        "f28c594a-448a-4efc-9d87-769fe6e5f5d2",
+        "caption",
+        "description",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 24,
+        "padding_bottom": 32
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"I GOT TIRED OF SUPERMARKET MOUTHWASHES & FOUND THIS - AN ABSOLOUTE GEM, REALLY EFFECTIVE & WITHOUT CHEMICALS! - WORTH EVERY PENNY\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Jermine. S<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 24,
+        "padding_bottom": 8
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_N4pYgC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Benefits & Features",
+            "icon": "check_mark",
+            "row_content": "<p>✔️ Brightens your smile naturally without harsh chemicals<br\/>✔️ Freshens breath by helping neutralise odour-causing buildup<br\/>✔️ Helps refresh the mouth and lift impurities as part of your daily routine<br\/>✔️ Helps reduce visible buildup on teeth for a cleaner feel<br\/>✔️ Gentle on teeth and gums — safe for daily use without damaging enamel<br\/>✔️ Convenient sachets make oil pulling easy and portable<br\/>✔️ Crafted with the finest grade coconut oil for effective daily care<br\/>✔️ Rich in antioxidants, supporting your natural oral care routine<br\/>✔️ Soothes the mouth and supports a clean, fresh feel<br\/>✔️ Enhances your oral care routine, turning it into a refreshing ritual<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "List of ingredients",
+            "icon": "leaf",
+            "row_content": "<ul><li>Finest Grade Coconut Oil<\/li><li>Peppermint Oil<\/li><\/ul><p><strong>100% & Natural<\/strong><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How to use?",
+            "icon": "question_mark",
+            "row_content": "<p>1. Rip the sachet and pour the contents into your mouth<\/p><p>2. Swish the oil around your mouth<br\/><em>(Recommended to keep in your mouth for 5-8 minutes)<\/em><\/p><p>3. Spit & Rinse<\/p><p><strong>Recommended to use daily!<\/strong><\/p>",
+            "page": ""
+          }
+        },
+        "1efe8090-8cc3-4d87-874c-e2af1cea652a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Whats in the box?",
+            "icon": "box",
+            "row_content": "<p><strong>Each order of Coconut Oil Pulling Mouthwash of 16 Sachets. <\/strong><\/p><p>16x individually packed strips for individual uses<\/p><p>1x Manual<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Warnings & Cautions",
+            "icon": "lightning_bolt",
+            "row_content": "<p>Keep out of reach of children.<\/p><p>Do not swallow the oil; spit it out after use.<\/p><p>Consult a dentist if you have dental issues.<\/p><p>Store in a cool, dry place and seal tightly.<\/p>",
+            "page": ""
+          }
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "The science behind Coconut Oil Pulling:",
+            "icon": "eye",
+            "row_content": "<p>Coconut oil pulling has been used for generations as a natural addition to oral care routines. Our single-serve sachets are packed with high-quality coconut oil, naturally rich in lauric acid—a fatty acid widely recognised for its cleansing properties.<br\/><br\/>This daily swishing ritual helps remove debris and impurities from the mouth, leaving your breath feeling fresh and your mouth revitalised. With its smooth consistency and light coconut taste, it’s a simple yet powerful way to elevate your self-care routine.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wPUNyh": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Can Coconut Oil Pulling be used on composite bonding, veneers or fillings?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, coconut oil pulling is safe for composite bonding, veneers, and fillings. Its antibacterial properties help maintain oral hygiene without damaging dental work. The gentle, non-abrasive nature of coconut oil preserves the integrity of cosmetic materials.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_N4pYgC",
+        "collapsible-row-3",
+        "collapsible-row-1",
+        "1efe8090-8cc3-4d87-874c-e2af1cea652a",
+        "collapsible-row-0",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "collapsible_row_wPUNyh"
+      ],
+      "settings": {
+        "caption": "Coconut Oil Pulling Mouthwash",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 4,
+        "padding_bottom": 8
+      }
+    },
+    "ss_comparison_table_2_KkcAnp": {
+      "type": "ss-comparison-table-2",
+      "blocks": {
+        "item_mewQwn": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Finest grade, natural coconut oil",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "yes"
+          }
+        },
+        "item_YjbgBm": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Peppermint infusion for freshness",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_33MeyR": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Sachet-format for easy use anytime",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_dqTa9x": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Gentle on enamel and sensitive gums",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "yes"
+          }
+        },
+        "item_cdxXte": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Free from harsh chemicals",
+            "first_icon": "yes",
+            "second_icon": "yes",
+            "third_icon": "no"
+          }
+        },
+        "item_4bHKYg": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "row_heading": "20 Minutes Treatment",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_3Atb7k": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "row_heading": "Ultra Soft Nylon Bristles ",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_bfT3tX": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "row_heading": "30K+ Sonic Vibrations\/Minute ",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_M4dVCP": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "row_heading": "30 Sec Daily Clean ",
+            "first_icon": "yes",
+            "second_icon": "yes",
+            "third_icon": "no"
+          }
+        }
+      },
+      "block_order": [
+        "item_mewQwn",
+        "item_YjbgBm",
+        "item_33MeyR",
+        "item_dqTa9x",
+        "item_cdxXte",
+        "item_4bHKYg",
+        "item_3Atb7k",
+        "item_bfT3tX",
+        "item_M4dVCP"
+      ],
+      "name": "SS - Comparison Table #2",
+      "settings": {
+        "heading": "Us vs Them",
+        "heading_custom": true,
+        "heading_font": "archivo_n9",
+        "heading_size": 26,
+        "heading_height": 100,
+        "heading_align": "center",
+        "table_mt": 50,
+        "table_radius": 10,
+        "table_border_thickness": 1,
+        "table_column_active": "1",
+        "table_column_active_radius": 10,
+        "first_heading": "Smile",
+        "second_heading": "Others",
+        "third_heading": "",
+        "table_heading_custom": true,
+        "table_heading_font": "archivo_n6",
+        "table_heading_size": 16,
+        "table_heading_size_mobile": 16,
+        "table_heading_height": 100,
+        "table_heading_align": "center",
+        "table_heading_padding_horizontal": 20,
+        "table_heading_padding_horizontal_mobile": 4,
+        "table_heading_padding_vertical": 20,
+        "table_heading_padding_vertical_mobile": 10,
+        "table_row_padding_horizontal": 20,
+        "table_row_padding_horizontal_mobile": 4,
+        "table_row_padding_vertical": 20,
+        "table_row_padding_vertical_mobile": 10,
+        "table_row_heading_custom": true,
+        "table_row_heading_font": "questrial_n4",
+        "table_row_heading_size": 16,
+        "table_row_heading_size_mobile": 16,
+        "table_row_heading_height": 100,
+        "table_row_heading_align": "left",
+        "table_icon_yes": "shopify:\/\/shop_images\/Check_Mark_WOB_1_c617ae15-7874-456f-a73f-3f24b2494b60.png",
+        "table_icon_no": "shopify:\/\/shop_images\/Close_X_1_a86e08c6-2338-4366-bb6f-6e986329601b.png",
+        "table_icon_size": 32,
+        "table_icon_size_mobile": 20,
+        "heading_color": "#0e1b4d",
+        "table_border_color": "#0e1b4d",
+        "table_heading_color": "#0e1b4d",
+        "table_heading_active_color": "#0e1b4d",
+        "table_column_active_bg_color": "#d3ccff",
+        "table_row_heading_color": "#0e1b4d",
+        "table_icon_color": "#b90505",
+        "table_icon_active_color": "#ffffff",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "rgba(0,0,0,0)",
+        "margin_top": 60,
+        "margin_bottom": 84,
+        "padding_top": 20,
+        "padding_bottom": 24,
+        "padding_horizontal": 1,
+        "padding_horizontal_mobile": 0.5,
+        "full_width": false,
+        "content_width": 150,
+        "border_thickness": 2
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Untitled_design_-_2022-09-15T164940.840_ad0561e3-dd2d-4cad-85c2-a5eaf789cae3.png"
+      }
+    },
+    "1664871129fff89d3f": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_arJYN3": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_arJYN3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Use a combination of images and text to share information about this product, and your brand. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Consider adding information about your shipping and return policies. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Consider highlighting your environmental  commitments. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Consider describing a money-back guarantee or highlighting your customer service. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2",
+        "column-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "rich-text-1": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>AN<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>DESCRIBE HOW TO PAIR PRODUCTS TOGETHER <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-0": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-2": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "ss_comparison_table_2_KkcAnp",
+    "16631668754f796b02",
+    "1664871129fff89d3f",
+    "product-recommendations",
+    "multicolumn",
+    "rich-text-1",
+    "image-with-text-0",
+    "image-with-text-1",
+    "image-with-text-2",
+    "newsletter"
+  ]
+}

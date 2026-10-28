@@ -1,0 +1,259 @@
+<!-- Product Information -->
+<section class="asyncLoad" id="product-info">
+  <div class="custom-container">
+    <div class="title">
+      <h2 class="heading">{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.description }}</p>
+    </div>
+    <div class="tab-teaser">
+      <div class="tab-menu">
+        <ul>
+          {% for block in section.blocks %}
+            <li>
+              <a href="#tab-1{{forloop.index}}" class="{% if forloop.index == 1 %}active{% endif %}">
+                {% if block.settings.img != blank %}
+                  <img data-src="{{ block.settings.img | img_url:'' }}" class="lazyload">
+                {% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="tab-main-box">
+        {% for block in section.blocks %}
+          <div class="tab-box" id="tab-1{{forloop.index}}" {% if forloop.index == 1 %}style="display:block;" {% endif %}>
+            <div class="custom-row">
+              <div class="custom-col">
+                <div class="tab-title">
+                  <h2 class="heading">{{ block.settings.tab-main-heading }}</h2>
+                  <p>{{ block.settings.tab-main-text }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="custom-row">
+              <div class="custom-col custom-col-6">
+                <div class="faq_lst">
+                  {% if block.settings.question_1 != blank %}
+                    <div class="faq_blk active">
+                      <h6>{{ block.settings.question_1 }}</h6>
+                      <div class="txt">
+                        <p>{{ block.settings.answer_1 }}</p>
+                      </div>
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.question_2 != blank %}
+                    <div class="faq_blk">
+                      <h6>{{ block.settings.question_2 }}</h6>
+                      <div class="txt">
+                          <p>{{ block.settings.answer_2 }}</p>
+                      </div>
+                    </div>
+                  {% endif %}
+                  {% if block.settings.question_3 != blank %}
+                    <div class="faq_blk">
+                      <h6>{{ block.settings.question_3 }}</h6>
+                      <div class="txt">
+                        <p>{{ block.settings.answer_3 }}</p>
+                      </div>
+                    </div>
+                  {% endif %}
+                  {% if block.settings.question_4 != blank %}
+                    <div class="faq_blk">
+                      <h6>{{ block.settings.question_4 }}</h6>
+                      <div class="txt">
+                        <p>{{ block.settings.answer_4 }}</p>
+                      </div>
+                    </div>
+                  {% endif %}
+                  {% if block.settings.question_5 != blank %}
+                    <div class="faq_blk">
+                      <h6>{{ block.settings.question_5 }}</h6>
+                      <div class="txt">
+                        <p>{{ block.settings.answer_5 }}</p>
+                      </div>
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+              <div class="custom-col custom-col-6">
+                <div class="img-container">
+                  {% if block.settings.tab_right_img1 != blank %}
+                    <div class="img-blk">
+                      <img data-src="{{ block.settings.tab_right_img1 | img_url:'' }}" class="lazyload">
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.tab_right_img2 != blank %}
+                    <div class="img-blk">
+                      <img data-src="{{ block.settings.tab_right_img2 | img_url:'' }}" class="lazyload">
+                    </div>
+                  {% endif %}
+
+                  {% if block.settings.tab_right_img3 != blank %}
+                    <div class="img-blk">
+                      <img data-src="{{ block.settings.tab_right_img3 | img_url:'' }}" class="lazyload">
+                    </div>
+                  {% endif %}
+                </div>
+                {% if block.settings.tab_main_video != blank %}
+                  <div class="video-container">
+                    <iframe width="560" height="315" data-src="https://www.youtube.com/embed/{{ block.settings.tab_main_video | split: "v=" | last }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="lazyload" allowfullscreen></iframe>
+<!--                     <video id='video' controls="controls" preload='none' width="600" ">
+                      <source id='mp4' src="{{ block.settings.tab_main_video }}" type='video/mp4' />
+                      <p>Your user agent does not support the HTML5 Video element.</p>
+                    </video> -->
+                  </div>
+                {% endif %}
+                {% if block.settings.tab_right_btn_text != blank %}
+                  <div class="bth-contianer">
+                    <a href="{{ block.settings.tab_right_btn_url }}" class="btn" style="background-color:{{ block.settings.btn-color}}">{{ block.settings.tab_right_btn_text }}</a>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div> 
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Product Information",
+   "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description"
+      }
+    ],
+   "blocks":[
+        {
+        "type":"Product-Information",
+        "name":"Add Product Information",
+        "settings":
+          [            
+            {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Select Product Image"
+            },
+            
+             {
+            "type": "text",
+            "id": "tab-main-heading",
+            "label": "Tab Main heading"
+            },
+              {
+            "type": "text",
+            "id": "tab-main-text",
+            "label": "Tab Main text"
+            },
+             {
+            "type": "text",
+            "id": "question_1",
+            "label": "Question 1"
+            },
+             {
+            "type": "textarea",
+            "id": "answer_1",
+            "label": "Answer 1"
+            },
+             {
+            "type": "text",
+            "id": "question_2",
+            "label": "Question 2"
+            },
+             {
+            "type": "textarea",
+            "id": "answer_2",
+            "label": "Answer 2"
+            },
+             {
+            "type": "text",
+            "id": "question_3",
+            "label": "Question 3"
+            },
+             {
+            "type": "textarea",
+            "id": "answer_3",
+            "label": "Answer 3"
+            },
+             {
+            "type": "text",
+            "id": "question_4",
+            "label": "Question 4"
+            },
+             {
+            "type": "textarea",
+            "id": "answer_4",
+            "label": "Answer 4"
+            },
+             {
+            "type": "text",
+            "id": "question_5",
+            "label": "Question 5"
+            },
+             {
+            "type": "textarea",
+            "id": "answer_5",
+            "label": "Answer 5"
+            },
+             {
+            "type": "image_picker",
+            "id": "tab_right_img1",
+            "label": "Tab right image 1"
+            },
+             {
+            "type": "image_picker",
+            "id": "tab_right_img2",
+            "label": "Tab right image 2"
+            },
+             {
+            "type": "image_picker",
+            "id": "tab_right_img3",
+            "label": "Tab right image 3"
+            },
+            {
+            "type": "url",
+            "id": "tab_main_video",
+            "label": "Tab right main video"
+            },
+            {
+            "type": "color",
+            "id": "btn-color",
+            "label": "Slect Button Color"
+            },
+             {
+            "type": "richtext",
+            "id": "tab_right_btn_text",
+            "label": "Tab right button text"
+            },
+             {
+            "type": "url",
+            "id": "tab_right_btn_url",
+            "label": "Tab right button url"
+            } 
+          ]
+        }
+    ],
+    "presets": [
+      {
+      "name": "Product Information",
+      "category": "Custom Sections"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

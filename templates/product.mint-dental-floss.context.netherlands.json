@@ -1,0 +1,40 @@
+{
+  "parent": "product.mint-dental-floss.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "b5cc6647-9112-41bd-a083-8e750cc06758": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET | FREE NETHERLANDS DELIVERY | NO MINIMUM SPEND"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "b5cc6647-9112-41bd-a083-8e750cc06758",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664870774e164b7b9",
+    "product-recommendations"
+  ]
+}

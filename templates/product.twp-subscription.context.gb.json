@@ -1,0 +1,37 @@
+{
+  "parent": "product.twp-subscription.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "e3334334-9f21-4ce9-9378-b6538fe22d5f": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY!"
+          }
+        },
+        "buy_buttons": {
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_NzgwRd",
+        "price",
+        "e3334334-9f21-4ce9-9378-b6538fe22d5f",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  }
+}

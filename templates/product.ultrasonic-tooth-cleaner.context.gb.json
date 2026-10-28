@@ -1,0 +1,17 @@
+{
+  "context": {
+    "market": "gb"
+  },
+  "parent": "product.ultrasonic-tooth-cleaner.json",
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "ec2dee85-24ba-43f8-bd23-1beee0845fba": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    }
+  }
+}

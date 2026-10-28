@@ -1,0 +1,674 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_TUwHBn": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "c69768a2-854d-47fb-b1f8-e8f4f2d9404a": {
+          "type": "methods",
+          "disabled": true,
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo.png",
+            "clearpay_text": "Or 4 interest-free payments of £5.00 with",
+            "klarna_img": "shopify:\/\/shop_images\/klarna.png",
+            "klarna_text": "Or pay later, get it tomorrow with"
+          }
+        },
+        "ec2dee85-24ba-43f8-bd23-1beee0845fba": {
+          "type": "shopify:\/\/apps\/clearpay-on-site-messaging\/blocks\/payments-messaging\/5d763983-d3e6-4888-9966-4e1170b26ae9",
+          "disabled": true,
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 12,
+            "margin_bottom": 12,
+            "color": "#151414",
+            "size": "md",
+            "intro_text": "Or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": false,
+            "show_upper_limit": false,
+            "show_if_outside_limits": true,
+            "product": "ultrasonic-tooth-cleaner"
+          }
+        },
+        "c65d22aa-93e1-4a2d-b0dd-122b4b3d269f": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY | NO MINIMUM SPEND",
+            "second_tag": ""
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "custom_liquid_D6KeLU": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"social-proof-badge\">\n  <p id=\"social-proof-text\">\n    <strong class=\"name-block\">\n      <span id=\"full-name\" aria-live=\"polite\">Jimmy Smith<\/span>\n      <!-- Blue verified tick -->\n      <svg class=\"verified-tick\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" role=\"img\" aria-label=\"verified\">\n        <circle cx=\"12\" cy=\"12\" r=\"12\" fill=\"#1DA1F2\"\/>\n        <path fill=\"#fff\" d=\"M10.2 15.6l-3.1-3.1 1.1-1.1 2 2 4.7-4.7 1.1 1.1z\"\/>\n      <\/svg>\n    <\/strong>\n    &nbsp;and <strong>1,400+ others<\/strong> bought this product last month!\n  <\/p>\n<\/div>\n\n<style>\n  .social-proof-badge {\n    display:flex;\n    align-items:center;\n    padding:8px 12px;\n    margin:12px 0;\n    font-size:14px;\n    line-height:1.4;\n    color:#333;\n    background: transparent;\n  }\n\n  .social-proof-badge p { margin:0; }\n\n  .name-block {\n    display:inline-flex;\n    align-items:center;\n    gap:2px; \/* small spacing between name and tick *\/\n  }\n\n  #full-name {\n    transition: opacity 300ms ease;\n    opacity:1;\n  }\n\n  .verified-tick {\n    display:inline-block;\n    margin:0; \/* remove extra space *\/\n    vertical-align: middle;\n  }\n<\/style>\n\n<script>\n  (function(){\n    \/\/ 15 random names\n    const names = [\n      \"Jimmy Smith\", \"Avery Johnson\", \"Lily Chen\", \"Noah Robinson\",\n      \"Grace Walker\", \"Henry Lee\", \"Zoe Turner\", \"Caleb Adams\",\n      \"Isla Scott\", \"Owen Evans\", \"Layla Collins\", \"Jack Murphy\",\n      \"Nora Mitchell\", \"Leo Rogers\", \"Chloe Reed\"\n    ];\n\n    const CHANGE_INTERVAL_MS = 3000; \/\/ every 3 sec\n    const FADE_MS = 300; \/\/ fade duration\n\n    const nameEl = document.getElementById('full-name');\n\n    \/\/ Initialize\n    let idx = 0;\n    nameEl.textContent = names[idx];\n    idx = (idx + 1) % names.length;\n\n    function updateName() {\n      nameEl.style.opacity = '0';\n      setTimeout(() => {\n        nameEl.textContent = names[idx];\n        idx = (idx + 1) % names.length;\n        nameEl.style.opacity = '1';\n      }, FADE_MS);\n    }\n\n    const intervalId = setInterval(updateName, CHANGE_INTERVAL_MS);\n\n    \/\/ Stop interval if element is removed from DOM\n    const observer = new MutationObserver(() => {\n      if (!document.body.contains(nameEl)) {\n        clearInterval(intervalId);\n        observer.disconnect();\n      }\n    });\n    observer.observe(document.body, { childList: true, subtree: true });\n  })();\n<\/script>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "8dbfdafb-8960-486d-a698-4d5bc5532efb": {
+          "type": "custom_tags",
+          "settings": {
+            "first_tag": "",
+            "second_tag": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_TUwHBn",
+        "price",
+        "c69768a2-854d-47fb-b1f8-e8f4f2d9404a",
+        "ec2dee85-24ba-43f8-bd23-1beee0845fba",
+        "c65d22aa-93e1-4a2d-b0dd-122b4b3d269f",
+        "caption",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "custom_liquid_D6KeLU",
+        "buy_buttons",
+        "description",
+        "share",
+        "8dbfdafb-8960-486d-a698-4d5bc5532efb"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 36
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"SUCH A GEM FIND!, I ADD IT ON TOP OF MY TOOTHPASTE EVERY 3 DAYS AND CAN FEEL MY TEETH MUCH CLEANER AND MORE REFRESHED! - WILL BE COMING BACK\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Louise. F<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 24,
+        "padding_bottom": 16
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Benefits",
+            "icon": "lightning_bolt",
+            "row_content": "<p>✔ Remove and prevent all types of stains & yellow teeth.<\/p><p>✔  Effectively eliminate the damage on teeth from coffee, wine, and more for a pristine smile.<\/p><p>✔ Get teeth dentist-smooth & squeaky clean.<\/p><p>✔ Achieve a dentist-approved, ultra-smooth, and fresh-clean feeling for your teeth.<\/p><p>✔ Gentle on enamel and gums, with no abrasiveness.<\/p><p>✔ Recognised as the top Teeth Whitener of 2023!<\/p><p>✔ Safe & natural ingredients for peace of mind<\/p><p>✔ Enjoy a 6-month supply of whitening per container.<\/p><p>✔ Achieve a noticeably brighter smile in just a few uses<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "List of ingredients",
+            "icon": "leaf",
+            "row_content": "<p>Calcium Carbonate, Cyclodextrin, Sodium Bicarbonate, Xylitol, Phtalimidoperoxycaproic Acid (PAP), Sodium Cocoyl Isethionate, Tetrasodium Pyrophosphate, Hydroxyapatite (nano), Mica (Ci77019), PVP, Phenoxyethanol, Mint Flavour (Aroma), Potassium Citrate,  Sucralose, Menthol, Water, Monosodium Citrate, Ethylhexyglycerin<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<p>Each order of PAP+ Teeth Whitening Powder consists of:<\/p><p>1x Premium Box Packaging<\/p><p>1x PAP+ Teeth Whitening Powder <\/p>",
+            "page": ""
+          }
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Instructions",
+            "icon": "question_mark",
+            "row_content": "<p>Wondering how you can get the most out of your PAP+ Teeth Whitening Powder?<\/p><p>There's two ways to using the Teeth Whitening Powder:<\/p><p>1) Start by applying your toothpaste, and then gently dip your toothbrush with the toothpaste into the PAP+ Powder.<\/p><p>2) Alternatively, you can use it as a prelude to your daily brushing routine. Simply dip your toothbrush into the powder, brush your teeth vigorously for 2 minutes, and then proceed with your regular brushing regimen.<\/p><p>Recommended usage time: 3x per week<\/p>",
+            "page": ""
+          }
+        },
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Can the Teeth Whitening Powder be used on composite bonding, veneer or fillings?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, the Teeth Whitening Powder is suitable for use on composite bonding, veneers, and fillings. While it is gentle on all types of dental work, it effectively removes surface stains from your teeth. The formula is designed to enhance your smile by brightening your natural teeth without compromising the integrity of your dental restorations.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-3",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975"
+      ],
+      "settings": {
+        "caption": "PAP+ Pro Teeth Whitening Powder",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_e40e6e56-055c-4095-a302-866afec82237.png"
+      }
+    },
+    "1684170805803e96bc": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_4Bg6Vz": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_4Bg6Vz"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Use a combination of images and text to share information about this product, and your brand. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Consider adding information about your shipping and return policies. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Consider highlighting your environmental  commitments. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Consider describing a money-back guarantee or highlighting your customer service. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2",
+        "column-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "rich-text-1": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>AN<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>DESCRIBE HOW TO PAIR PRODUCTS TOGETHER <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-0": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-2": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "16631908844b141995": {
+      "type": "index-custom-section-reviews",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "review_all": true,
+        "rating": "",
+        "Total_Review": ""
+      }
+    },
+    "16631915046fd0af22": {
+      "type": "rich-text",
+      "blocks": {
+        "166319150475c40769-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"REMOVES ALL PLAQUE EVEN THOSE WHICH SEEM VERY DIFFICULT. SAVES TRIPS TO THE DENTIST ALL AT THE COMFORT OF YOUR OWN HOME\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "166319150475c40769-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "166319150475c40769-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "166319150475c40769-0",
+        "166319150475c40769-1",
+        "166319150475c40769-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "16648716444036e5ca": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1684170805803e96bc",
+    "product-recommendations",
+    "multicolumn",
+    "rich-text-1",
+    "image-with-text-0",
+    "image-with-text-1",
+    "image-with-text-2",
+    "newsletter",
+    "16631908844b141995",
+    "16631915046fd0af22",
+    "16648716444036e5ca"
+  ]
+}

@@ -1,0 +1,1003 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_t3rWWY": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "ec2dee85-24ba-43f8-bd23-1beee0845fba": {
+          "type": "shopify:\/\/apps\/clearpay-on-site-messaging\/blocks\/payments-messaging\/5d763983-d3e6-4888-9966-4e1170b26ae9",
+          "disabled": true,
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 12,
+            "margin_bottom": 12,
+            "color": "#151414",
+            "size": "md",
+            "intro_text": "Or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": false,
+            "show_upper_limit": false,
+            "show_if_outside_limits": true,
+            "product": "ultrasonic-tooth-cleaner"
+          }
+        },
+        "c69768a2-854d-47fb-b1f8-e8f4f2d9404a": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo.png",
+            "clearpay_text": "Or 4 interest-free payments of £6.25 with",
+            "klarna_img": "shopify:\/\/shop_images\/klarna.png",
+            "klarna_text": "Or pay later, get it tomorrow with"
+          }
+        },
+        "c65d22aa-93e1-4a2d-b0dd-122b4b3d269f": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "SPECIAL OFFER: BUY 2 FOR £45.00! | BUY 3 FOR £60.00 | BUY 4 FOR £70.00 - JUST ADD TO CART",
+            "second_tag": ""
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "custom_liquid_jhhqEz": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"social-proof-badge\">\n  <p id=\"social-proof-text\">\n    <strong class=\"name-block\">\n      <span id=\"full-name\" aria-live=\"polite\">Jack<\/span>\n      <!-- Blue verified tick -->\n      <svg class=\"verified-tick\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" role=\"img\" aria-label=\"verified\">\n        <circle cx=\"12\" cy=\"12\" r=\"12\" fill=\"#1DA1F2\"\/>\n        <path fill=\"#fff\" d=\"M10.2 15.6l-3.1-3.1 1.1-1.1 2 2 4.7-4.7 1.1 1.1z\"\/>\n      <\/svg>\n    <\/strong>\n    &nbsp;and <strong>1000+ others<\/strong> bought this product last month!\n  <\/p>\n<\/div>\n\n<style>\n  .social-proof-badge {\n    display:flex;\n    align-items:center;\n    padding:8px 12px;\n    margin:12px 0;\n    font-size:14px;\n    line-height:1.4;\n    color:#333;\n    background: transparent;\n  }\n\n  .social-proof-badge p { margin:0; }\n\n  .name-block {\n    display:inline-flex;\n    align-items:center;\n    gap:2px;\n  }\n\n  #full-name {\n    transition: opacity 300ms ease;\n    opacity:1;\n  }\n\n  .verified-tick {\n    display:inline-block;\n    margin:0;\n    vertical-align: middle;\n  }\n<\/style>\n\n<script>\n  (function(){\n    const names = [\n      \"Jack\", \"Grace\", \"Sophia\", \"Ethan\", \"Olivia\",\n      \"Mason\", \"Sophie\", \"Daniel\", \"Emma\", \"Liam\",\n      \"Elijah\", \"James\", \"Ava\", \"Lucas\", \"Isabella\",\n      \"Mia\", \"Logan\", \"Amelia\", \"Harper\"\n    ];\n\n    const CHANGE_INTERVAL_MS = 3000;\n    const FADE_MS = 300;\n\n    const nameEl = document.getElementById('full-name');\n\n    let idx = 0;\n    nameEl.textContent = names[idx];\n    idx = (idx + 1) % names.length;\n\n    function updateName() {\n      nameEl.style.opacity = '0';\n      setTimeout(() => {\n        nameEl.textContent = names[idx];\n        idx = (idx + 1) % names.length;\n        nameEl.style.opacity = '1';\n      }, FADE_MS);\n    }\n\n    const intervalId = setInterval(updateName, CHANGE_INTERVAL_MS);\n\n    const observer = new MutationObserver(() => {\n      if (!document.body.contains(nameEl)) {\n        clearInterval(intervalId);\n        observer.disconnect();\n      }\n    });\n    observer.observe(document.body, { childList: true, subtree: true });\n  })();\n<\/script>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "custom_liquid_zqETB6": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div id='ss-product-videos'><\/div>"
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "8dbfdafb-8960-486d-a698-4d5bc5532efb": {
+          "type": "custom_tags",
+          "settings": {
+            "first_tag": "",
+            "second_tag": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_t3rWWY",
+        "price",
+        "ec2dee85-24ba-43f8-bd23-1beee0845fba",
+        "c69768a2-854d-47fb-b1f8-e8f4f2d9404a",
+        "c65d22aa-93e1-4a2d-b0dd-122b4b3d269f",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "custom_liquid_jhhqEz",
+        "buy_buttons",
+        "custom_liquid_zqETB6",
+        "share",
+        "8dbfdafb-8960-486d-a698-4d5bc5532efb"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 36
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"HELPS REMOVE PLAQUE EVEN THOSE WHICH SEEM VERY DIFFICULT - ALL AT THE COMFORT OF YOUR OWN HOME\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Alphie. M<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 24,
+        "padding_bottom": 16
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Features",
+            "icon": "lightning_bolt",
+            "row_content": "<p>✔ Adjustable frequency to help lift surface buildup and tough stains<br\/><br\/>✔ Long-lasting battery – up to 200 uses per full charge<br\/><br\/>✔ Travel-ready design – portable, durable, and easy to carry<br\/><br\/>✔ Advanced vibration technology – up to 12,000 pulses per minute<\/p>",
+            "page": ""
+          }
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How to use the Ultrasonic Tooth Cleaner",
+            "icon": "question_mark",
+            "row_content": "<p>The Ultrasonic Tooth Cleaner is very easy and simple to use.<br\/><br\/>1. Wash the tip of your Ultrasonic Tooth Cleaner<br\/><br\/>2. Turn on your device<br\/><br\/>3. Place the vibrating tip on (and around) your visible buildup and surface stains<br\/><br\/>4. Rinse your mouth with warm water<br\/><br\/>Recommended: Repeat 4x a week (up to 2 minutes a session)<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<p>Each order of Ultrasonic Tooth Cleaner consists of:<\/p><p>1x Ultrasonic Tooth Cleaner<\/p><p>1x Micro USB Cable<\/p><p>1x Manual<\/p>",
+            "page": ""
+          }
+        },
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cautions",
+            "icon": "lightning_bolt",
+            "row_content": "<p>Don't overuse the tooth cleaner, we recommend 4x times a week, 2 minutes per session.<br\/><br\/>Not safe for Children under the age of 12.<br\/><br\/>Only buy certified Tooth Cleaners.<br\/><br\/>Please make sure to wash your mouth with warm water after use.<\/p><p>If you have gum issues or recent dental procedures, please consult your dentist before using this device<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cons of not using an Ultra Sonic Tooth Cleaner",
+            "icon": "star",
+            "row_content": "<p>Neglecting your oral care routine can be devastating on teeth and gums. Over time, surface stains and buildup may accumulate, affecting the overall cleanliness and appearance of your teeth. Maintaining a consistent routine helps keep your mouth feeling smooth, refreshed, and cared for.<br\/><br\/>This product may also be reffered to as one of the following:<br\/><br\/>Calculus remover, Dental irrigator, Dental scaler, Oral irrigator, Plaque remover, Tartar removal tool, Tartar remover, Tooth cleaner, Tooth stain remover, Ultrasonic dental cleaner, Ultrasonic scaler, Ultrasonic tooth cleaner.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-3",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "collapsible-row-1",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975",
+        "collapsible-row-0"
+      ],
+      "settings": {
+        "caption": "Ultrasonic Tooth Cleaner",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ss_feature_47_38CLDL": {
+      "type": "ss-feature-47",
+      "blocks": {
+        "sub_heading_fN9VaP": {
+          "type": "sub_heading",
+          "disabled": true,
+          "settings": {
+            "sub_heading": "<p>Most people think they’re brushing correctly but the numbers tell a different story.<\/p>",
+            "sub_heading_custom": false,
+            "sub_heading_font": "josefin_sans_n4",
+            "sub_heading_size": 12,
+            "sub_heading_size_mobile": 12,
+            "sub_heading_height": 150,
+            "sub_heading_mt": 0,
+            "sub_heading_mt_mobile": 0,
+            "sub_heading_color": "#121212"
+          }
+        },
+        "heading_RarHBy": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Sharper Smile, One Week At A Time<\/strong><\/h2>",
+            "heading_custom": true,
+            "heading_font": "archivo_n7",
+            "heading_size": 26,
+            "heading_size_mobile": 26,
+            "heading_height": 130,
+            "heading_mt": 12,
+            "heading_mt_mobile": 12,
+            "heading_color": "#0e1b4d"
+          }
+        },
+        "text_tqQmcc": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use tooth cleaner consistently & notice subtle changes from day 1<\/p>",
+            "text_custom": true,
+            "text_font": "questrial_n4",
+            "text_size": 16,
+            "text_size_mobile": 16,
+            "text_height": 150,
+            "text_mt": 10,
+            "text_mt_mobile": 10,
+            "text_color": "#0e1b4d"
+          }
+        },
+        "feature_FVErq8": {
+          "type": "feature",
+          "settings": {
+            "title": "Week 1",
+            "text": "<ul><li>Surface buildup feels smoother<br\/><\/li><li>Cleaner sensation after each use<\/li><\/ul>",
+            "feature_height": 50,
+            "feature_height_mobile": 30
+          }
+        },
+        "feature_aCk9GB": {
+          "type": "feature",
+          "settings": {
+            "title": "Week 2",
+            "text": "<ul><li>Initial stains begin to lift<\/li><li>Teeth feel more polished<\/li><\/ul>",
+            "feature_height": 100,
+            "feature_height_mobile": 50
+          }
+        },
+        "feature_KwPgRx": {
+          "type": "feature",
+          "settings": {
+            "title": "Week 3",
+            "text": "<ul><li>Brighter tone becomes visible<br\/><\/li><li>Gums feel less irritated<\/li><\/ul>",
+            "feature_height": 160,
+            "feature_height_mobile": 80
+          }
+        },
+        "feature_y3DQLN": {
+          "type": "feature",
+          "settings": {
+            "title": "Week 4",
+            "text": "<ul><li>Clean that lasts longer<br\/><\/li><li>Confidence in your fresh smile<\/li><\/ul>",
+            "feature_height": 200,
+            "feature_height_mobile": 100
+          }
+        }
+      },
+      "block_order": [
+        "sub_heading_fN9VaP",
+        "heading_RarHBy",
+        "text_tqQmcc",
+        "feature_FVErq8",
+        "feature_aCk9GB",
+        "feature_KwPgRx",
+        "feature_y3DQLN"
+      ],
+      "name": "SS - Feature #47",
+      "settings": {
+        "content_max_width": 80,
+        "content_align": "center",
+        "content_align_mobile": "center",
+        "feature_width": 220,
+        "feature_width_mobile": 190,
+        "padding_advanced": false,
+        "feature_padding_horizontal": 20,
+        "feature_padding_horizontal_mobile": 20,
+        "feature_padding_vertical": 20,
+        "feature_padding_vertical_mobile": 20,
+        "feature_radius": 8,
+        "feature_border_thickness": 1,
+        "feature_bg_opacity": 0.2,
+        "feature_shadow": true,
+        "feature_item_align": "left",
+        "feature_item_align_mobile": "start",
+        "feature_align": "left",
+        "feature_align_mobile": "left",
+        "line_thickness": 1,
+        "title_custom": true,
+        "title_font": "archivo_n4",
+        "title_size": 26,
+        "title_size_mobile": 26,
+        "title_height": 130,
+        "text_custom": true,
+        "text_font": "questrial_n4",
+        "text_size": 16,
+        "text_size_mobile": 16,
+        "text_height": 150,
+        "text_mt": 12,
+        "text_mt_mobile": 4,
+        "title_color": "#ffffff",
+        "text_color": "#ffffff",
+        "feature_bg_color": "#c403fa",
+        "feature_border_color": "rgba(0,0,0,0)",
+        "feature_shadow_color": "rgba(0,0,0,0)",
+        "line_color": "#0e1b4d",
+        "background_style": "gradient",
+        "background_color": "#eaf4ff",
+        "background_gradient": "linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(148, 201, 249, 1) 2%, rgba(143, 219, 249, 1) 3%, rgba(195, 233, 255, 1) 4%, rgba(126, 148, 243, 1) 97%)",
+        "border_color": "#121212",
+        "margin_top": 60,
+        "margin_bottom": 60,
+        "margin_horizontal": 7,
+        "margin_horizontal_mobile": 1.5,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 20
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_aa29138a-e959-4c87-83fd-cf781575941c.png"
+      }
+    },
+    "1684170805803e96bc": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Use a combination of images and text to share information about this product, and your brand. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Consider adding information about your shipping and return policies. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Consider highlighting your environmental  commitments. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Consider describing a money-back guarantee or highlighting your customer service. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2",
+        "column-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "rich-text-1": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>AN<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>DESCRIBE HOW TO PAIR PRODUCTS TOGETHER <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-0": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-2": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "16631908844b141995": {
+      "type": "index-custom-section-reviews",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "review_all": true,
+        "rating": "",
+        "Total_Review": ""
+      }
+    },
+    "16631915046fd0af22": {
+      "type": "rich-text",
+      "blocks": {
+        "166319150475c40769-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"REMOVES ALL PLAQUE EVEN THOSE WHICH SEEM VERY DIFFICULT. SAVES TRIPS TO THE DENTIST ALL AT THE COMFORT OF YOUR OWN HOME\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "166319150475c40769-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "166319150475c40769-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "166319150475c40769-0",
+        "166319150475c40769-1",
+        "166319150475c40769-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "16648716444036e5ca": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_re8PUV": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_re8PUV"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "ss_product_vidoes_cx4Nxi": {
+      "type": "ss-product-vidoes",
+      "blocks": {
+        "video_BYGHdT": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/02-22 - H3 - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        },
+        "video_Vbie3r": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/09-04- Recreate HLLY UTC - H3 - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        },
+        "video_PRFzzn": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/09-27 - If your teeth looks like this - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        },
+        "video_pVnQma": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/05-15 - H4 - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        },
+        "video_FNd9pU": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/08-30 - Mashup H1 - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "video_BYGHdT",
+        "video_Vbie3r",
+        "video_PRFzzn",
+        "video_pVnQma",
+        "video_FNd9pU"
+      ],
+      "name": "SS - Product videos",
+      "settings": {
+        "videos_position": "above_description",
+        "use_metafield": false,
+        "heading": "<h2>Real people. Real smiles<\/h2>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "slider_view": 3,
+        "slider_view_mobile": 3,
+        "slider_gap": 16,
+        "slider_gap_mobile": 16,
+        "slider_mt": 20,
+        "slider_mt_mobile": 16,
+        "card_radius": 10,
+        "card_border_thickness": 0,
+        "video_ratio": "portrait",
+        "video_ratio_mobile": "portrait",
+        "video_overlay": 0.3,
+        "card_shadow": true,
+        "icon_size": 34,
+        "icon_size_mobile": 34,
+        "icon_border_thickness": 1,
+        "icon_position": "bottom_left",
+        "icon_position_mobile": "bottom_left",
+        "hide_icon": false,
+        "arrow_size": 35,
+        "arrow_size_mobile": 35,
+        "arrow_radius": 5,
+        "arrow_border_thickness": 0,
+        "arrow_hover_shadow": true,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "show_content": false,
+        "modal_width": 30,
+        "modal_width_mobile": 95,
+        "padding_advanced": false,
+        "modal_padding_vertical": 0,
+        "modal_padding_vertical_mobile": 0,
+        "modal_padding_horizontal": 0,
+        "modal_padding_horizontal_mobile": 0,
+        "modal_radius": 16,
+        "modal_border_thickness": 0,
+        "modal_overlay": 0.5,
+        "close_size": 42,
+        "close_size_mobile": 42,
+        "close_radius": 8,
+        "close_border_thickness": 0,
+        "buttons_size": 48,
+        "buttons_size_mobile": 48,
+        "buttons_radius": 8,
+        "buttons_border_thickness": 0,
+        "modal_video_radius": 0,
+        "modal_video_border_thickness": 0,
+        "modal_video_ratio": "portrait",
+        "modal_video_ratio_mobile": "portrait",
+        "modal_heading_custom": false,
+        "modal_heading_font": "josefin_sans_n4",
+        "modal_heading_size": 28,
+        "modal_heading_size_mobile": 28,
+        "modal_heading_height": 130,
+        "modal_heading_align": "center",
+        "modal_heading_align_mobile": "center",
+        "modal_text_custom": false,
+        "modal_text_font": "josefin_sans_n4",
+        "modal_text_size": 16,
+        "modal_text_size_mobile": 16,
+        "modal_text_height": 150,
+        "modal_text_align": "center",
+        "modal_text_align_mobile": "center",
+        "modal_text_mt": 16,
+        "modal_text_mt_mobile": 16,
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#000000",
+        "video_overlay_color": "#000000",
+        "card_shadow_color": "#000000",
+        "icon_color": "#ffffff",
+        "icon_bg_color": "#000000",
+        "icon_border_color": "#ffffff",
+        "arrow_icon_color": "#1c1c1c",
+        "arrow_icon_hover_color": "#1c1c1c",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#000000",
+        "modal_heading_color": "#000000",
+        "modal_text_color": "#000000",
+        "modal_content_bg_color": "#ffffff",
+        "modal_border_color": "#000000",
+        "modal_overlay_color": "#000000",
+        "modal_bg_color": "#ffffff",
+        "modal_video_border_color": "#000000",
+        "buttons_icon_color": "#ffffff",
+        "buttons_bg_color": "#ffffff",
+        "buttons_border_color": "#000000",
+        "close_icon_color": "#ffffff",
+        "close_bg_color": "#ffffff",
+        "close_border_color": "#000000",
+        "heading_color": "#000000",
+        "background_color": "",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "ss_feature_47_38CLDL",
+    "16631668754f796b02",
+    "1684170805803e96bc",
+    "product-recommendations",
+    "multicolumn",
+    "rich-text-1",
+    "image-with-text-0",
+    "image-with-text-1",
+    "image-with-text-2",
+    "newsletter",
+    "16631908844b141995",
+    "16631915046fd0af22",
+    "16648716444036e5ca",
+    "ss_product_vidoes_cx4Nxi"
+  ]
+}

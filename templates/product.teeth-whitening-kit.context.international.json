@@ -1,0 +1,7 @@
+{
+  "parent": "product.teeth-whitening-kit.json",
+  "context": {
+    "market": "international"
+  },
+  "sections": {}
+}

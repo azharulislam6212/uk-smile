@@ -1,0 +1,142 @@
+{% comment %}
+ EComposer (https://ecomposer.io)
+ You SHOULD NOT modify source code in this page because
+ It is automatically generated from EComposer
+ At 2024-10-20 17:30:42
+ {% endcomment %} 
+ 
+ {% assign ecom_root_url = routes.root_url %}
+ {% if ecom_root_url != '/'%}
+ {% assign ecom_root_url = routes.root_url | append: '/' %}
+ {% endif %}
+ <link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /><noscript><link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /></noscript><script type="text/javascript" asyc="async" id="ecom-vendors-countdown_js" src="https://cdn.ecomposer.app/vendors/js/ecom-countdown.js?ver=2.0" ></script>
+{%capture section_id %}ecom-vip-countdown-page{% endcapture%}{% if section and section_id == section.id and headless == true %}
+{{ content_for_header }}
+{% render 'ecom_header', ECOM_THEME: true %}{% endif %}<link href="https://fonts.googleapis.com/css?family=Arima:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Albert+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
+{{'ecom-66f6b9dc7cb309aeef049d59.css' | asset_url | stylesheet_tag }}
+<script src="{{'ecom-66f6b9dc7cb309aeef049d59.js' | asset_url }}" defer="defer"></script>
+<script type="text/javascript" class="ecom-page-info">
+ window.EComposer = window.EComposer || {};
+ window.EComposer.TEMPLATE_ID="66f6b9dc7cb309aeef049d59";
+ window.EComposer.PAGE = {"template_id":"66f6b9dc7cb309aeef049d59","title":"VIP COUNTDOWN BF","type":"page","slug":"ecom-vip-countdown","plan_id":1};
+ </script>
+<div class="ecom-builder" id="ecom-vip-countdown"><div class="ecom-sections" data-section-id="{{section.id}}"><section class="ecom-row ecom-core ecom-section ecom-akqzzy6wb9p" data-id="ecom-akqzzy6wb9p" style="z-index: inherit;"><div data-deep="1" class="core__row--columns core__row--full"><div class="ecom-column ecom-core core__column--first core__column--last ecom-q3hchr5uhg"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-animation ecom-block ecom-core core__block elmspace ecom-78j59h6hmpn ecom-christmas_flakes" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db"></h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-ypx0cma2nq" data-core-is="block"><div class="ecom__element ecom-element element__code exporting" deep="1"><script>
+ window.addEventListener('load',
+ function (ev) {
+ spawn_snow();
+ spawnSnowCSS();
+ }
+ );
+ function spawn_snow(snow_density = 70) {
+ snow_density -= 1;
+ var flake = '<svg width="129.108px" height="140.597px" viewBox="0 0 129.108 140.597" enable-background="new 0 0 129.108 140.597" xml:space="preserve" version="1.1" class="flake"><path fill="#00FFFF" d="M106.491,83.706l17.706,10.222l-4.067,7.046l-17.88-10.324l4.693,17.494l-7.814,2.096l-6.121-22.916l-0.604-2.402L71,72.519v25.01l1.569,1.627l16.848,16.906l-5.688,5.727L71,108.984V129h-8v-20.221l-12.917,12.807l-5.837-5.727l16.849-16.775L63,97.325V72.519L41.371,84.922l-0.79,2.402l-6.14,22.916l-7.823-2.096l4.688-17.494l-17.882,10.324l-4.068-7.046l17.705-10.222L9.566,79.018l2.096-7.823l23.095,6.188l2.223,0.596l21.66-12.505L37.157,53.071l-2.402,0.644l-22.916,6.14l-2.096-7.823l17.495-4.688L9.358,37.019l4.07-7.046l17.71,10.222l-4.678-17.494l7.842-2.096L40.525,43.7l0.669,2.223L63,58.428V33.622l-1.868-1.758L44.247,15.088l5.8-5.727L63,22.168V2h8v19.963L83.748,9.156l5.668,5.727L72.549,31.79L71,33.418v25.01l21.581-12.505l0.517-2.223l6.188-23.095l7.823,2.096l-4.688,17.494l17.705-10.222l4.068,7.046l-17.882,10.324l17.494,4.688l-2.096,7.823l-22.916-6.14l-2.402-0.644L74.911,65.473L96.57,77.979l2.223-0.596l23.095-6.188l2.096,7.823L106.491,83.706z"/></svg>';
+ document.querySelector('.ecom-christmas_flakes').innerHTML = '';
+ for (let x = 0; x < snow_density; x++) {
+ let board = document.createElement('div');
+ board.className = "snowflake";
+ document.querySelector('.ecom-christmas_flakes').appendChild(board);
+ }
+ }
+ function add_css(rule) { // Append style for each snowflake to the head
+ let css = document.createElement('style');
+ css.type = 'text/css';
+ css.appendChild(document.createTextNode(rule)); // Support for the rest
+ document.getElementsByTagName("head")[0].appendChild(css);
+ }
+ function random_int(value = 100) { // Math
+ return Math.floor(Math.random() * value) + 1;
+ }
+ function random_range(min, max) { // Math
+ min = Math.ceil(min);
+ max = Math.floor(max);
+ return Math.floor(Math.random() * (max - min + 1)) + min;
+ }
+ function spawnSnowCSS(snow_density = 70) { // Create style for snowflake
+ let snowflake_name = "snowflake";
+ let rule = ``;
+ if (typeof base_css !== 'undefined') {
+ rule = base_css;
+ }
+ for (let i = 1; i < snow_density; i++) {
+ let random_x = Math.random() * 100; // vw
+ let random_offset = random_range(-100000, 100000) * 0.0001; // vw;
+ let random_x_end = random_x + random_offset;
+ let random_x_end_yoyo = random_x + (random_offset / 2);
+ let random_yoyo_time = random_range(30000, 80000) / 100000;
+ let random_yoyo_y = random_yoyo_time * 100; // vh
+ let random_scale = Math.random();
+ let fall_duration = random_range(10, 30) * 1; // s
+ let fall_delay = random_int(30) * -1; // s
+ let opacity_ = Math.random();
+ rule += `
+ .${snowflake_name}:nth-child(${i}) {
+ opacity: ${opacity_};
+ transform: translate(${random_x}vw, -10px) scale(${random_scale});
+ animation: fall-${i} ${fall_duration}s ${fall_delay}s linear infinite;
+ }
+ @keyframes fall-${i} {
+ ${
+ random_yoyo_time * 100
+ }% {
+ transform: translate(${random_x_end}vw, ${random_yoyo_y}vh) scale(${random_scale});
+ }
+ to {
+ transform: translate(${random_x_end_yoyo}vw, 100vh) scale(${random_scale});
+ }
+ 
+ }
+ `
+ }
+ add_css(rule);
+ }
+</script>
+<style>
+.ecom-christmas_flakes {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ pointer-events: none;
+ cursor: no-drop;
+}
+.snowflake {
+ position: absolute;
+ width: 35px;
+ height: 35px;
+ background: linear-gradient(white, white);
+ border-radius: 50%;
+ filter: drop-shadow(0 0 10px white);
+}
+.snowflake:empty {
+ display: block;
+}
+.snowflake {
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='129.108px' height='140.597px' viewBox='0 0 129.108 140.597' enable-background='new 0 0 129.108 140.597' xml:space='preserve' version='1.1' class='flake'%3E%3Cpath fill='%23fff' d='M106.491,83.706l17.706,10.222l-4.067,7.046l-17.88-10.324l4.693,17.494l-7.814,2.096l-6.121-22.916l-0.604-2.402L71,72.519v25.01l1.569,1.627l16.848,16.906l-5.688,5.727L71,108.984V129h-8v-20.221l-12.917,12.807l-5.837-5.727l16.849-16.775L63,97.325V72.519L41.371,84.922l-0.79,2.402l-6.14,22.916l-7.823-2.096l4.688-17.494l-17.882,10.324l-4.068-7.046l17.705-10.222L9.566,79.018l2.096-7.823l23.095,6.188l2.223,0.596l21.66-12.505L37.157,53.071l-2.402,0.644l-22.916,6.14l-2.096-7.823l17.495-4.688L9.358,37.019l4.07-7.046l17.71,10.222l-4.678-17.494l7.842-2.096L40.525,43.7l0.669,2.223L63,58.428V33.622l-1.868-1.758L44.247,15.088l5.8-5.727L63,22.168V2h8v19.963L83.748,9.156l5.668,5.727L72.549,31.79L71,33.418v25.01l21.581-12.505l0.517-2.223l6.188-23.095l7.823,2.096l-4.688,17.494l17.705-10.222l4.068,7.046l-17.882,10.324l17.494,4.688l-2.096,7.823l-22.916-6.14l-2.402-0.644L74.911,65.473L96.57,77.979l2.223-0.596l23.095-6.188l2.096,7.823L106.491,83.706z'%3E%3C/path%3E%3C/svg%3E");
+ background-size: cover!important;
+}
+</style></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section><section class="ecom-row ecom-core ecom-section ecom-0cz4it37pd6" data-id="ecom-0cz4it37pd6" style="z-index: inherit;"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-l2dpu12ygv"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-animation ecom-block ecom-core core__block elmspace ecom-951u7rivumh" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h1 class="ecom__heading ecom-db"><div><strong>BLACK Friday IS ALMOST HERE!</strong></div></h1></div></div> <div class="ecom-animation ecom-block ecom-core core__block ecom-br8hr007z6d" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db"><p>VIP ACCESS IS FREE THIS YEAR!&nbsp;&nbsp;(was £25 last year)</p><div>JUST SIGN UP BELOW AND GUARANTEE YOUR SPOT:<br><div><br>✅ guaranteed BEST prices&nbsp;</div><div>&nbsp;✅ early access to all products</div><div><span style="letter-spacing: 0px;">&nbsp;✅ HIGHEST VALUE PROMO CODES</span></div><div><span style="letter-spacing: 0px;">✅ PREMIUM FREE GIFTS&nbsp;</span></div><div><br></div></div></h3></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section><section class="ecom-row ecom-core ecom-section ecom-g22cnyd525r" data-id="ecom-g22cnyd525r" style="z-index: inherit;"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-dswha2x3k1"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-rqwe49tsc9" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-g7so9c0ebpn" data-id="ecom-g7so9c0ebpn" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-hmbmcj586y"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-vt3y1y7638s" data-core-is="block"><div class="ecom-element ecom-klaviyo-element ecom-container" deep="2"><div class="ecom-klaviyo-element__form"><div class="klaviyo-form-T4Rgeg"></div>
+</div></div></div> <div class="ecom-block ecom-core core__block ecom-ixd9rfs2w7" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="2"><h3 class="ecom__heading ecom-db">VIP ACCESS SIGN-UP CLOSES IN:</h3></div></div> <div class="ecom-animation ecom-block ecom-core core__block ecom-r0itj784jp" data-core-is="block"><div class="ecom-element ecom-base-elements ecom-element__countdown" deep="2"><div class="ecom-element__countdown-wrapper ecom-flex"><div class="ecom-element__countdown-container"><div class="ecom-element__countdown--time" data-countdown-to="2037/6/26 06:00 GMT+0700" data-countdown-from="2024/9/28 00:00 GMT+0100" data-evergreen-cd-time="0:0:0" data-evergreen-redirect-url="" data-evergreen-restart="{&quot;type&quot;:&quot;&quot;,&quot;data&quot;:&quot;0:0:0&quot;}" data-countdown-type="time" data-trans-week="[%-w] week%!w" data-trans-day="[%-d] day%!D" data-trans-hour="[%-H] hour%!H" data-trans-minute="[%-M] Min%!M" data-trans-second="[%-S] Sec%!S" data-show-fields="hour,minute,second"></div><div class="ecom-countdown-progress-bar"><div class="ecom-countdown-progress-bar--timer"></div></div></div></div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block ecom-8nugge5gv" data-core-is="block"><div class="ecom__element ecom-element-table ecom-flex" data-disable-inline-editor="" deep="1"><table><thead><tr><th data-index="column-0">Featured</th><th data-index="column-1">VIP&nbsp;</th><th data-index="column-2">NON VIP</th></tr></thead><tbody><tr data-row="row-0"><td data-col="0" data-row="0" data-index="column-00">BEST PRICES</td><td data-col="1" data-row="0" data-index="column-01">✅</td><td data-col="2" data-row="0" data-index="column-02">❌</td></tr><tr data-row="row-1"><td data-col="0" data-row="1" data-index="column-10">PREMIUM FREE GIFTS&nbsp;</td><td data-col="1" data-row="1" data-index="column-11">✅</td><td data-col="2" data-row="1" data-index="column-12">❌</td></tr><tr data-row="row-2"><td data-col="0" data-row="2" data-index="column-20">BIGGEST PROMO
+&nbsp;CODES&nbsp;</td><td data-col="1" data-row="2" data-index="column-21">✅</td><td data-col="2" data-row="2" data-index="column-22">❌</td></tr><tr data-row="row-3"><td data-col="0" data-row="3" data-index="column-30">FREE NEXT DAY DELIVERY
+</td><td data-col="1" data-row="3" data-index="column-31">✅</td><td data-col="2" data-row="3" data-index="column-32">❌</td></tr><tr data-row="row-4"><td data-col="0" data-row="4" data-index="column-40">EXTENDED X-MAS RETURNS &amp; WARRANTY POLICY</td><td data-col="1" data-row="4" data-index="column-41">✅</td><td data-col="2" data-row="4" data-index="column-42">❌</td></tr><tr data-row="row-5"><td data-col="0" data-row="5" data-index="column-50">EARLY ACCESS TO ALL DEALS</td><td data-col="1" data-row="5" data-index="column-51">✅</td><td data-col="2" data-row="5" data-index="column-52">❌</td></tr></tbody></table></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-la1sof3sexg" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-87cenxx3umr" data-id="ecom-87cenxx3umr" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"></div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section><section class="ecom-row ecom-core ecom-section ecom-86aeman42dc" data-id="ecom-86aeman42dc" style="z-index: inherit;"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-3c1t2vndw1i"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-tf09aaxu1s" data-core-is="group"><div class="ecom-core ecom-group core__block ecom-3867dic84dq"> <div class="core__group--wrapper ecom-accordion__wrapper ecom-flex ecom-column ecom-w__full ecom__element ecom__accordion" data-r="" style=""><div class="core__group--items"><div id="ecom-0le24n5zxqho" class="core__group--item ecom-accordion__item ecom-item-active ecom-item-group-init" data-id="ecom-0le24n5zxqho"><div class="ecom-accordion__title ecom-flex ecom-w__full ecom-al_center ecom-items ecom-item-active"><div class="ecom-accordion_nav--icon ecom-items--icon" style="order: 1;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M488 231.1C501.3 231.1 512 242.7 512 255.1C512 269.3 501.3 279.1 488 279.1H280V488C280 501.3 269.3 512 255.1 512C242.7 512 231.1 501.3 231.1 488V279.1H23.1C10.74 279.1-.0006 269.3-.0006 255.1C-.0006 242.7 10.74 231.1 23.1 231.1H231.1V24C231.1 10.75 242.7 0 255.1 0C269.3 0 280 10.75 280 24V231.1H488z"></path></svg></div><div class="ecom-accordion_nav--icon ecom-items--icon ecom-items-icon-active" style="order: 1;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M432 256C432 269.3 421.3 280 408 280H40c-13.25 0-24-10.74-24-23.99C16 242.8 26.75 232 40 232h368C421.3 232 432 242.8 432 256z"></path></svg></div><div class="ecom-accordion_wrapper-info ecom-flex ecom-al_center"><span class="ecom-items--icon ecom-accordion_icon-title" data-image="false"></span><h3 class="ecom-accordion__title-text ecom-items--text">What will I gain from signing up for VIP Access?</h3></div></div><div class="core__group--body ecom-accordion__body"><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-uv287bhdu8b" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-framed">By signing up through the link above, you'll get early access to our best-ever prices, exclusive access to all products, the highest promotional discounts, and free gifts!
+VIP access typically costs £25.00, but this year, we’re offering it to 20,000 users completely free!</div></div></div> </div></div></div></div><div id="ecom-x7yqe8kwhj" class="core__group--item ecom-accordion__item" data-id="ecom-x7yqe8kwhj"><div class="ecom-accordion__title ecom-flex ecom-w__full ecom-al_center ecom-items"><div class="ecom-accordion_nav--icon ecom-items--icon" style="order: 1;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M488 231.1C501.3 231.1 512 242.7 512 255.1C512 269.3 501.3 279.1 488 279.1H280V488C280 501.3 269.3 512 255.1 512C242.7 512 231.1 501.3 231.1 488V279.1H23.1C10.74 279.1-.0006 269.3-.0006 255.1C-.0006 242.7 10.74 231.1 23.1 231.1H231.1V24C231.1 10.75 242.7 0 255.1 0C269.3 0 280 10.75 280 24V231.1H488z"></path></svg></div><div class="ecom-accordion_nav--icon ecom-items--icon ecom-items-icon-active" style="order: 1;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M432 256C432 269.3 421.3 280 408 280H40c-13.25 0-24-10.74-24-23.99C16 242.8 26.75 232 40 232h368C421.3 232 432 242.8 432 256z"></path></svg></div><div class="ecom-accordion_wrapper-info ecom-flex ecom-al_center"><span class="ecom-items--icon ecom-accordion_icon-title" data-image="false"></span><h3 class="ecom-accordion__title-text ecom-items--text">When will the VIP deals begin?</h3></div></div><div class="core__group--body ecom-accordion__body"><div class="core__blocks" index="1"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-jjmkp900qqd" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-framed">We will email you in advance to help you get ready, but all deals will officially launch during Black Week (starting that Monday 25th November) and conclude on Cyber Monday (2nd December)</div></div></div> </div></div></div></div><div id="ecom-u9887ejbef8" class="core__group--item ecom-accordion__item" data-id="ecom-u9887ejbef8"><div class="ecom-accordion__title ecom-flex ecom-w__full ecom-al_center ecom-items"><div class="ecom-accordion_nav--icon ecom-items--icon" style="order: 1;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M488 231.1C501.3 231.1 512 242.7 512 255.1C512 269.3 501.3 279.1 488 279.1H280V488C280 501.3 269.3 512 255.1 512C242.7 512 231.1 501.3 231.1 488V279.1H23.1C10.74 279.1-.0006 269.3-.0006 255.1C-.0006 242.7 10.74 231.1 23.1 231.1H231.1V24C231.1 10.75 242.7 0 255.1 0C269.3 0 280 10.75 280 24V231.1H488z"></path></svg></div><div class="ecom-accordion_nav--icon ecom-items--icon ecom-items-icon-active" style="order: 1;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M432 256C432 269.3 421.3 280 408 280H40c-13.25 0-24-10.74-24-23.99C16 242.8 26.75 232 40 232h368C421.3 232 432 242.8 432 256z"></path></svg></div><div class="ecom-accordion_wrapper-info ecom-flex ecom-al_center"><span class="ecom-items--icon ecom-accordion_icon-title" data-image="false"></span><h3 class="ecom-accordion__title-text ecom-items--text">How do I sign up to the VIP Access?</h3></div></div><div class="core__group--body ecom-accordion__body"><div class="core__blocks" index="2"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-jf9zxbpg1hs" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-framed">If the countdown is still running, just enter your email address in the form above, click the VIP Access button, and voilà—you’re in!
+</div></div></div> </div></div></div></div><div id="ecom-1tugw3pqm2x" class="core__group--item ecom-accordion__item" data-id="ecom-1tugw3pqm2x"><div class="ecom-accordion__title ecom-flex ecom-w__full ecom-al_center ecom-items"><div class="ecom-accordion_nav--icon ecom-items--icon" style="order: 1;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"><path d="M488 231.1C501.3 231.1 512 242.7 512 255.1C512 269.3 501.3 279.1 488 279.1H280V488C280 501.3 269.3 512 255.1 512C242.7 512 231.1 501.3 231.1 488V279.1H23.1C10.74 279.1-.0006 269.3-.0006 255.1C-.0006 242.7 10.74 231.1 23.1 231.1H231.1V24C231.1 10.75 242.7 0 255.1 0C269.3 0 280 10.75 280 24V231.1H488z"></path></svg></div><div class="ecom-accordion_nav--icon ecom-items--icon ecom-items-icon-active" style="order: 1;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M432 256C432 269.3 421.3 280 408 280H40c-13.25 0-24-10.74-24-23.99C16 242.8 26.75 232 40 232h368C421.3 232 432 242.8 432 256z"></path></svg></div><div class="ecom-accordion_wrapper-info ecom-flex ecom-al_center"><span class="ecom-items--icon ecom-accordion_icon-title" data-image="false"></span><h3 class="ecom-accordion__title-text ecom-items--text">Will the prices ever go lower than the VIP deals?</h3></div></div><div class="core__group--body ecom-accordion__body"><div class="core__blocks" index="3"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-q72igh4zxqs" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-framed"><span style="letter-spacing: normal;">All prices for our VIP customers are guaranteed to be the lowest. If prices drop even further, we'll automatically refund you the difference—no need to reach out</span></div></div></div> </div></div></div></div></div></div> </div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section>
+</div></div>
+{% schema %}
+{
+ "name": "VIP COUNTDOWN BF",
+ "locales": {},
+ "settings": [
+ {
+ "type": "header",
+ "content": "The section was generated by [Ecomposer](https:\/\/ecomposer.io).",
+ "info": "\n EComposer is a Visual Page Builder app on Shopify AppStore.\n It provides 100+ pre-built templates in library,\n so you can build unlimited pages that you can imagine with it.\n Please don't add Shopify sections to EComposer's page in the theme customize. If you do this, Shopify sections will be deleted when you republish your page in EComposer\n "
+ },
+ {
+ "type": "header",
+ "content": "[EDIT WITH EComposer APP \u2192](https:\/\/ecomposer.app\/shop?open_builder=1&page=page&id=66f6b9dc7cb309aeef049d59&utm_source=theme-customize)",
+ "info": "(*You must install the app to start editing this section [Learn more](https:\/\/help.ecomposer.io\/docs\/getting-started\/installation\/))"
+ }
+ ]
+}
+{% endschema %}

@@ -1,0 +1,100 @@
+<section class="asyncLoad" id="instant">
+  <div class="custom-container">
+      <div class="instant-off-blk" data-aos="fade-down" data-aos-duration="1000" style="background-image: url('{{ section.settings.bg | img_url:'' }}');">
+       <div class="content">
+          {% if section.settings.tag1 %}
+            {% if section.settings.tag != blank %}
+              <span class="badge" style="background-color:{{ section.settings.color1 }};">{{ section.settings.tag }}</span>
+            {% endif %}
+          {% endif %}
+        <h4 class="subtitle">{{ section.settings.sub-heading }}</h4>
+        <h1 class="heading">{{ section.settings.heading }}</h1>
+        <p>{{ section.settings.description }}</p>
+         {% if section.settings.btn_txt != blank  %}
+           <a href="{{ section.settings.product.url }}" class="btn">{{section.settings.btn_txt}} {{ section.settings.product.price | money | remove: '.00' }}</a>
+         {% endif %}  
+        <div class="img-blk up-down">
+           {% if section.settings.product_image1 %}
+            <img src="{{ section.settings.product_image | img_url:'' }}">
+          {% endif %}
+        </div>
+      </div>
+      </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Best Seller-2",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "bg",
+          "label": "Select Background-Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "tag1",
+          "label": "Show/Hide Tag",
+           "default": true
+         },
+         {
+            "type": "color",
+            "id": "color1",
+            "label": "Select Color"
+         },
+         {
+          "type": "text",
+          "id": "tag",
+          "label": "Add Tag Text"
+         },
+         {
+          "type": "text",
+          "id": "sub-heading",
+          "label": "Sub-Heading"
+         },
+         {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+         },
+         {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+         },
+         {
+          "type": "checkbox",
+          "id": "product_image1",
+          "label": "Show/Hide product_image"
+         },
+         {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Add product image"
+         },
+         {
+          "type": "text",
+          "id": "btn_txt",
+          "label": "Button Text"
+         },
+         {
+          "type": "product",
+          "id": "product",
+          "label": "Select Product[for price]"
+         }
+    ],
+ 
+    "presets": [
+      {
+      "name": "Best Seller-2",
+      "category": "Custom Sections"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

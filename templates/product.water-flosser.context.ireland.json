@@ -1,0 +1,51 @@
+{
+  "parent": "product.water-flosser.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "4b5187ef-6563-4eaf-8d8d-6415e52c432d": {
+          "settings": {
+            "first_tag": "SPECIAL OFFER: BUY 2 FOR €89! | BUY 3 FOR - €121.00 BUY 4 FOR €147.00! JUST ADD TO CART"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "4b5187ef-6563-4eaf-8d8d-6415e52c432d",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    },
+    "16631668754f796b02": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express Ireland 1-3 Working Day Delivery"
+          }
+        }
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664872804da9fcc65",
+    "product-recommendations"
+  ]
+}

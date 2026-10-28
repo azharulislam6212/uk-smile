@@ -1,0 +1,39 @@
+{
+  "parent": "product.water-flosser-attachments.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "47c20f18-158d-4364-a174-918b2836d7d4": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET! | EXPRESS DELIVERY IN IRELAND!"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "47c20f18-158d-4364-a174-918b2836d7d4",
+        "1ed15949-a525-40fc-8d07-2868b613f63a",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "1664870774e164b7b9",
+    "product-recommendations"
+  ]
+}

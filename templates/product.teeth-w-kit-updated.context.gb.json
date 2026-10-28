@@ -1,0 +1,17 @@
+{
+  "context": {
+    "market": "gb"
+  },
+  "parent": "product.teeth-w-kit-updated.json",
+  "sections": {
+    "blocks_VzmWH9": {
+      "settings": {},
+      "blocks": {
+        "ai_gen_block_c67a3aa_X94fDR": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "parent": "product.stainless-tongue-scraper.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "d085ccc6-68e6-4675-9db1-c7ba62c9278c": {
+          "disabled": true,
+          "settings": {}
+        },
+        "c8cbade7-3d3a-4dcd-b251-831c71e20441": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET! | EXPRESS DELIVERY IN NETHERLANDS!"
+          }
+        }
+      }
+    }
+  }
+}

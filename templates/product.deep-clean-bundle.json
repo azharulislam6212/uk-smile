@@ -1,0 +1,311 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_Pc7Hzf": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "methods_VbRkfy": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo_ed12fd8b-bd03-42cc-9ed0-298d311cf203.png",
+            "clearpay_text": "Or 4 interest-free payments of £15.00 with",
+            "klarna_img": "shopify:\/\/shop_images\/klarna_bbbc08fe-de9a-4649-8a7c-cad044e29e84.png",
+            "klarna_text": "Or pay later, get it tomorrow with"
+          }
+        },
+        "2d2d503e-227c-4d86-9b1c-b8bdcbf2a139": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY | NO MINIMUM SPEND",
+            "second_tag": ""
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "variant_picker_UF8AJn": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_Pc7Hzf",
+        "price",
+        "methods_VbRkfy",
+        "2d2d503e-227c-4d86-9b1c-b8bdcbf2a139",
+        "caption",
+        "rating",
+        "quantity_selector",
+        "variant_picker_UF8AJn",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 12,
+        "padding_bottom": 40
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"WHO DECIDED TOOTHPASTE AND TOOTHBRUSH IS ALL YOU NEED! THIS IS AN ABSOLOUTE GAME CHANGER! BIG BIG FAN 5 STARS\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Jace. A<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 12,
+        "padding_bottom": 4
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<p>Each order of Deep Clean Bundle consists of <\/p><ul><li>6-In-1 Sonic Electric Toothbrush<\/li><li>4x Toothbrush Heads<\/li><li>Teeth Whitening Pen<\/li><li>Teeth Whitening Strips (14 Packs)<\/li><li>V34 Colour Corrector<\/li><li>Manual<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "List of ingredients (Gels)",
+            "icon": "leaf",
+            "row_content": "<p>All products sold on Smile Therapy are:<strong> <\/strong><em><strong>100% Safe, Natural & Certified!<\/strong><\/em><\/p><p>Teeth Whitening Strips:<br\/>Glycerin, Water, PVP, Ethylcellulose, Alcohol,Sodium Polyacrylate, Phthalimidoperoxycaproic Acid(PAP)Xylitol, Potassium Citrate,Hydroxyapatite, Rebaudioside A, Menthol, Sodium Citrate,Xanthan Gum, PVM\/MA Copolymer, C12-15 Pareth-3.<br\/><br\/>Teeth Whitening Pen:<br\/>Glycerin,Aqua\/Water, PVP, Ethylcellulose, Sodium Polyacrylate,Phthalimidoperoxycaproic Acid(PAP)Xylitol, Potassium Citrate,Hydroxyapatite, Rebaudioside A, Menthol, Sodium Citrate,Xanthan Gum, PVM\/MA Copolymer, C12-15 Pareth-3.<br\/><\/p>",
+            "page": ""
+          }
+        },
+        "792a2454-8dbe-40ac-ae87-a745eb01fb9b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Instructions & Tips",
+            "icon": "clipboard",
+            "row_content": "<p>1) Begin by applying toothpaste and powering on your Sonic Electric Toothbrush (selecting your preferred speed and cleaning mode)<\/p><p>2) Once complete, apply V34 Serum to the Electric Toothbrush and brush for another 2 minutes (recommended to use twice a week as a post brushing treatment)<\/p><p>3) Rinse your mouth with warm water & apply Teeth Whitening Strips (ensuring its kept on for 20-30 minutes)<\/p><p>4) Once the strips have been removed, apply Teeth Whitening Pen for touch ups and instant whitening.<\/p><p>5) Rinse your mouth and clean your equipment. Enjoy your new white smile!<\/p>",
+            "page": ""
+          }
+        },
+        "22779142-8db6-4dbf-93b6-ac3fd9d5b799": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Warnings & Caution",
+            "icon": "question_mark",
+            "row_content": "<p>The V34, Teeth Whitening Pen and Whitening Strips is not to be used while pregnant or breastfeeding.<br\/><br\/>This bundle is not recommended for those under the age of 12.<br\/><br\/>If residue from the gel is swallowed in small quantities please do not worry.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nbAPbH": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Can the Teeth Whitening Kit be used on composite bonding, veneers or fillings?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, the Teeth Whitening Kit is suitable for use on composite bonding, veneers, and fillings. While the kit is designed to safely whiten your natural teeth, it also helps to remove surface stains on dental restorations. The formula is gentle on all dental materials, ensuring that your composite bonding, veneers, and fillings remain intact while your smile is brightened.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-1",
+        "collapsible-row-3",
+        "792a2454-8dbe-40ac-ae87-a745eb01fb9b",
+        "22779142-8db6-4dbf-93b6-ac3fd9d5b799",
+        "collapsible_row_nbAPbH"
+      ],
+      "settings": {
+        "caption": "Deep Clean Bundle",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 4
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK<br> Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        },
+        "9a9343a9-050d-43c7-bf8d-b821ee82ffc3": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98",
+        "9a9343a9-050d-43c7-bf8d-b821ee82ffc3"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_aa29138a-e959-4c87-83fd-cf781575941c.png"
+      }
+    },
+    "16648713477d94ffe9": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_3dxfR3": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_3dxfR3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "16648713477d94ffe9",
+    "product-recommendations"
+  ]
+}

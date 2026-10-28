@@ -1,0 +1,7 @@
+{
+  "parent": "product.tooth-cleaner-mix.json",
+  "context": {
+    "market": "eu"
+  },
+  "sections": {}
+}

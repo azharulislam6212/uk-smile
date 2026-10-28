@@ -1,0 +1,33 @@
+{
+  "parent": "product.silicone-tongue-brush.json",
+  "context": {
+    "market": "eu"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "8a6a9c46-cafc-4c9e-b6a6-fa9950b27b6a": {
+          "disabled": true,
+          "settings": {}
+        },
+        "574a5d09-4012-47b3-8f5f-f4edce89f277": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE NOW LIVE!"
+          }
+        }
+      }
+    },
+    "16631668754f796b02": {
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express 1-3 Working Days Delivery"
+          }
+        }
+      }
+    }
+  }
+}

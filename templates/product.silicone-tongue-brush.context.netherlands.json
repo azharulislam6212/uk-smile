@@ -1,0 +1,39 @@
+{
+  "parent": "product.silicone-tongue-brush.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "574a5d09-4012-47b3-8f5f-f4edce89f277": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET | FREE NETHERLANDS DELIVERY| NO MINIMUM SPEND"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "574a5d09-4012-47b3-8f5f-f4edce89f277",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664872996ecb85b6e",
+    "product-recommendations"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "product.toothbrush-heads.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {},
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "6aafe5cc-5bb2-4896-be47-69c71ae9e388",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "1664870774e164b7b9",
+    "product-recommendations"
+  ]
+}

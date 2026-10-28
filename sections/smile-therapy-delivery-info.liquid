@@ -1,0 +1,1184 @@
+{{ 'section-smile-therapy-delivery.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign section_id = section.id
+  assign default_code = ''
+-%}
+
+<div
+  class="st-delivery-page st-delivery-page--{{ section_id }}"
+  data-section-id="{{ section_id }}"
+  style="
+    --st-text-color: {{ section.settings.text_color }};
+    --st-bg-color: {{ section.settings.background_color }};
+    --st-table-header-bg: {{ section.settings.table_header_bg }};
+    --st-border-color: {{ section.settings.border_color }};
+    --st-note-bg: {{ section.settings.note_bg }};
+  "
+>
+  {%- if section.settings.heading != blank -%}
+    <h1 class="st-delivery-page__heading">{{ section.settings.heading }}</h1>
+  {%- endif -%}
+
+  {%- if section.settings.intro != blank -%}
+    <div class="st-intro">{{ section.settings.intro }}</div>
+  {%- endif -%}
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="st-picker">
+      <label for="st-country-{{ section_id }}">{{ section.settings.picker_label | default: 'Delivery country' }}</label>
+      <select id="st-country-{{ section_id }}" class="st-country-select">
+        {%- for block in section.blocks -%}
+          {%- assign code = block.settings.country_code | strip -%}
+          {%- if forloop.first -%}
+            {%- assign default_code = code -%}
+          {%- endif -%}
+          <option value="{{ code }}" {% if forloop.first %}selected{% endif %} {{ block.shopify_attributes }}>
+            {{ block.settings.country_name }}
+          </option>
+        {%- endfor -%}
+      </select>
+    </div>
+
+    <div id="st-result-{{ section_id }}" class="st-result" aria-live="polite">
+      {%- for block in section.blocks -%}
+        {%- if forloop.first -%}
+          {%- assign active_block = block -%}
+          <h2 class="st-result__heading">{{ block.settings.country_name }}</h2>
+          <div class="st-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Shipping option</th>
+                  <th>Rate</th>
+                  <th>Estimated delivery</th>
+                  {%- if block.settings.layout == 'uk' -%}
+                    <th>Courier</th>
+                  {%- else -%}
+                    <th>Sent with</th>
+                    <th>Delivered locally by</th>
+                  {%- endif -%}
+                </tr>
+              </thead>
+              <tbody>
+                {%- for i in (1..4) -%}
+                  {%- case i -%}
+                    {%- when 1 -%}
+                      {%- assign service = block.settings.method_1_service -%}
+                      {%- assign rate = block.settings.method_1_rate -%}
+                      {%- assign eta = block.settings.method_1_eta -%}
+                      {%- assign sent_with = block.settings.method_1_sent_with -%}
+                      {%- assign local_partner = block.settings.method_1_local_partner -%}
+                    {%- when 2 -%}
+                      {%- assign service = block.settings.method_2_service -%}
+                      {%- assign rate = block.settings.method_2_rate -%}
+                      {%- assign eta = block.settings.method_2_eta -%}
+                      {%- assign sent_with = block.settings.method_2_sent_with -%}
+                      {%- assign local_partner = block.settings.method_2_local_partner -%}
+                    {%- when 3 -%}
+                      {%- assign service = block.settings.method_3_service -%}
+                      {%- assign rate = block.settings.method_3_rate -%}
+                      {%- assign eta = block.settings.method_3_eta -%}
+                      {%- assign sent_with = block.settings.method_3_sent_with -%}
+                      {%- assign local_partner = block.settings.method_3_local_partner -%}
+                    {%- when 4 -%}
+                      {%- assign service = block.settings.method_4_service -%}
+                      {%- assign rate = block.settings.method_4_rate -%}
+                      {%- assign eta = block.settings.method_4_eta -%}
+                      {%- assign sent_with = block.settings.method_4_sent_with -%}
+                      {%- assign local_partner = block.settings.method_4_local_partner -%}
+                  {%- endcase -%}
+                  {%- if service != blank -%}
+                    <tr>
+                      <td>{{ service }}</td>
+                      <td>{{ rate }}</td>
+                      <td>{{ eta }}</td>
+                      <td>{{ sent_with }}</td>
+                      {%- if block.settings.layout != 'uk' -%}
+                        <td>{{ local_partner }}</td>
+                      {%- endif -%}
+                    </tr>
+                  {%- endif -%}
+                {%- endfor -%}
+              </tbody>
+            </table>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+
+  {%- if section.settings.note_heading != blank or section.settings.note_text != blank -%}
+    <div class="st-note">
+      {%- if section.settings.note_heading != blank -%}
+        <strong>{{ section.settings.note_heading }}</strong><br>
+      {%- endif -%}
+      {{ section.settings.note_text }}
+    </div>
+  {%- endif -%}
+</div>
+
+{%- comment -%} Build the full country dataset as JSON so the dropdown can swap content client-side, exactly like the original page. {%- endcomment -%}
+<script id="st-data-{{ section_id }}" type="application/json">
+{
+  {%- for block in section.blocks -%}
+    {%- assign code = block.settings.country_code | strip -%}
+    "{{ code | escape }}": {
+      "country": {{ block.settings.country_name | json }},
+      "layout": {{ block.settings.layout | json }},
+      "methods": [
+        {%- assign first_method = true -%}
+        {%- for i in (1..4) -%}
+          {%- case i -%}
+            {%- when 1 -%}
+              {%- assign service = block.settings.method_1_service -%}
+              {%- assign rate = block.settings.method_1_rate -%}
+              {%- assign eta = block.settings.method_1_eta -%}
+              {%- assign sent_with = block.settings.method_1_sent_with -%}
+              {%- assign local_partner = block.settings.method_1_local_partner -%}
+            {%- when 2 -%}
+              {%- assign service = block.settings.method_2_service -%}
+              {%- assign rate = block.settings.method_2_rate -%}
+              {%- assign eta = block.settings.method_2_eta -%}
+              {%- assign sent_with = block.settings.method_2_sent_with -%}
+              {%- assign local_partner = block.settings.method_2_local_partner -%}
+            {%- when 3 -%}
+              {%- assign service = block.settings.method_3_service -%}
+              {%- assign rate = block.settings.method_3_rate -%}
+              {%- assign eta = block.settings.method_3_eta -%}
+              {%- assign sent_with = block.settings.method_3_sent_with -%}
+              {%- assign local_partner = block.settings.method_3_local_partner -%}
+            {%- when 4 -%}
+              {%- assign service = block.settings.method_4_service -%}
+              {%- assign rate = block.settings.method_4_rate -%}
+              {%- assign eta = block.settings.method_4_eta -%}
+              {%- assign sent_with = block.settings.method_4_sent_with -%}
+              {%- assign local_partner = block.settings.method_4_local_partner -%}
+          {%- endcase -%}
+          {%- if service != blank -%}
+            {%- unless first_method -%},{%- endunless -%}
+            {%- assign first_method = false -%}
+            {
+              "service": {{ service | json }},
+              "rate": {{ rate | json }},
+              "eta": {{ eta | json }},
+              "sent_with": {{ sent_with | json }},
+              "local_partner": {{ local_partner | json }}
+            }
+          {%- endif -%}
+        {%- endfor -%}
+      ]
+    }{% unless forloop.last %},{% endunless %}
+  {%- endfor -%}
+}
+</script>
+
+<script>
+(function(){
+  var sectionId = {{ section_id | json }};
+  var dataEl = document.getElementById('st-data-' + sectionId);
+  var sel = document.getElementById('st-country-' + sectionId);
+  var out = document.getElementById('st-result-' + sectionId);
+  if(!dataEl || !sel || !out) return;
+
+  var data = {};
+  try { data = JSON.parse(dataEl.textContent); } catch(e) { data = {}; }
+
+  function esc(v){
+    return String(v || '')
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;')
+      .replace(/'/g,'&#039;');
+  }
+
+  function render(code){
+    var item = data[code];
+    if(!item) return;
+
+    if(item.layout === 'uk'){
+      var ukRows = item.methods.map(function(v){
+        return '<tr>' +
+          '<td>' + esc(v.service) + '</td>' +
+          '<td>' + esc(v.rate) + '</td>' +
+          '<td>' + esc(v.eta) + '</td>' +
+          '<td>' + esc(v.sent_with) + '</td>' +
+        '</tr>';
+      }).join('');
+
+      out.innerHTML =
+        '<h2 class="st-result__heading">' + esc(item.country) + '</h2>' +
+        '<div class="st-wrap"><table>' +
+        '<thead><tr><th>Shipping option</th><th>Rate</th><th>Estimated delivery</th><th>Courier</th></tr></thead>' +
+        '<tbody>' + ukRows + '</tbody></table></div>';
+      return;
+    }
+
+    var rows = item.methods.map(function(v){
+      return '<tr>' +
+        '<td>' + esc(v.service) + '</td>' +
+        '<td>' + esc(v.rate) + '</td>' +
+        '<td>' + esc(v.eta) + '</td>' +
+        '<td>' + esc(v.sent_with) + '</td>' +
+        '<td>' + esc(v.local_partner) + '</td>' +
+      '</tr>';
+    }).join('');
+
+    out.innerHTML =
+      '<h2 class="st-result__heading">' + esc(item.country) + '</h2>' +
+      '<div class="st-wrap"><table>' +
+      '<thead><tr><th>Shipping option</th><th>Rate</th><th>Estimated delivery</th><th>Sent with</th><th>Delivered locally by</th></tr></thead>' +
+      '<tbody>' + rows + '</tbody></table></div>';
+  }
+
+  sel.addEventListener('change', function(){ render(this.value); });
+
+  {%- if request.design_mode -%}
+  document.addEventListener('shopify:section:load', function(evt){
+    if(evt.target.querySelector('#st-country-' + sectionId)){
+      render(sel.value);
+    }
+  });
+  {%- endif -%}
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Delivery information",
+  "tag": "section",
+  "class": "st-delivery-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Delivery Information"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Intro text",
+      "default": "<p>Select your delivery country to see shipping options, prices, estimated delivery times and the local delivery partner.</p>"
+    },
+    {
+      "type": "text",
+      "id": "picker_label",
+      "label": "Dropdown label",
+      "default": "Delivery country"
+    },
+    {
+      "type": "header",
+      "content": "Note box"
+    },
+    {
+      "type": "text",
+      "id": "note_heading",
+      "label": "Note heading",
+      "default": "International delivery"
+    },
+    {
+      "type": "richtext",
+      "id": "note_text",
+      "label": "Note text",
+      "default": "<p>International orders are sent from the UK with Royal Mail and handed to the destination country's postal network for final delivery. Australia is fulfilled locally with Australia Post. Your dispatch email and live tracking link show the latest tracking information.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "table_header_bg",
+      "label": "Table header background",
+      "default": "#f7f7f7"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "color",
+      "id": "note_bg",
+      "label": "Note background",
+      "default": "#f7f7f7"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "country",
+      "name": "Country",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Country"
+        },
+        {
+          "type": "text",
+          "id": "country_name",
+          "label": "Country name (shown in dropdown)",
+          "default": "Country name"
+        },
+        {
+          "type": "text",
+          "id": "country_code",
+          "label": "Country code (must be unique, e.g. GB, US, *)",
+          "default": "XX"
+        },
+        {
+          "type": "select",
+          "id": "layout",
+          "label": "Table layout",
+          "options": [
+            { "value": "uk", "label": "4 columns (Courier only)" },
+            { "value": "intl", "label": "5 columns (+ Delivered locally by)" }
+          ],
+          "default": "intl"
+        },
+        {
+          "type": "header",
+          "content": "Shipping method 1"
+        },
+        { "type": "text", "id": "method_1_service", "label": "Service name" },
+        { "type": "text", "id": "method_1_rate", "label": "Rate" },
+        { "type": "text", "id": "method_1_eta", "label": "Estimated delivery" },
+        { "type": "text", "id": "method_1_sent_with", "label": "Sent with / Courier" },
+        { "type": "text", "id": "method_1_local_partner", "label": "Delivered locally by (5-column layout only)" },
+        {
+          "type": "header",
+          "content": "Shipping method 2"
+        },
+        { "type": "text", "id": "method_2_service", "label": "Service name" },
+        { "type": "text", "id": "method_2_rate", "label": "Rate" },
+        { "type": "text", "id": "method_2_eta", "label": "Estimated delivery" },
+        { "type": "text", "id": "method_2_sent_with", "label": "Sent with / Courier" },
+        { "type": "text", "id": "method_2_local_partner", "label": "Delivered locally by (5-column layout only)" },
+        {
+          "type": "header",
+          "content": "Shipping method 3"
+        },
+        { "type": "text", "id": "method_3_service", "label": "Service name" },
+        { "type": "text", "id": "method_3_rate", "label": "Rate" },
+        { "type": "text", "id": "method_3_eta", "label": "Estimated delivery" },
+        { "type": "text", "id": "method_3_sent_with", "label": "Sent with / Courier" },
+        { "type": "text", "id": "method_3_local_partner", "label": "Delivered locally by (5-column layout only)" },
+        {
+          "type": "header",
+          "content": "Shipping method 4"
+        },
+        { "type": "text", "id": "method_4_service", "label": "Service name" },
+        { "type": "text", "id": "method_4_rate", "label": "Rate" },
+        { "type": "text", "id": "method_4_eta", "label": "Estimated delivery" },
+        { "type": "text", "id": "method_4_sent_with", "label": "Sent with / Courier" },
+        { "type": "text", "id": "method_4_local_partner", "label": "Delivered locally by (5-column layout only)" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Delivery information",
+      "blocks": [
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "United Kingdom",
+      "country_code": "GB",
+      "layout": "uk",
+      "method_1_service": "Standard Delivery",
+      "method_1_rate": "FREE",
+      "method_1_eta": "1–2 working days",
+      "method_1_sent_with": "Amazon Shipping",
+      "method_1_local_partner": "",
+      "method_2_service": "Royal Mail Tracked",
+      "method_2_rate": "£2.99",
+      "method_2_eta": "1–2 working days",
+      "method_2_sent_with": "Royal Mail",
+      "method_2_local_partner": "",
+      "method_3_service": "InPost Locker / Shop",
+      "method_3_rate": "£3.49",
+      "method_3_eta": "2–3 working days",
+      "method_3_sent_with": "InPost",
+      "method_3_local_partner": "",
+      "method_4_service": "DPD Next Day",
+      "method_4_rate": "£4.99",
+      "method_4_eta": "Next working day",
+      "method_4_sent_with": "DPD",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Ireland",
+      "country_code": "IE",
+      "layout": "intl",
+      "method_1_service": "Tracked Delivery",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "An Post",
+      "method_2_service": "Express Delivery",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Austria",
+      "country_code": "AT",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Austrian Post (Österreichische Post)",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Belgium",
+      "country_code": "BE",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "bpost",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Croatia",
+      "country_code": "HR",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Croatian Post (Hrvatska pošta)",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Cyprus",
+      "country_code": "CY",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Cyprus Post",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Estonia",
+      "country_code": "EE",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Omniva (Estonian Post)",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Finland",
+      "country_code": "FI",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Posti",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "France",
+      "country_code": "FR",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€6.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "La Poste",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€11.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Express carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Germany",
+      "country_code": "DE",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Deutsche Post / DHL",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Greece",
+      "country_code": "GR",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "ELTA (Hellenic Post)",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Italy",
+      "country_code": "IT",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€6.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Poste Italiane",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€11.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Express carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Latvia",
+      "country_code": "LV",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Latvijas Pasts",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Lithuania",
+      "country_code": "LT",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Lithuania Post (Lietuvos paštas)",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Luxembourg",
+      "country_code": "LU",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "POST Luxembourg",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Malta",
+      "country_code": "MT",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "MaltaPost",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Netherlands",
+      "country_code": "NL",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "PostNL",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Portugal",
+      "country_code": "PT",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "CTT",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Slovakia",
+      "country_code": "SK",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Slovenská pošta",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Slovenia",
+      "country_code": "SI",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Pošta Slovenije",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Spain",
+      "country_code": "ES",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€4.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Correos",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Australia",
+      "country_code": "AU",
+      "layout": "intl",
+      "method_1_service": "Australia Parcel Post",
+      "method_1_rate": "FREE",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Australia Post",
+      "method_1_local_partner": "Australia Post",
+      "method_2_service": "Australia Express Post",
+      "method_2_rate": "A$9.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Australia Post",
+      "method_2_local_partner": "Australia Post",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "New Zealand",
+      "country_code": "NZ",
+      "layout": "intl",
+      "method_1_service": "Local Tracked Delivery",
+      "method_1_rate": "FREE",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "NZ Post",
+      "method_2_service": "",
+      "method_2_rate": "",
+      "method_2_eta": "",
+      "method_2_sent_with": "",
+      "method_2_local_partner": "",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "United States",
+      "country_code": "US",
+      "layout": "intl",
+      "method_1_service": "International Worldwide Shipping",
+      "method_1_rate": "£9.99",
+      "method_1_eta": "7–12 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "USPS",
+      "method_2_service": "",
+      "method_2_rate": "",
+      "method_2_eta": "",
+      "method_2_sent_with": "",
+      "method_2_local_partner": "",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Canada",
+      "country_code": "CA",
+      "layout": "intl",
+      "method_1_service": "International Worldwide Shipping",
+      "method_1_rate": "£9.99",
+      "method_1_eta": "7–12 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Canada Post",
+      "method_2_service": "",
+      "method_2_rate": "",
+      "method_2_eta": "",
+      "method_2_sent_with": "",
+      "method_2_local_partner": "",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "United Arab Emirates",
+      "country_code": "AE",
+      "layout": "intl",
+      "method_1_service": "International Worldwide Shipping",
+      "method_1_rate": "£9.99",
+      "method_1_eta": "7–12 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Emirates Post",
+      "method_2_service": "",
+      "method_2_rate": "",
+      "method_2_eta": "",
+      "method_2_sent_with": "",
+      "method_2_local_partner": "",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Romania",
+      "country_code": "RO",
+      "layout": "intl",
+      "method_1_service": "Tracked & Signed",
+      "method_1_rate": "€9.99 | FREE from €60.00",
+      "method_1_eta": "3–5 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Poșta Română",
+      "method_2_service": "Express Shipping",
+      "method_2_rate": "€14.99",
+      "method_2_eta": "1–3 working days",
+      "method_2_sent_with": "Express network",
+      "method_2_local_partner": "Express carrier shown in tracking",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  },
+  {
+    "type": "country",
+    "settings": {
+      "country_name": "Other / Rest of World",
+      "country_code": "*",
+      "layout": "intl",
+      "method_1_service": "International Worldwide Shipping",
+      "method_1_rate": "£9.99",
+      "method_1_eta": "7–12 working days",
+      "method_1_sent_with": "Royal Mail",
+      "method_1_local_partner": "Destination postal operator",
+      "method_2_service": "",
+      "method_2_rate": "",
+      "method_2_eta": "",
+      "method_2_sent_with": "",
+      "method_2_local_partner": "",
+      "method_3_service": "",
+      "method_3_rate": "",
+      "method_3_eta": "",
+      "method_3_sent_with": "",
+      "method_3_local_partner": "",
+      "method_4_service": "",
+      "method_4_rate": "",
+      "method_4_eta": "",
+      "method_4_sent_with": "",
+      "method_4_local_partner": ""
+    }
+  }
+]
+    }
+  ]
+}
+{% endschema %}

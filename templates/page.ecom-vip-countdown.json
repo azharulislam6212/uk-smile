@@ -1,0 +1,12 @@
+{
+  "layout": "ecom",
+  "sections": {
+    "ecom-vip-countdown-page": {
+      "type": "ecom-vip-countdown-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ecom-vip-countdown-page"
+  ]
+}

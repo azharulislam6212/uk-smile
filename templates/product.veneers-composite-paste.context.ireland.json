@@ -1,0 +1,18 @@
+{
+  "parent": "product.veneers-composite-paste.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "collapsible-content": {
+      "settings": {},
+      "blocks": {
+        "collapsible-row-0": {
+          "settings": {
+            "row_content": "<p>Glycerin, Aqua, Hydrated Silica, Pentasodium Triphosphate, Perlite, PVP, Sodium Bicarbonate, Cellulose Gum, CI 77891, Cocamidopropyl Betaine, Mentha Arvensis Leaf Oil, Sodium Fluoride, Sodium Saccharin, Menthol, Aroma, Tocopheryl Acetate, Sodium Chloride, Limonene, Linalool.<\/p>"
+          }
+        }
+      }
+    }
+  }
+}

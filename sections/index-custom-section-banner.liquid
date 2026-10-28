@@ -1,0 +1,150 @@
+<style>
+  .hero_banner_section{
+    background-image: url('{{ section.settings.background-d | img_url: 'master' }}') ;
+  }
+@media screen and (max-width:767px){
+  .hero_banner_section{
+    background-image: url('{{ section.settings.background-m | img_url: 'master' }}') ;
+  }
+}
+</style>
+<section id="banner" class="hero_banner_section" style="">
+
+  <div class="custom-container">
+      <div class="custom-row">
+          <div class="custom-col">
+            <div class="content">
+              {% if section.settings.badge != blank %}
+                <span class="badge" style="background-color:{{ section.settings.color1 }};">{{ section.settings.badge }}</span>
+              {% endif %}
+            
+              {% if section.settings.subtitle != blank %}
+                <h4 class="subtitle">{{ section.settings.subtitle }}</h4>
+              {% endif %}
+
+              {% if section.settings.title != blank %}
+                <h1 class="heading">{{ section.settings.title }}</h1>
+              {% endif %}
+
+              {% if section.settings.description != blank %}
+                {{ section.settings.description }}
+              {% endif %}
+              {% if section.settings.btn_text_1 != blank or section.settings.btn_text_2  %}
+              <div class="btn-blk">
+                 {% if section.settings.btn_text_1 != blank %}
+                    <a href="{{ section.settings.btn_link_1 }}" class="btn btn_custom btn-white" style="background-color:{{section.settings.btn-color1}}">{{ section.settings.btn_text_1 }}</a>
+                 {% endif %}
+
+                 {% if section.settings.btn_text_2 != blank %}
+                    <a href="{{ section.settings.btn_link_2 }}" class="btn btn_custom " style="background-color:{{section.settings.btn-color2}}">{{ section.settings.btn_text_2 }}</a>
+                 {% endif %}
+              </div>
+              {% endif %}
+            </div>
+            <div class="image-blk up-down">
+              <img src="{{ section.settings.image | img_url: 'master' }}" >
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+</section>
+
+{% schema %}
+{
+  "name": {
+    "en": "Banner"
+  },
+  "settings": [
+    {
+    "type": "image_picker",
+    "id": "background-d",
+    "label": "Select background Image[Desktop]"
+    },
+   {
+    "type": "image_picker",
+    "id": "background-m",
+    "label": "Select background Image[Mobile]"
+    },
+    {
+    "type": "color",
+    "id": "color1",
+    "label": "Select Color"
+    },
+    {
+    "type": "text",
+    "id": "badge",
+    "label": "Add Badge",
+    "default": "New"
+    },
+    {
+    "type": "text",
+    "id": "subtitle",
+    "label": "Add Subtitle",
+    "default": "Colour Corrector"
+    },
+    {
+    "type": "text",
+    "id": "title",
+    "label": "Add Title",
+    "default": "Voted #1 Plaque, Stains & Tartar Remover"
+    },
+    {
+    "id": "description",
+    "type": "richtext",
+    "label": "Enter Description",
+    "default": "<p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor.</p>"
+    },
+    {
+      "type": "color",
+      "id": "btn-color1",
+      "label": "Button Color_1"
+    },
+    {
+      "type": "text",
+      "id": "btn_text_1",
+      "label": "Add Button Text",
+      "default": "Buy Now"
+    },
+    {
+      "type": "url",
+      "id": "btn_link_1",
+      "label": "Add Button link"
+    },
+    {
+      "type": "color",
+      "id": "btn-color2",
+      "label": "Button Color_2"
+    },
+    {
+      "type": "text",
+      "id": "btn_text_2",
+      "label": "Add Button Text",
+      "default": "View All Products"
+    },
+    {
+      "type": "url",
+      "id": "btn_link_2",
+      "label": "Add Button link"
+    },
+    {
+    "type": "image_picker",
+    "id": "image",
+    "label": "Upload Product Iamge"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

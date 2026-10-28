@@ -1,0 +1,519 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_Pc7Hzf": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "51096ec4-4ca4-4071-883f-e354594bc6a8": {
+          "type": "shopify:\/\/apps\/clearpay-on-site-messaging\/blocks\/payments-messaging\/5d763983-d3e6-4888-9966-4e1170b26ae9",
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 16,
+            "margin_bottom": 16,
+            "color": "",
+            "size": "md",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": "advanced-pap-at-home-teeth-whitening-kit"
+          }
+        },
+        "2d2d503e-227c-4d86-9b1c-b8bdcbf2a139": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY | NO MINIMUM SPEND",
+            "second_tag": ""
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "custom_liquid_aAN3hH": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div id='ss-product-videos'><\/div>"
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_Pc7Hzf",
+        "price",
+        "51096ec4-4ca4-4071-883f-e354594bc6a8",
+        "2d2d503e-227c-4d86-9b1c-b8bdcbf2a139",
+        "caption",
+        "description",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "custom_liquid_aAN3hH",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 12,
+        "padding_bottom": 40
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"WORKS LIKE A CHARM, SEEN RESULTS ALMOST INSTANTLY. MUCH BETTER THAN THOSE COMPANIES THAT CHARGE EXORBITANT FEES FOR TEETH WHITENING\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Kieran. S<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 12,
+        "padding_bottom": 4
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "List of ingredients",
+            "icon": "leaf",
+            "row_content": "<p>Glycerin, Water\/Aqua, Phthalimidoperoxycaproic Acid (PAP), Ammonium Acryloyldimethyltaurate\/VP Copolymer, PVP (Polyvinylpyrrolidone), Sodium Phosphate, Potassium Citrate, Disodium Phosphate, Hydroxyapatite, Sodium Saccharin, Mentha Piperita (Peppermint) Oil, Sodium Gluconate, Potassium Hydroxide, Pentasodium Triphosphate, t-Butyl Alcohol, PVM\/MA Copolymer, Xerothick Xanthan Gum, C12-15 Pareth-3, Titanium Dioxide (CI 77891), Mica (CI 77019), Iron Oxides (CI 77491)<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<p>Each order of Advanced PAP+ Teeth Whitening Kit consists of:<br\/><\/p><ul><li>6 X 3ML Whitening Gels (12 applications)   <\/li><li>1 X 5 Bulb LED Light<\/li><li>4 X Thermoforming Mouth Trays<\/li><li>1 X Shade Guide<\/li><li>1 X Instruction Manual<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Instructions + Tips",
+            "icon": "lightning_bolt",
+            "row_content": "<p>This process from start to finish takes up to 15 minutes.<br\/><br\/><strong>Step 1. <\/strong>Begin the treatment by brushing your teeth thoroughly for 2 minutes prior to using the kit.<br\/><br\/><strong>Step 2.<\/strong> Each syringe contains enough gel for a single whitening treatment. Twist off the cap, and apply half of the gel to the top of the Mouth Tray, and the other half of the to the bottom of the Mouth Tray.<br\/><br\/><strong>Step 3: <\/strong>Power on the LED Device by pressing the button and place the device in your mouth.<br\/><br\/><strong>Step 4: <\/strong>No need to set any timers, leave it in your mouth until the device automatically powers off after 10 minutes. Expel any excess gel and rinse your mouth thoroughly with water.<br\/><br\/><strong>Step 5: <\/strong>Separate the mouth tray from the LED device and clean it with hot<br\/>water.<\/p>",
+            "page": ""
+          }
+        },
+        "792a2454-8dbe-40ac-ae87-a745eb01fb9b": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "What's are the key ingredients of the Teeth Whitening Kit?",
+            "icon": "clipboard",
+            "row_content": "<p>Phthalimidoperoxycaproicacid (PAP) - An alternative to peroxide, PAP is clinically proven to whiten teeth without causing any sensitivity or irritation that ingredients such as peroxide can often cause<\/p><p>Hydroxyapatie - This ingredient works to rebuild the protective layer of your teeth, replacing minerals that may be lost from the tooth surface and strengthening teeth.<\/p><p>Potassium Citrate - Suitable for helping to relieve pre-existing teeth sensitivity, potassium citrate can provide protection against external aggressors that can cause discomfort<\/p>",
+            "page": ""
+          }
+        },
+        "22779142-8db6-4dbf-93b6-ac3fd9d5b799": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Warnings & Caution",
+            "icon": "question_mark",
+            "row_content": "<ul><li>All products sold on our website have been researched and tested to ensure maximum safety of all our customers.<br\/><\/li><li>This product is not to be used while pregnant or breastfeeding.<br\/><\/li><li>This product is not recommended for those under the age of 12.<br\/><\/li><li>If the residue from the pod is swallowed in small quantities please do not worry<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nbAPbH": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Can the Teeth Whitening Kit be used on composite bonding, veneers or fillings?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, the Teeth Whitening Kit is suitable for use on composite bonding, veneers, and fillings. While the kit is designed to safely whiten your natural teeth, it also helps to remove surface stains on dental restorations. The formula is gentle on all dental materials, ensuring that your composite bonding, veneers, and fillings remain intact while your smile is brightened.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-3",
+        "collapsible-row-1",
+        "collapsible-row-0",
+        "792a2454-8dbe-40ac-ae87-a745eb01fb9b",
+        "22779142-8db6-4dbf-93b6-ac3fd9d5b799",
+        "collapsible_row_nbAPbH"
+      ],
+      "settings": {
+        "caption": "Advanced PAP+ Teeth Whitening Kit",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 4
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        },
+        "9a9343a9-050d-43c7-bf8d-b821ee82ffc3": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98",
+        "9a9343a9-050d-43c7-bf8d-b821ee82ffc3"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_aa29138a-e959-4c87-83fd-cf781575941c.png"
+      }
+    },
+    "16648713477d94ffe9": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_3dxfR3": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_3dxfR3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {}
+    },
+    "ss_product_vidoes_rybegj": {
+      "type": "ss-product-vidoes",
+      "blocks": {
+        "video_87hwLh": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/12-30 - V2 - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        },
+        "video_ReMd39": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/09-12 -Close ADDYSN - H1 - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        },
+        "video_9t3dLL": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/01-08 - TWK - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        },
+        "video_BBNNhA": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/08-16 -Open SRH - H4 - 9_16.mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        },
+        "video_mdKK7r": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/07-17 -YellowToWhite TWK - H1 - 9_16 (SMD).mp4",
+            "video_url": "",
+            "modal_heading": "<h4>Heading<\/h4>",
+            "modal_text": "<p>Text<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "video_87hwLh",
+        "video_ReMd39",
+        "video_9t3dLL",
+        "video_BBNNhA",
+        "video_mdKK7r"
+      ],
+      "name": "SS - Product videos",
+      "settings": {
+        "videos_position": "above_description",
+        "use_metafield": false,
+        "heading": "<h2>Real people. Real smiles<\/h2>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "slider_view": 3,
+        "slider_view_mobile": 3,
+        "slider_gap": 16,
+        "slider_gap_mobile": 16,
+        "slider_mt": 20,
+        "slider_mt_mobile": 16,
+        "card_radius": 10,
+        "card_border_thickness": 0,
+        "video_ratio": "portrait",
+        "video_ratio_mobile": "portrait",
+        "video_overlay": 0.3,
+        "card_shadow": true,
+        "icon_size": 34,
+        "icon_size_mobile": 34,
+        "icon_border_thickness": 1,
+        "icon_position": "bottom_left",
+        "icon_position_mobile": "bottom_left",
+        "hide_icon": false,
+        "arrow_size": 35,
+        "arrow_size_mobile": 35,
+        "arrow_radius": 5,
+        "arrow_border_thickness": 0,
+        "arrow_hover_shadow": true,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "show_content": false,
+        "modal_width": 30,
+        "modal_width_mobile": 95,
+        "padding_advanced": false,
+        "modal_padding_vertical": 0,
+        "modal_padding_vertical_mobile": 0,
+        "modal_padding_horizontal": 0,
+        "modal_padding_horizontal_mobile": 0,
+        "modal_radius": 16,
+        "modal_border_thickness": 0,
+        "modal_overlay": 0.5,
+        "close_size": 42,
+        "close_size_mobile": 42,
+        "close_radius": 8,
+        "close_border_thickness": 0,
+        "buttons_size": 48,
+        "buttons_size_mobile": 48,
+        "buttons_radius": 8,
+        "buttons_border_thickness": 0,
+        "modal_video_radius": 0,
+        "modal_video_border_thickness": 0,
+        "modal_video_ratio": "portrait",
+        "modal_video_ratio_mobile": "portrait",
+        "modal_heading_custom": false,
+        "modal_heading_font": "josefin_sans_n4",
+        "modal_heading_size": 28,
+        "modal_heading_size_mobile": 28,
+        "modal_heading_height": 130,
+        "modal_heading_align": "center",
+        "modal_heading_align_mobile": "center",
+        "modal_text_custom": false,
+        "modal_text_font": "josefin_sans_n4",
+        "modal_text_size": 16,
+        "modal_text_size_mobile": 16,
+        "modal_text_height": 150,
+        "modal_text_align": "center",
+        "modal_text_align_mobile": "center",
+        "modal_text_mt": 16,
+        "modal_text_mt_mobile": 16,
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#000000",
+        "video_overlay_color": "#000000",
+        "card_shadow_color": "#000000",
+        "icon_color": "#ffffff",
+        "icon_bg_color": "#000000",
+        "icon_border_color": "#ffffff",
+        "arrow_icon_color": "#1c1c1c",
+        "arrow_icon_hover_color": "#1c1c1c",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#000000",
+        "modal_heading_color": "#000000",
+        "modal_text_color": "#000000",
+        "modal_content_bg_color": "#ffffff",
+        "modal_border_color": "#000000",
+        "modal_overlay_color": "#000000",
+        "modal_bg_color": "#ffffff",
+        "modal_video_border_color": "#000000",
+        "buttons_icon_color": "#ffffff",
+        "buttons_bg_color": "#ffffff",
+        "buttons_border_color": "#000000",
+        "close_icon_color": "#ffffff",
+        "close_bg_color": "#ffffff",
+        "close_border_color": "#000000",
+        "heading_color": "#000000",
+        "background_color": "",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "16648713477d94ffe9",
+    "product-recommendations",
+    "ss_product_vidoes_rybegj"
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "1ed15949-a525-40fc-8d07-2868b613f63a": {
+          "type": "shopify:\/\/apps\/clearpay-on-site-messaging\/blocks\/payments-messaging\/5d763983-d3e6-4888-9966-4e1170b26ae9",
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 16,
+            "margin_bottom": 16,
+            "color": "",
+            "size": "md",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "1ed15949-a525-40fc-8d07-2868b613f63a",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 8,
+        "padding_bottom": 20
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"HATED OPENING MY MOUTH COMPLETELY BC OF MY CHIPPED TOOTH TILL I FOUND THESE VENEERS, ABSOLUTELY LOVE THEM\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Tom. D<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 20,
+        "padding_bottom": 8
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Features:",
+            "icon": "lightning_bolt",
+            "row_content": "<p>✓ Eat and drink with ease: Unlike traditional veneers, SnapOn Veneers allow you to enjoy your favourite  foods and beverages without any restrictions, providing convenience and flexibility.<\/p><p>✓ Suitable for all: Whether you have gaps, stains, or misaligned teeth, SnapOn Veneers offer a solution for anyone seeking a quick and non-invasive smile enhancement.<\/p><p>✓ Easy DIY mold: With a simple DIY mold, you can create your custom fit at home, eliminating the need for costly dental visits or complicated procedures.<\/p><p>✓ Natural appearance: These veneers are crafted to look natural and stunning, enhancing your smile with a flawless and radiant appearance.<\/p><p>✓ Confidence booster: By transforming your smile, SnapOn Veneers boost your confidence, enabling you to shine bright and make a lasting impression.<\/p><p>✓ Comfortable to wear: The veneers are designed to be comfortable, ensuring a pleasant experience even during extended wear.<\/p><p>✓ Instant results: Transform your smile instantly with SnapOn Veneers, <\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<p>Each SnapOn Veneers package includes:<\/p><p>2x veneers for both, upper and lower teeth<\/p><p>1x DIY (Re-useable) Mold<\/p><p>1x Manual<\/p><p>1x Tin for portable carrying<\/p>",
+            "page": ""
+          }
+        },
+        "fe171100-881f-4837-b96f-7ca54c3e73de": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Instructions",
+            "icon": "star",
+            "row_content": "<p>Instructions for SnapOn Veneers:<\/p><p>1. Easy mold creation: Follow provided instructions to create a mold of your teeth. If you get this wrong, they're re-usable so just restart and get the perfect mold!<\/p><p>2. Adjusting the Fit: Trim and shape the veneers to achieve a comfortable fit.<\/p><p>3. Insertion and Removal: Gently press the veneers onto your teeth for wearing and easily slide them off for removal.<\/p><p>4. Practice Speaking: Practice speaking with the veneers to adjust to any speech changes.<\/p><p>4. Cleaning and Storage: Rinse after each use, soak periodically, and store in the provided case.<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Specifications",
+            "icon": "clipboard",
+            "row_content": "<p><\/p><p>Dimensions: 16.8cm x 2.4cm<\/p><p>18 gears to choose from<\/p><p>IPX7 - 100% waterproof!<\/p><p>180 days standby time<\/p><p><\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Electric Toothbrush vs Manual Toothbrush?",
+            "icon": "question_mark",
+            "row_content": "<p>Electric toothbrush bristles vibrate or rotate to help you remove plaque buildup from your teeth and gums. The vibration allows for more micro-movements every time you move your toothbrush across your teeth.<\/p><p>This is the main difference between electric and manual toothbrushes. <strong>Manual toothbrushes rely on your ability to effectively brush away plaque and food; electric toothbrushes do the work for you<\/strong>, which has statistically been proven to result in cleaner and whiter teeth.<\/p>",
+            "page": ""
+          }
+        },
+        "4629f7ef-2bd9-46e7-a3d7-291adcdb936a": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I clean the SnapOn Dental Veneers?",
+            "icon": "check_mark",
+            "row_content": "<p>Cleaning your SnapOn Veneers is simple and hassle-free. Here's how you can keep them clean and maintain their pristine appearance:<\/p><p>Daily Rinse: After each use, rinse the veneers with lukewarm water to remove any food particles or debris.<\/p><p>Gentle Brushing: Use a soft-bristle toothbrush and a mild, non-abrasive toothpaste to gently brush the veneers. Avoid using harsh chemicals or abrasive substances that could damage the surface.<\/p><p>Periodically, you can soak the veneers in a denture cleaning solution or a mixture of water and mild mouthwash. Follow the instructions provided with the cleaning product for the recommended soaking duration.<\/p><p>Proper storage: When not in use, store the veneers in their provided case.<\/p>",
+            "page": ""
+          }
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "How to use the electric dental cleaning kit?",
+            "icon": "washing",
+            "row_content": "<p>1. Select your desired attachment based on your oral needs.<\/p><p>2. Turn on the device and alter between modes based on your cleaning needs.<\/p><p>3. Alter between heads if necessary.<\/p><p>4. Clean the device and the tip after use. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Cons of not using an Ultra Sonic Tooth Cleaner",
+            "icon": "star",
+            "row_content": "<p>Bad dental hygiene can be devastating on teeth and gums. Not only can it be expensive, but it can also lead to bad breath, gum disease, receding gums, dental decay, and even tooth loss.<\/p><p>This product may also be reffered to as one of the following:<\/p><p><\/p><p><em>Calculus remover, Dental irrigator, Dental scaler, Oral irrigator, Plaque remover, Tartar removal tool, Tartar remover, Tooth cleaner, Tooth stain remover, Ultrasonic dental cleaner, Ultrasonic scaler, Ultrasonic tooth cleaner.<\/em><\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "b156cbed-7093-4197-84e3-0ced68818bea": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cautions",
+            "icon": "leaf",
+            "row_content": "<p>While SnapOn Veneers are a convenient and effective solution for enhancing your smile, it's important to keep the following cautions in mind:<\/p><p>Not a substitute for dental care: SnapOn Veneers are cosmetic in nature and should not be considered a substitute for regular dental care. Maintain good oral hygiene practices and continue to visit your dentist for check-ups and professional cleanings.<\/p><p>Temporary solution: SnapOn Veneers are designed to be removable and temporary. They should not be worn continuously for extended periods. It's important to give your natural teeth regular breaks from wearing the veneers.<\/p><p>Proper fit and adjustment: Ensure that the veneers fit properly and comfortably. Follow the instructions carefully when creating the mold and adjusting the fit. <\/p><p>Limitations on eating: While SnapOn Veneers allow you to eat and drink while wearing them, it's important to exercise caution. Avoid excessively hard, sticky, or chewy foods that could potentially damage or dislodge the veneers.<\/p><p>Individual sensitivities: Some individuals may have sensitivities or allergies to the materials used in SnapOn Veneers. If you experience any adverse reactions or discomfort, discontinue use and seek advice from a dental professional.<\/p><p>Personalised fit: SnapOn Veneers provide a custom fit based on your own dental impression. Sharing or using veneers that were specifically molded for someone else can result in poor fit, discomfort, or potential oral health issues.<\/p><p>By being mindful of these cautions and following the instructions provided, you can maximise the benefits of SnapOn Veneers while ensuring the health and well-being of your teeth and gums.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-3",
+        "collapsible-row-1",
+        "fe171100-881f-4837-b96f-7ca54c3e73de",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975",
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523",
+        "4629f7ef-2bd9-46e7-a3d7-291adcdb936a",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "collapsible-row-0",
+        "b156cbed-7093-4197-84e3-0ced68818bea"
+      ],
+      "settings": {
+        "caption": "SnapOn Dental Veneers",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Untitled_design_-_2022-09-15T164940.840_ad0561e3-dd2d-4cad-85c2-a5eaf789cae3.png"
+      }
+    },
+    "1664870774e164b7b9": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664870774e164b7b9",
+    "product-recommendations"
+  ]
+}

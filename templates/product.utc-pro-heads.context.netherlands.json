@@ -1,0 +1,38 @@
+{
+  "parent": "product.utc-pro-heads.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "9f136940-3bf2-4b5b-bf25-1bdfcefc0643": {
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "9f136940-3bf2-4b5b-bf25-1bdfcefc0643",
+        "1ed15949-a525-40fc-8d07-2868b613f63a",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "1664870774e164b7b9",
+    "product-recommendations"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "product.denture-tablets.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "collapsible_content_tPNUEE": {
+      "settings": {},
+      "blocks": {
+        "collapsible_row_hzHdz3": {
+          "settings": {
+            "row_content": "<p><strong>Key Ingredients:<\/strong><\/p><p>Citric Acid, Sodium<br\/>Carbonate, Tetraacetylethylenediamine, Adhesive, Surfactant, Sodium<br\/>Percarbonate, Sodium Chloride.<\/p>"
+          }
+        }
+      }
+    }
+  }
+}

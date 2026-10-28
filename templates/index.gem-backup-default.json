@@ -1,0 +1,894 @@
+{
+  "sections": {
+    "1662408039b6d761a1": {
+      "type": "index-custom-section-banner",
+      "settings": {
+        "background-d": "shopify:\/\/shop_images\/banner-bg_1.png",
+        "background-m": "shopify:\/\/shop_images\/Untitled_design_-_2022-09-15T164940.840_ad0561e3-dd2d-4cad-85c2-a5eaf789cae3.png",
+        "color1": "#179ccd",
+        "badge": "<b> <i> BEST SELLER<\/i><\/b>",
+        "subtitle": "",
+        "title": "<b>Ultrasonic Tooth Cleaner<\/b>",
+        "description": "<p>Uses advanced vibration technology to deeply cleanse your teeth, removing any plaque, stains, or tartar from your teeth in minutes<\/p>",
+        "btn-color1": "",
+        "btn_text_1": "<b>ORDER NOW<\/b>",
+        "btn_link_1": "shopify:\/\/products\/ultrasonic-tooth-dental-cleaner",
+        "btn-color2": "",
+        "btn_text_2": "vIEW ALL PRODUCTS",
+        "btn_link_2": "shopify:\/\/collections\/smile-therapy-catalogue",
+        "image": "shopify:\/\/shop_images\/Untitled_design_-_2023-10-29T162358.408.png"
+      }
+    },
+    "16624171275daadf66": {
+      "type": "index-custom-section-features-on",
+      "blocks": {
+        "bc2435c2-9e4c-4d3c-8536-fa0923d802d0": {
+          "type": "icons",
+          "settings": {
+            "img-icon": "shopify:\/\/shop_images\/partner-icon-3.png"
+          }
+        },
+        "7ce7a12e-f782-4872-95fe-ad0870fcc804": {
+          "type": "icons",
+          "settings": {
+            "img-icon": "shopify:\/\/shop_images\/partner-icon-5.png"
+          }
+        },
+        "1d7cf1eb-9446-4500-b3ee-9d03aa67f344": {
+          "type": "icons",
+          "settings": {
+            "img-icon": "shopify:\/\/shop_images\/partner-icon-1.png"
+          }
+        },
+        "770ac465-d8a6-4497-8f01-243289a60b21": {
+          "type": "icons",
+          "settings": {
+            "img-icon": "shopify:\/\/shop_images\/partner-icon-2.png"
+          }
+        },
+        "7adcb99c-a4f7-4978-84f9-21abc52a2398": {
+          "type": "icons",
+          "settings": {
+            "img-icon": "shopify:\/\/shop_images\/partner-icon-6.png"
+          }
+        },
+        "1aee37c5-48d2-403a-996d-90c48c875045": {
+          "type": "icons",
+          "settings": {
+            "img-icon": "shopify:\/\/shop_images\/partner-icon-4.png"
+          }
+        },
+        "113cb8b3-16a8-450d-93f6-5c04ff7d1b58": {
+          "type": "icons",
+          "settings": {
+            "img-icon": "shopify:\/\/shop_images\/partner-icon-1.png"
+          }
+        }
+      },
+      "block_order": [
+        "bc2435c2-9e4c-4d3c-8536-fa0923d802d0",
+        "7ce7a12e-f782-4872-95fe-ad0870fcc804",
+        "1d7cf1eb-9446-4500-b3ee-9d03aa67f344",
+        "770ac465-d8a6-4497-8f01-243289a60b21",
+        "7adcb99c-a4f7-4978-84f9-21abc52a2398",
+        "1aee37c5-48d2-403a-996d-90c48c875045",
+        "113cb8b3-16a8-450d-93f6-5c04ff7d1b58"
+      ],
+      "settings": {}
+    },
+    "16624209762ef63d20": {
+      "type": "index-custom-section-browse-more-product",
+      "blocks": {
+        "b69584ff-d295-47b6-90e3-f3c38609163d": {
+          "type": "Product",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_d032ae5b-0fc8-4da5-9bbc-83d7d496f23a.png",
+            "heading": "Ultrasonic Tooth Cleaner",
+            "description": "Advanced vibration technology to remove any plaque, stains, or tartar!",
+            "btn_txt": "Add to cart -",
+            "product": "ultrasonic-tooth-cleaner"
+          }
+        },
+        "40c851f8-4aeb-444c-a03b-bbfdddb6a35f": {
+          "type": "Product",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/product-1.png",
+            "heading": "V34 Colour Corrector",
+            "description": "A new way to brighten your smile, using colour correcting technology.",
+            "btn_txt": "Add to cart",
+            "product": "v34-colour-corrector"
+          }
+        },
+        "3f8496c9-a6e2-476d-9f46-d898314e2f59": {
+          "type": "Product",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/product-2.png",
+            "heading": "PAP+ Teeth Whitening Strips",
+            "description": "Whiten anywhere on-the-go with our PAP+ Strips.",
+            "btn_txt": "Add to cart -",
+            "product": "teeth-whitening-strips-14-patches"
+          }
+        },
+        "49910852-279d-4960-a544-24b3ea853b3c": {
+          "type": "Product",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Untitled_50_x_400px.png",
+            "heading": "Teeth Whitening Pen",
+            "description": "Whiten your teeth on the go with instant results in less than a minute!",
+            "btn_txt": "Add to cart -",
+            "product": "teeth-whitening-pen"
+          }
+        },
+        "cfcd69f2-2321-4898-8b0e-7815dfa04f28": {
+          "type": "Product",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/product-4.png",
+            "heading": "Bamboo Toothbrush",
+            "description": "The perfect eco-friendly replacement to your plastic throw-away's!",
+            "btn_txt": "ADD TO CART",
+            "product": "eco-friendly-bamboo-toothbrush"
+          }
+        },
+        "619d6077-e9b9-4116-8302-885a48376181": {
+          "type": "Product",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Untitled_design_-_2023-11-04T182931.775.png",
+            "heading": "Cordless Water Flosser",
+            "description": "Remove bacteria deep between teeth and below gum-line where traditional flossing cant reach.",
+            "btn_txt": "ADD TO CART",
+            "product": "water-flosser"
+          }
+        },
+        "c3e46717-ebd5-4d74-a39a-c54c483caeca": {
+          "type": "Product",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Untitled_415_x_645px_3.png",
+            "heading": "Mint Dental Floss (100)",
+            "description": "Essential fresh mint dental floss can do what brushing misses leaving a minty breath after each use!",
+            "btn_txt": "ADD TO CART",
+            "product": "mint-dental-floss-pack-of-100"
+          }
+        },
+        "88dd904d-9df1-40db-8a34-24ce35a6c814": {
+          "type": "Product",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/product-3.png",
+            "heading": "Advanced Teeth Whitening Kit",
+            "description": "Professional level teeth whitening,\nfrom the comfort of your home.",
+            "btn_txt": "Add to cart -",
+            "product": "advanced-teeth-whitening-kit"
+          }
+        },
+        "14708017-042e-4faf-b556-b25403b0e92e": {
+          "type": "Product",
+          "disabled": true,
+          "settings": {
+            "img": "shopify:\/\/shop_images\/add.png",
+            "heading": "Electric Toothbrush Kit",
+            "description": "",
+            "btn_txt": "ADD TO CART",
+            "product": ""
+          }
+        },
+        "61c436ee-8742-4fca-86e0-d4c0c981882d": {
+          "type": "Product",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Untitled_design_-_2022-09-18T205606.190.png",
+            "heading": "Silicon Tongue Brush",
+            "description": "Clean your tongue in a way your toothbrush wouldn't be able to handle!",
+            "btn_txt": "ADD TO CART",
+            "product": "tongue-brush-cleaner"
+          }
+        },
+        "07075b00-daa7-4012-a97f-219077e221a8": {
+          "type": "Product",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Untitled_415_x_645px.png",
+            "heading": "Stainless Steel Tongue Scraper",
+            "description": "Swipe away the bacteria on your tongue within seconds!",
+            "btn_txt": "Add to Cart",
+            "product": "stainless-steel-tongue-scraper"
+          }
+        }
+      },
+      "block_order": [
+        "b69584ff-d295-47b6-90e3-f3c38609163d",
+        "40c851f8-4aeb-444c-a03b-bbfdddb6a35f",
+        "3f8496c9-a6e2-476d-9f46-d898314e2f59",
+        "49910852-279d-4960-a544-24b3ea853b3c",
+        "cfcd69f2-2321-4898-8b0e-7815dfa04f28",
+        "619d6077-e9b9-4116-8302-885a48376181",
+        "c3e46717-ebd5-4d74-a39a-c54c483caeca",
+        "88dd904d-9df1-40db-8a34-24ce35a6c814",
+        "14708017-042e-4faf-b556-b25403b0e92e",
+        "61c436ee-8742-4fca-86e0-d4c0c981882d",
+        "07075b00-daa7-4012-a97f-219077e221a8"
+      ],
+      "settings": {
+        "color": "",
+        "family": "mono",
+        "heading": "Smile brighter with Smile Therapy's results guaranteed catalogue!",
+        "subheading": "",
+        "btn-color": "",
+        "btn-txt": "Show me everything!",
+        "collection-btn": "shopify:\/\/collections\/smile-therapy-catalogue"
+      }
+    },
+    "166242685262a76ffb": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "6eaf84c8-a921-4ce8-a2fa-310f4f733c94": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "1-2 Working Days Delivery",
+            "sub-title": "All orders placed by 4pm are shipped same day!"
+          }
+        },
+        "385a0f0a-12c7-4a21-8f2e-ed52e6273b42": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested & Certified!",
+            "sub-title": "All products have been certified in labs!"
+          }
+        },
+        "a4265b06-1a1f-4c7c-adda-14f8174fc1c3": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan",
+            "sub-title": "All products listed on Smile Therapy are certified Vegan!"
+          }
+        },
+        "a1c0969b-d14a-4c78-828d-d5c8431f9e56": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back Guarantee",
+            "sub-title": "Guaranteed results or get your full payment back."
+          }
+        },
+        "22e95418-0228-4460-ab48-71aaadf31d3b": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": "We've transformed over 250,000 smiles!"
+          }
+        }
+      },
+      "block_order": [
+        "6eaf84c8-a921-4ce8-a2fa-310f4f733c94",
+        "385a0f0a-12c7-4a21-8f2e-ed52e6273b42",
+        "a4265b06-1a1f-4c7c-adda-14f8174fc1c3",
+        "a1c0969b-d14a-4c78-828d-d5c8431f9e56",
+        "22e95418-0228-4460-ab48-71aaadf31d3b"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Untitled_design_-_2022-09-15T164940.840_ad0561e3-dd2d-4cad-85c2-a5eaf789cae3.png"
+      }
+    },
+    "166251666774a7b426": {
+      "type": "index-custom-section-sale-banner",
+      "disabled": true,
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/pastel_sale.jpg",
+        "sale": "UP TO 50% OFF SALE NOW LIVE",
+        "sale-slogan": "ENDS IN",
+        "date": "29 October 2023",
+        "btn-txt": "click here to shop our sale",
+        "btn-url": "shopify:\/\/collections\/all"
+      }
+    },
+    "1662503167d9a38129": {
+      "type": "index-custom-section-best-seller",
+      "settings": {
+        "bg-desktop": "shopify:\/\/shop_images\/best-seller-bg_720eab17-2adb-4cda-9ee1-c2025d992cf0.png",
+        "bg-mobile": "shopify:\/\/shop_images\/girl_with_smile.jpg",
+        "tag1": true,
+        "color1": "#1878b9",
+        "tag": "BEST SELLER",
+        "heading": "Have plaque, stain or cavity issues?",
+        "description": "Well that's exactly why we introduced the Ultrasonic Tooth Cleaner, simply hover over the stubborn plaque, and watch the advanced vibration technology do its magic!",
+        "sale_tag1": true,
+        "sale_tag": "shopify:\/\/shop_images\/tag.png",
+        "btn-color": "#211c1c",
+        "btn_txt": "rEMOVE MY PLAQUE NOW!",
+        "product": "ultrasonic-tooth-cleaner"
+      }
+    },
+    "1662494212cf27915a": {
+      "type": "index-custom-section-promotion",
+      "blocks": {
+        "699851a8-aa1d-49ed-98a9-e45846c179de": {
+          "type": "Promotions",
+          "settings": {
+            "bg": "shopify:\/\/shop_images\/promotion-blk-2.png",
+            "discount1": true,
+            "color1": "#0e1b4d",
+            "discount": "Guaranteed 4 shades lighter!",
+            "heading": "Advanced Teeth Whitening Kit",
+            "description": "<b>Professional level teeth whitening,\nfrom the comfort of your home.<\/b>",
+            "btn_txt": "ORDER NOW!",
+            "btn_url": "shopify:\/\/products\/advanced-teeth-whitening-kit"
+          }
+        },
+        "feca4586-d653-43b1-9607-4a7807ff5d1f": {
+          "type": "Promotions",
+          "settings": {
+            "bg": "shopify:\/\/shop_images\/Teeth_Whitening_Box_Pen_Home_Page_2.png",
+            "discount1": true,
+            "color1": "",
+            "discount": "Instant Results - Whiten in less than a minute!",
+            "heading": "Teeth Whitening Pen",
+            "description": "<b> Whiten your teeth on the go!<\/b>",
+            "btn_txt": "Order now!",
+            "btn_url": "shopify:\/\/products\/teeth-whitening-pen"
+          }
+        }
+      },
+      "block_order": [
+        "699851a8-aa1d-49ed-98a9-e45846c179de",
+        "feca4586-d653-43b1-9607-4a7807ff5d1f"
+      ],
+      "settings": {}
+    },
+    "1662507058551d6f80": {
+      "type": "index-custom-section-best-seller2",
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/instant-20-bg.png",
+        "tag1": true,
+        "color1": "#fafafa",
+        "tag": "SELLING FAST",
+        "sub-heading": "",
+        "heading": "We've taken flossing up a notch.",
+        "description": "Step up your oral health instantly when you switch to an electric water flosser for a more personalised clean, superior gum protection, and whole-mouth coverage.",
+        "product_image1": true,
+        "product_image": "shopify:\/\/shop_images\/Untitled_design_-_2024-08-15T162046.610.png",
+        "btn_txt": "Buy Now",
+        "product": "water-flosser"
+      }
+    },
+    "16624937391f9f6bc1": {
+      "type": "index-custom-section-reviews",
+      "blocks": {
+        "fcf944d9-45a2-49b5-bd3a-c278f7020b73": {
+          "type": "Testimonial",
+          "settings": {
+            "quote1": true,
+            "quote": "shopify:\/\/shop_images\/quoatation-mark.png",
+            "content": "The colour corrector is a game changer! I literally see an improvement instantly. I highly recommend using it with a Bamboo Toothbrush (Prevents your brush turning purple)",
+            "review_star": true,
+            "review_name": "Claire. D",
+            "review_country": ""
+          }
+        },
+        "66ea88f3-1e81-492a-88ee-c22996747dc9": {
+          "type": "Testimonial",
+          "settings": {
+            "quote1": true,
+            "quote": "shopify:\/\/shop_images\/quoatation-mark.png",
+            "content": "Love this whole brand, the products are amazing. Ultrasonic Tooth Cleaner has been a game changer for the plaque on my teeth. 5* to Smile Therapy!",
+            "review_star": true,
+            "review_name": "Jaden. K",
+            "review_country": ""
+          }
+        },
+        "960e22d3-bc9f-4d4a-bc86-93ffbfee9637": {
+          "type": "Testimonial",
+          "settings": {
+            "quote1": true,
+            "quote": "shopify:\/\/shop_images\/quoatation-mark.png",
+            "content": "Works like magic I love all the products, I'm a regular customer. For oral care this is the place to be. Highly recommend  A+++",
+            "review_star": true,
+            "review_name": "Stephanie. L",
+            "review_country": ""
+          }
+        },
+        "d6bf3531-f6a3-422d-a09d-b0751e9411aa": {
+          "type": "Testimonial",
+          "settings": {
+            "quote1": true,
+            "quote": "shopify:\/\/shop_images\/quoatation-mark.png",
+            "content": "I have been a customer for over a year now. I’m a customer because after all my research I found a whitening kit that doesn’t hurt. I have sensitive teeth. My teeth are much whiter while I don’t have to give up wine or coffee & tea.",
+            "review_star": true,
+            "review_name": "Momin. G",
+            "review_country": ""
+          }
+        },
+        "c5096898-190a-41e1-8a30-a83187ccfde2": {
+          "type": "Testimonial",
+          "settings": {
+            "quote1": true,
+            "quote": "shopify:\/\/shop_images\/quoatation-mark.png",
+            "content": "I absolutely love Smile Therapy! Their products are amazing and the packaging is so chic! I also love how great the customer service team is. I highly recommend.",
+            "review_star": true,
+            "review_name": "Sienna. B",
+            "review_country": ""
+          }
+        },
+        "c0bbea66-bd00-485b-9f0d-6b8b013e0238": {
+          "type": "Testimonial",
+          "settings": {
+            "quote1": true,
+            "quote": "shopify:\/\/shop_images\/quoatation-mark.png",
+            "content": "Recommended by a friend to the Teeth Whitening Kit after I pointed out how his teeth have become so clear and clean only to be directed here! Mid way through my journey and I can confirm this is the real deal! Great progress happy to share pics.",
+            "review_star": true,
+            "review_name": "Adam. A",
+            "review_country": ""
+          }
+        },
+        "7da9530d-bb34-4d32-8e92-b7fd0a0f7f98": {
+          "type": "Testimonial",
+          "settings": {
+            "quote1": true,
+            "quote": "shopify:\/\/shop_images\/quoatation-mark.png",
+            "content": "Wow, this has made a big difference in my life. It works so good. And the fact that customer service representative actually care about any concerns or issues you have goes a long ways.",
+            "review_star": true,
+            "review_name": "Antonio. L",
+            "review_country": ""
+          }
+        },
+        "af6701de-61d4-41c6-89d6-cab25a1f3f3b": {
+          "type": "Testimonial",
+          "settings": {
+            "quote1": true,
+            "quote": "shopify:\/\/shop_images\/quoatation-mark.png",
+            "content": "The teeth whitening strips are a game changer, easy to use and I have sensitive teeth (I don't feel a thing with these strips) I've tried many brands but Smile Therapy really does work, I will be trialing more products.",
+            "review_star": true,
+            "review_name": "Ryan. Q",
+            "review_country": ""
+          }
+        },
+        "7b9aa280-b1c3-4454-916f-b9fb00dc9a6c": {
+          "type": "Testimonial",
+          "settings": {
+            "quote1": true,
+            "quote": "shopify:\/\/shop_images\/quoatation-mark.png",
+            "content": "I've never experienced customer service on a level like Smile Therapy's - they genuinely care about my concerns and issues and deal with it immediately. They've earned a loyal customer for life.",
+            "review_star": true,
+            "review_name": "Melissa. Y",
+            "review_country": ""
+          }
+        }
+      },
+      "block_order": [
+        "fcf944d9-45a2-49b5-bd3a-c278f7020b73",
+        "66ea88f3-1e81-492a-88ee-c22996747dc9",
+        "960e22d3-bc9f-4d4a-bc86-93ffbfee9637",
+        "d6bf3531-f6a3-422d-a09d-b0751e9411aa",
+        "c5096898-190a-41e1-8a30-a83187ccfde2",
+        "c0bbea66-bd00-485b-9f0d-6b8b013e0238",
+        "7da9530d-bb34-4d32-8e92-b7fd0a0f7f98",
+        "af6701de-61d4-41c6-89d6-cab25a1f3f3b",
+        "7b9aa280-b1c3-4454-916f-b9fb00dc9a6c"
+      ],
+      "settings": {
+        "heading": "Read what our customers have to say!",
+        "review_all": true,
+        "rating": "4.93",
+        "Total_Review": "(35,000+ reviews)"
+      }
+    },
+    "1662501718ae80b8aa": {
+      "type": "index-custom-section-money-back-guarantee",
+      "blocks": {
+        "999471cc-e08d-4145-ae9a-b010cf312c2d": {
+          "type": "Button",
+          "settings": {
+            "btn_txt": "<b> TEETH WHITENING<\/b>",
+            "btn_url": "shopify:\/\/collections\/teeth-whitening"
+          }
+        },
+        "a059f634-e4c4-4164-b17b-5afb53bcd87d": {
+          "type": "Button",
+          "settings": {
+            "btn_txt": "<b> TEETH CLEANING<\/b>",
+            "btn_url": "shopify:\/\/collections\/teeth-cleaning"
+          }
+        },
+        "d5433f5a-26f7-417b-9f9f-ff92d1be792d": {
+          "type": "Button",
+          "settings": {
+            "btn_txt": "<b> DAILY ORAL HYGIENE<\/b>",
+            "btn_url": "shopify:\/\/collections\/daily-oral-essentials"
+          }
+        },
+        "5e276324-c036-40a1-9a34-54fd48d177b0": {
+          "type": "Button",
+          "disabled": true,
+          "settings": {
+            "btn_txt": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "999471cc-e08d-4145-ae9a-b010cf312c2d",
+        "a059f634-e4c4-4164-b17b-5afb53bcd87d",
+        "d5433f5a-26f7-417b-9f9f-ff92d1be792d",
+        "5e276324-c036-40a1-9a34-54fd48d177b0"
+      ],
+      "settings": {
+        "bg-desktop": "shopify:\/\/shop_images\/collection-cta-bg.png",
+        "bg-mobile": "shopify:\/\/shop_images\/product-4.png",
+        "tag1": true,
+        "color1": "#ffffff",
+        "tag": "What are your smile goals?",
+        "heading": "We've got a solution for every smile.",
+        "description": "",
+        "btn_show": true
+      }
+    },
+    "16624988494b33b521": {
+      "type": "index-custom-section-img-with-text",
+      "blocks": {
+        "44809b0d-f946-436e-a7ac-6bbc4566f0c8": {
+          "type": "Image-With-Text",
+          "settings": {
+            "bg": "shopify:\/\/shop_images\/img-with-text-bg.png",
+            "bg_mobile": "shopify:\/\/shop_images\/img-with-text-bg.jpg",
+            "heading": "<b>Voted U.K's #1 Oral Care Company with 250,000+ customers worldwide<\/b>",
+            "description": "<br><b> Join the Smile Therapy revelation with guaranteed results on all our products. With over 250,000+ customers worldwide we're taking the oral care industry by storm!<\/b>",
+            "color_description": "#000000",
+            "btn_txt": "I'm ready to improve my smile - SHOP NOW!",
+            "btn_url": "shopify:\/\/collections\/smile-therapy-catalogue"
+          }
+        },
+        "5af8fa33-f1b3-4bff-a763-6724554ad37e": {
+          "type": "Image-With-Text",
+          "disabled": true,
+          "settings": {
+            "bg": "shopify:\/\/shop_images\/Untitled_415_x_645px_1649_x_682px_1100_x_326px.png",
+            "bg_mobile": "shopify:\/\/shop_images\/stomatologist-doctor-explaining-proper-dental-hygiene-patient-holding-sample-human-jaw.jpg",
+            "heading": "<b> Not sure what you need?<\/b>",
+            "description": "<b><b> Take our 30 second quiz and allow us to personalise products catered to your needs instantly!<\/b><\/b>",
+            "color_description": "#000000",
+            "btn_txt": "<b> TAKE A 30 SECOND QUIZ NOW<\/b>",
+            "btn_url": "https:\/\/6toothcleaner.myshopify.com\/tools\/perfect-product-finder\/smile-therapy-quiz"
+          }
+        }
+      },
+      "block_order": [
+        "44809b0d-f946-436e-a7ac-6bbc4566f0c8",
+        "5af8fa33-f1b3-4bff-a763-6724554ad37e"
+      ],
+      "settings": {}
+    },
+    "1662509238bc63f1ae": {
+      "type": "index-custom-section-blog",
+      "blocks": {
+        "cdd0190f-f222-454c-95d8-dbb834fc7324": {
+          "type": "Blogs",
+          "settings": {
+            "blog_img": "shopify:\/\/shop_images\/two-people-smile-standing-in-front-of-a-cedar-tree.jpg",
+            "blog_date": "Stephen Dean",
+            "blog_heading": "How to whiten my teeth?",
+            "blog_url": "shopify:\/\/blogs\/news\/natural-ways-to-whiten-your-teeth-at-home"
+          }
+        },
+        "add6b444-f0ee-49fa-bcb1-0d0d99cb5dc8": {
+          "type": "Blogs",
+          "settings": {
+            "blog_img": "shopify:\/\/shop_images\/smiling-man-and-yellow-door.jpg",
+            "blog_date": "Alexendar Sean",
+            "blog_heading": "The power of the V34 Colour Corrector",
+            "blog_url": "shopify:\/\/blogs\/news\/the-power-of-v34-colour-corrector"
+          }
+        },
+        "6b209dae-069d-43b6-8839-8daded2fb213": {
+          "type": "Blogs",
+          "settings": {
+            "blog_img": "shopify:\/\/shop_images\/woman-in-beauty-rest-mask-in-pillow.jpg",
+            "blog_date": "Kienna Lore",
+            "blog_heading": "A Good Daily Night Routine",
+            "blog_url": "shopify:\/\/blogs\/news\/a-good-daily-night-routine"
+          }
+        },
+        "081516fa-236f-4121-8ac7-c36c9c76ed86": {
+          "type": "Blogs",
+          "settings": {
+            "blog_img": "shopify:\/\/shop_images\/stomatologist-doctor-explaining-proper-dental-hygiene-patient-holding-sample-human-jaw.jpg",
+            "blog_date": "Ference Kane",
+            "blog_heading": "Smile's Research & Development Team!",
+            "blog_url": "shopify:\/\/blogs\/news\/smile-therapys-research-development-team"
+          }
+        },
+        "680e8fe4-d54a-4db4-bca7-1313c1402763": {
+          "type": "Blogs",
+          "settings": {
+            "blog_img": "shopify:\/\/shop_images\/dentist-holding-dental-model.jpg",
+            "blog_date": "Dustin Wade",
+            "blog_heading": "Ultrasonic Tooth Cleaner vs Manual Scaling",
+            "blog_url": "shopify:\/\/blogs\/news\/ultrasonic-tooth-cleaner-vs-manual-scaling"
+          }
+        }
+      },
+      "block_order": [
+        "cdd0190f-f222-454c-95d8-dbb834fc7324",
+        "add6b444-f0ee-49fa-bcb1-0d0d99cb5dc8",
+        "6b209dae-069d-43b6-8839-8daded2fb213",
+        "081516fa-236f-4121-8ac7-c36c9c76ed86",
+        "680e8fe4-d54a-4db4-bca7-1313c1402763"
+      ],
+      "settings": {
+        "heading": "Want a good read? Read our blogs!",
+        "description": "Looking to learn a few trips and tricks to keep your teeth healthy and clean?",
+        "btn-txt": "Read all Blog",
+        "btn-url": "shopify:\/\/blogs\/news"
+      }
+    },
+    "166249690220c7a383": {
+      "type": "index-custom-section-promotion",
+      "blocks": {
+        "efe18d67-a0ad-4a17-98fe-f10303f0797e": {
+          "type": "Promotions",
+          "settings": {
+            "bg": "shopify:\/\/shop_images\/Untitled_design_-_2024-08-15T164031.675.png",
+            "discount1": true,
+            "color1": "#26cfd7",
+            "discount": "40% OFF",
+            "heading": "Electric Toothbrush",
+            "description": "<b> <i>9 OUT OF 10 DENTISTS RECOMMEND<\/i><\/b>",
+            "btn_txt": "order now",
+            "btn_url": "shopify:\/\/products\/6-in-1-sonic-deep-clean-electric-toothbrush"
+          }
+        },
+        "f757bf02-4bd4-4618-a109-2da58fe1bb2c": {
+          "type": "Promotions",
+          "settings": {
+            "bg": "shopify:\/\/shop_images\/promotion-blk-4.png",
+            "discount1": true,
+            "color1": "#000000",
+            "discount": "<b>THE ULTIMATE DENTAL KIT<\/b>",
+            "heading": "Professional Cleaning Kit",
+            "description": "<b> TAKE YOUR DAILY ROUTINE TO A NEW LEVEL WITH A PROFESSIONAL HOME DENTAL KIT<\/b>",
+            "btn_txt": "<b> SHOP NOW<\/b>",
+            "btn_url": "shopify:\/\/products\/dental-cleaning-kit"
+          }
+        }
+      },
+      "block_order": [
+        "efe18d67-a0ad-4a17-98fe-f10303f0797e",
+        "f757bf02-4bd4-4618-a109-2da58fe1bb2c"
+      ],
+      "settings": {}
+    },
+    "1662581909b31a48a2": {
+      "type": "index-custom-section-product-information",
+      "blocks": {
+        "892b271e-ddc9-4631-b45b-09e0a32b373f": {
+          "type": "Product-Information",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/product-3.png",
+            "tab-main-heading": "Advanced PAP+ Teeth Whitening Kit",
+            "tab-main-text": "",
+            "question_1": "List of ingredients",
+            "answer_1": "Glycerin, Water\/Aqua, Phtalimidoperoxycaproic Acid Potassium Citrate, Ammonium Acryloyldimethyltaurate\/VP Copolymer, Hydroxyapatite, PVP, Potassium Hydroxide, Sodium Saccharin, Aroma\/Peppermint Oil, Mica, Titanium Dioxide",
+            "question_2": "What's in the box?",
+            "answer_2": "<b>Each order of Advanced PAP+ Teeth Whitening Kit consists of: <b><\/b><br><\/b><p><br>\n<\/p><p> 1x LED Device (Accelerates the whitening process, includes a built in 10 minute timer)  <br><\/p><p><br>1x Mouth Tray (Attaches to the LED Device, fits ALL mouth sizes) <br><br>  8x Teeth Whitening Pods (For 8 whitening treatments)  <br><br>1x Teeth Shade Guide (To assist with measuring the progress of your whitening results) <br><br> 1x Manual<\/p>",
+            "question_3": "Instructions + Tips",
+            "answer_3": "This process from start to finish takes up to 15 minutes. <br><br>1. Begin the treatment by brushing your teeth thoroughly for 2 minutes prior to using the kit.<br><br>2. Each Pod contains enough gel for a single whitening treatment. Twist offthe cap, and apply half of the Pod to the top of the Mouth Tray, and the other half of the Pod to the bottom of the Mouth Tray.<br><br>Step 3: Power on the LED Device by pressing the button and place the device in your mouth. <br><br>Step 4: No need to set any timers, leave it in your mouth until the device automatically powers off after 10 minutes. Expel any excess gel and rinse your mouth thoroughly with water. <br><br>Step 5: Separate the mouth tray from the LED device and clean it with hot water.",
+            "question_4": "What's are the key ingredients of the Teeth Whitening Kit?",
+            "answer_4": "Phthalimidoperoxycaproicacid (PAP) - An alternative to peroxide, PAP is clinically proven to whiten teeth without causing any sensitivity or irritation that ingredients such as peroxide can often cause Hydroxyapatie <br><br> This ingredient works to rebuild the protective layer of your teeth, replacing minerals that may be lost from the tooth surface and strengthening teeth.Potassium Citrate <br><br>Suitable for helping to relieve pre-existing teeth sensitivity, potassium citrate can provide protection against external aggressors that can cause discomfort",
+            "question_5": "Warnings & Caution",
+            "answer_5": "All products sold on our website have been researched and tested thoroughly to ensure maximum safety of all our customers. <br><br>This product is not to be used while pregnant or breastfeeding.<br><br>This product is not recommended for those under the age of 12.<br><br>If the residue from the pod is swallowed in small quantities please do not worry.",
+            "tab_main_video": "https:\/\/www.youtube.com\/watch?v=poL71z4LiDI",
+            "btn-color": "#0693b5",
+            "tab_right_btn_text": "<p>BUY teeth whitening kit! <\/p>",
+            "tab_right_btn_url": "shopify:\/\/products\/advanced-teeth-whitening-kit"
+          }
+        },
+        "3a4733ad-1959-4318-a5e7-8121406f11e3": {
+          "type": "Product-Information",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/product-1.png",
+            "tab-main-heading": "V34 Colour Corrector",
+            "tab-main-text": "",
+            "question_1": "List of ingredients",
+            "answer_1": "Glycerin, Aqua\/Water, Sorbitol, Hydrated Silica, Xylitol, Polysorbate 80, Cellulose Gum, Mentha Piperita,(Peppermint) Oil, Phenoxyethanol, Sucralose, Tetrasodium, Pyrophosphate, CI17200\/D&C, Red No. 33, CI42090\/FD&C Blue No.1, Ethylhexylglycerin.",
+            "question_2": "How easy is the V34 to use?",
+            "answer_2": "1. Apply 2 pumps to a soft bristle toothbrush.  <br><br>2. Gently brush in a circular motion for 2 minutes.  <br><br>3. Expel excess and rinse mouth after use.  <br><br>4. Instantly see the shade of your teeth improve.",
+            "question_3": "When should I use the V34 Colour Corrector?",
+            "answer_3": "V34 is recommended to be used as a post brushing treatment, however it can be used on its own daily or before an event, to eliminate unwanted yellow undertones on your teeth. <p> <br>Recommended usage time: 3 times a week - please note there is no harm using the V34 daily.<\/p>",
+            "question_4": "How does the V34 whiten my teeth?",
+            "answer_4": "V34 Colour Corrector utilises colour correcting technology. Purple is directly opposite yellow on the colour wheel and is therefore its complementary colour, so a water soluble purple dye is applied to your teeth to cancel out any yellow undertones  <br><br> Oxidising tooth stains with PAP+ increases the lightness and reduces the saturation of yellow stains, whereas V34 balances the warm and cool tones (hue) in your teeth to reveal a more vibrant shade of white  <br> <br>Contains mineral ingredients, which can help replenish lost minerals and reduce sensitivity.",
+            "question_5": "Warning & Cautions",
+            "answer_5": "Do not swallow the colour corrector, if swallowed in small quantities do not worry.  <br><br>Do not let the colour corrector get near your eyes, rub water if V34 gets into contact with or near eyes. <br><br> Recommended for ages 12 and above. Not recommended for children.",
+            "tab_main_video": "https:\/\/www.youtube.com\/watch?v=MfL-kNqPxlA",
+            "btn-color": "#0693b5",
+            "tab_right_btn_text": "<p>buy v34 coLOUR CORRECTOR NOw!<\/p>",
+            "tab_right_btn_url": "shopify:\/\/products\/v34-colour-corrector"
+          }
+        },
+        "95a8db6c-2c0e-4e5d-bb54-e721c11de896": {
+          "type": "Product-Information",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/tab-4.png",
+            "tab-main-heading": "Ultrasonic Tooth Cleaner",
+            "tab-main-text": "",
+            "question_1": "Features",
+            "answer_1": "✔ Adjustable frequency to remove stubborn calculus, tartar and teeth stain. <br><br> ✔ Each full charge can last up to 200 uses! <br><br> ✔Portable & Durable - it's perfect for both home & travel. <br><br> ✔ Advanced Vibration Technology - Up to 12,000 times per minute high intensity frequency.<br><br>  ✔ Approved & Recommended by Dentists worldwide!",
+            "question_2": "How to use the Ultrasonic Tooth Cleaner?",
+            "answer_2": "The Ultrasonic Tooth Cleaner is very easy and simple to use. <br><br>1. Wash the tip of your Ultrasonic Tooth Cleaner  <br><br>2. Turn on your device <br><br> 3. Place the vibrating tip on (and around) your stubborn calculus, plaque, tar and teeth stains.  <br><br>4. Rinse your warm with warm water.  <br><br>5. Instantly see a major improvement!  Recommended: <br><br><b>Repeat 4x a week (up to 2 minutes a session)<\/b>",
+            "question_3": "What's in the box?",
+            "answer_3": "Each order of Ultrasonic Tooth Cleaner consists of: <br><br> 1x Ultrasonic Tooth Cleaner  <br><br>1x Micro USB Cable  <br><br>1x Manual",
+            "question_4": "Cons of not using an Ultrasonic Tooth Cleaner",
+            "answer_4": "Bad dental hygiene can be devastating on teeth and gums. Not only can it be expensive, but it can also lead to bad breath, gum disease, receding gums, dental decay, and even tooth loss.  <br><br>This product may also be identified as one of the following:  Calculus remover, Dental irrigator, Dental scaler, Oral irrigator, Plaque remover, Tartar removal tool, Tartar remover, Tooth cleaner, Tooth stain remover, Ultrasonic dental cleaner, Ultrasonic scaler, Ultrasonic tooth cleaner.",
+            "question_5": "",
+            "answer_5": "",
+            "tab_main_video": "https:\/\/www.youtube.com\/watch?v=6YAq4lAdkYk",
+            "btn-color": "#0693b5",
+            "tab_right_btn_text": "<p>Buy Ultrasonic Tooth Cleaner!<\/p>",
+            "tab_right_btn_url": "shopify:\/\/products\/ultrasonic-tooth-cleaner"
+          }
+        },
+        "b8e11c49-c269-4275-bd32-7bcdea0cb4a6": {
+          "type": "Product-Information",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/product-2.png",
+            "tab-main-heading": "Teeth Whitening Strips",
+            "tab-main-text": "",
+            "question_1": "List of ingredients",
+            "answer_1": "Glycerin, Propylene Glycol, Deionized Water, Sodium Phytate, Carbomer, Carboxymethyl, Polyvinylpyrrolidone, Menthol",
+            "question_2": "Instructions",
+            "answer_2": "1. Ensure your teeth are dry before using.  <br><br>2. Peel off the long strip and apply sticky side to the top half of your teeth. <br><br> 3. Press strip down firmly and folder over the back of your teeth to secure.<br><br>  4. Repeat the same for the bottom half with the shorter strip. <br><br> 5. Leave on your teeth for 30 minutes for maximum whitening treatment. <br><br> 6. Remove strips and rinse mouth with water.",
+            "question_3": "How do teeth whitening strips whiten?",
+            "answer_3": "When applied to your teeth, each strip firmly adheres to the tooth surface and releases the active ingredients of the whitening formula into the tooth’s structure to provide fast whitening, desensitising, and remineralising benefits.",
+            "question_4": "What's In the box?",
+            "answer_4": "Each order of teeth whitening strips consists of 14 treatments.  <br><br>14 individually packed strips for individual uses. <br><br> Teeth shade chart (to monitor and track your progress)",
+            "question_5": "Warnings",
+            "answer_5": "Avoid using strips after brushing your teeth. <br><br>Allow at least one hour after brushing teeth before using the strips. <br><br> Do not re-use the strips, dispose of the strips once used.  <br><br>The ingredients of the strips are safe and if some gel is swallowed it is perfectly safe. <br><br> Clean off any remaining gel residue by gargling with warm water. <br><br> If strip is difficult to remove from your teeth, simply lubricate the strip with water and remove. <br><br> Regularly use whitening strips every three months to obtain a whiter, brighter smile.",
+            "tab_main_video": "https:\/\/www.youtube.com\/watch?v=5S7y1SdUC5M",
+            "btn-color": "#0693b5",
+            "tab_right_btn_text": "<p>Buy Teeth Whitening Strips<\/p>",
+            "tab_right_btn_url": "shopify:\/\/products\/teeth-whitening-strips-14-patches"
+          }
+        },
+        "d22fa16a-87fe-47ce-bcc7-7f04e2ee20e8": {
+          "type": "Product-Information",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Untitled_50_x_400px.png",
+            "tab-main-heading": "Teeth Whitening Pen",
+            "tab-main-text": "",
+            "question_1": "Features",
+            "answer_1": "Brighten your teeth on the go. <br><br> Pocket and purse size making it travel friendly.  <br><br>No sensitivity.  <br><br>Vegan certified.  <br><br>Apply in less than a minute, instant results with our updated whitening formula.",
+            "question_2": "How to apply the Teeth Whitening Pen",
+            "answer_2": "1. Pull the cover off until you see the white brush.<br><br>2. Smile wide and stroke the brush along the front and the bottom of the teeth.<br><br>3. Allow the gel to dissolve naturally on your teeth.<br><br><b> For best results don't eat or drink for at least 15 minutes post treatment.<\/b>",
+            "question_3": "What's in the box?",
+            "answer_3": "Each package includes 1 teeth whitening pen & a manual,",
+            "question_4": "",
+            "answer_4": "",
+            "question_5": "",
+            "answer_5": "",
+            "tab_main_video": "https:\/\/www.youtube.com\/watch?v=fm6vZMy4pzg",
+            "btn-color": "#0693b5",
+            "tab_right_btn_text": "<p>Buy Teeth whitening pen <\/p>",
+            "tab_right_btn_url": "shopify:\/\/products\/teeth-whitening-pen"
+          }
+        },
+        "2a117051-e4d0-4117-aef5-6efb5e893a78": {
+          "type": "Product-Information",
+          "disabled": true,
+          "settings": {
+            "img": "shopify:\/\/shop_images\/tab-2.png",
+            "tab-main-heading": "Cordless Water Flosser",
+            "tab-main-text": "",
+            "question_1": "Features",
+            "answer_1": "Ultra Powerful Dental Flosser which removes food residues and stains between teeth and below the gum line thoroughly. keeping your breath fresh and your gum healthy.  <br><br>Water Flosser has 3 mode options to ensures you can personalise the pressure to your individual mouth.  <br><br>Soft - Suitable for people with braces or with implants. <br><br> Medium - Suitable for daily cleaning, effective remove food debris.  <br><br>Strong - Strong water pressure effective cleaning oral dental. <br><br> Extra large 230ml water reservoir allows you to thoroughly clean the scales and dental plaque without having to constantly refill. <br><br>360 degree rotating nozzle <br><br>Waterproof charging port <br><br> Guarantees to remove 99.99% of food residue",
+            "question_2": "What's in the box?",
+            "answer_2": "Each package includes: <br><br> 1x Cordless Water Flosser  <br><br>1x USB Charging Cable  <br><br>1x Manual",
+            "question_3": "Cautions",
+            "answer_3": "✘ Not recommended for children under the age of 8. <br><br> ✔ Only buy CE & UL certified Water Flossers  <br><br>✔ Please make sure to wash your mouth with warm water after use.",
+            "question_4": "Instructions & Tips",
+            "answer_4": "Simply ensure you have charged your Water Flosser, one quick full charge will last you a few weeks!  <br><br>1. Place water into the 270ml water tank, we recommend lukewarm. <br><br> 2. Aim the 360 directly into your mouth. <br><br> 3. Turn on your device and select the mode you would like, whether it's soft, medium or strong! <br><br>4. Target those hard to reach areas. <br><br> We recommend using the Water Flosser prior to toothbrushing: Removing food and debris enhances the effectiveness of both toothbrushing and toothpaste. Instructing patients to use it first improves compliance.",
+            "question_5": "",
+            "answer_5": "",
+            "tab_main_video": "",
+            "btn-color": "#0693b5",
+            "tab_right_btn_text": "<p>BUY WATER FLOSSER<\/p>",
+            "tab_right_btn_url": "shopify:\/\/products\/water-flosser"
+          }
+        },
+        "9a266237-a163-4eb2-a198-3e7a91950206": {
+          "type": "Product-Information",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Untitled_150_x_750px.png",
+            "tab-main-heading": "Silicon Tongue Brush",
+            "tab-main-text": "",
+            "question_1": "Features",
+            "answer_1": "✔ Ultra-soft, micro-pointed bristles reach deep into the uneven crevices of your tongue to loosen bacteria.<br><br> ✔ Built-in scraper collects and removes the bacteria and residue generated from brushing for cleaner breath<br><br> .✔ Ergonomically designed with a  long handle that helps reduce gagging and allows for an easier and more effective cleaning experience.<br><br> ✔Portable & Durable - it's perfect for both home & travel.<br><br> ✔ Approved & Recommended by Dentists!",
+            "question_2": "What's in the box?",
+            "answer_2": "Each package contains: <br><br> 1x Silicon Tongue Brush",
+            "question_3": "Instructions & Tips",
+            "answer_3": "Here's to getting the most out of your Silicone Tongue Brush:  <br><br>1. Moisten tongue with water or mouth wash. <br><br>  2. Gently brush tongue several times with the Tongue Brush using a back and forth motion reaching towards the back of the tongue.  <br><br> 3. Remove the residue generated from brushing, by scraping your tongue with the scraper located at the top of the brush.  <br><br> 4. Rinse mouth to remove the loosened material leaving the tongue clean and fresh.  <br><br> 5. Clean the Tongue Brush with water and store.",
+            "question_4": "",
+            "answer_4": "",
+            "question_5": "",
+            "answer_5": "",
+            "tab_main_video": "",
+            "btn-color": "#0693b5",
+            "tab_right_btn_text": "<p>Buy Silicon Tongue Brush<\/p>",
+            "tab_right_btn_url": "shopify:\/\/products\/tongue-brush-cleaner"
+          }
+        },
+        "c5a2dd31-4f54-4f41-a6f3-87ab923715c5": {
+          "type": "Product-Information",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Untitled_415_x_645px.png",
+            "tab-main-heading": "Stainless Steel Tongue Scraper",
+            "tab-main-text": "",
+            "question_1": "Features",
+            "answer_1": "✔ Unique design ensuring comfortability, curved round edges, polished surface providing you with reduced pressure. <br><br> ✔ Easy to hold and use. <br><br> ✔ Ergonomically designed with a  long handle that helps reduce gagging and allows for an easier and more effective cleaning experience. <br><br> ✔Portable & Durable - it's perfect for both home & travel. <br><br> ✔ Approved & Recommended by Dentists!",
+            "question_2": "What's in the box",
+            "answer_2": "Each package contains:<br><br>  1x Portable Stainless Steel Case  <br><br>1x Stainless Tongue Scraper",
+            "question_3": "Instructions & Tips",
+            "answer_3": "Here's to getting the most out of your Stainless Tongue Scraper <br><br> 1. Moisten tongue with water or mouth wash.  <br><br>2. Open your mouth.You'll want to open your mouth as wide as is comfortable, but not so wide that it causes discomfort. This makes your tongue more accessible and increases the ease of scraping.<br><br> 3. Remove the residue generated from brushing, by scraping your tongue with the scraper. <br><br> 4. Repeat this process until you notice residue from your tongue has been removed.  <br><br>5. Rinse mouth to remove the loosened material leaving the tongue clean and fresh.  <br><br>6. Clean the Tongue Scraper with water and store.",
+            "question_4": "",
+            "answer_4": "",
+            "question_5": "",
+            "answer_5": "",
+            "tab_main_video": "",
+            "btn-color": "#0693b5",
+            "tab_right_btn_text": "<p>BUY STAINLESS TONGUE CLEANER<\/p>",
+            "tab_right_btn_url": "shopify:\/\/products\/stainless-steel-tongue-scraper"
+          }
+        },
+        "2f68eb8d-fc7c-4e28-b379-cbaa5b796a01": {
+          "type": "Product-Information",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/Untitled_415_x_645px_3.png",
+            "tab-main-heading": "Mint Dental Floss (Pack of 100)",
+            "tab-main-text": "",
+            "question_1": "Features",
+            "answer_1": "✓ Extra strong textured floss  <br><br> ✓ Fluoride coating to help prevent tooth decay  <br><br>✓ Mint flavoured to eradicate any odd string flavours. <br><br> ✓ Flexible bristle pick that brushes deep between your teeth  <br><br> ✓ Pick also gently massages gums  <br><br>✓ Curved, easy reach design allows you to access all areas of your mouth  <br><br> ✓ Scaling tool cleans the surface of your teeth for added plaque and stain removal <br><br> ✓ Antibacterial handle & floss for a more hygienic clean<br><br> ✓ Vegan Friendly",
+            "question_2": "What's in the box?",
+            "answer_2": "Each package contains: <br><br> 100x Mint Dental Floss Picks <br><br> 1x Manual",
+            "question_3": "Instructions & Tips",
+            "answer_3": "Pick Instructions:  <br><br>1. Place pick between teeth and gently press against the gum. <br><br> 2.Use an in and out motion to remove food particles and stimulate gums.  <br><br>3. Rinse as necessary.",
+            "question_4": "Cautions",
+            "answer_4": "✘ Do not force into tight spaces between teeth. <br><br> ✔ Children require adult supervision. <br><br> ✔ Please make sure to wash your mouth with warm water after use.",
+            "question_5": "",
+            "answer_5": "",
+            "tab_main_video": "",
+            "btn-color": "#0693b5",
+            "tab_right_btn_text": "<p>BUY MINT DENTAL FLOSS<\/p>",
+            "tab_right_btn_url": "shopify:\/\/products\/mint-dental-floss-pack-of-100"
+          }
+        }
+      },
+      "block_order": [
+        "892b271e-ddc9-4631-b45b-09e0a32b373f",
+        "3a4733ad-1959-4318-a5e7-8121406f11e3",
+        "95a8db6c-2c0e-4e5d-bb54-e721c11de896",
+        "b8e11c49-c269-4275-bd32-7bcdea0cb4a6",
+        "d22fa16a-87fe-47ce-bcc7-7f04e2ee20e8",
+        "2a117051-e4d0-4117-aef5-6efb5e893a78",
+        "9a266237-a163-4eb2-a198-3e7a91950206",
+        "c5a2dd31-4f54-4f41-a6f3-87ab923715c5",
+        "2f68eb8d-fc7c-4e28-b379-cbaa5b796a01"
+      ],
+      "settings": {
+        "heading": "Want to know more about your next purchase?",
+        "description": "<p>We understand how important it is for you to know what you're using for your teeth care, so we've compiled all the information for you right here; with all the benefits, ingredients, guides, cautions and instructions.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "1662408039b6d761a1",
+    "16624171275daadf66",
+    "16624209762ef63d20",
+    "166242685262a76ffb",
+    "166251666774a7b426",
+    "1662503167d9a38129",
+    "1662494212cf27915a",
+    "1662507058551d6f80",
+    "16624937391f9f6bc1",
+    "1662501718ae80b8aa",
+    "16624988494b33b521",
+    "1662509238bc63f1ae",
+    "166249690220c7a383",
+    "1662581909b31a48a2"
+  ]
+}

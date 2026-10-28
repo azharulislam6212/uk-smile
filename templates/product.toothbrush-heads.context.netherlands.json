@@ -1,0 +1,17 @@
+{
+  "parent": "product.toothbrush-heads.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "1ed15949-a525-40fc-8d07-2868b613f63a": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_fecMge": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "629dcd9c-001d-4602-bdc4-ee2fca07367a": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo.png",
+            "clearpay_text": "or 4 interest-free payments of £7.50 with",
+            "klarna_img": "shopify:\/\/shop_images\/klarna.png",
+            "klarna_text": "or pay later, get it tomorrow with"
+          }
+        },
+        "4b5187ef-6563-4eaf-8d8d-6415e52c432d": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "SPECIAL DEAL: SPECIAL DEAL: BUY 2 FOR £54.99!  BUY 3 FOR £79.99 | BUY 4 FOR £99.99!  JUST ADD TO CART",
+            "second_tag": ""
+          }
+        },
+        "afd89eef-d714-4619-92db-f3bbd46dfcb7": {
+          "type": "shopify:\/\/apps\/clearpay-on-site-messaging\/blocks\/payments-messaging\/5d763983-d3e6-4888-9966-4e1170b26ae9",
+          "disabled": true,
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 14,
+            "margin_bottom": 14,
+            "color": "",
+            "size": "md",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": "water-flosser"
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_fecMge",
+        "price",
+        "629dcd9c-001d-4602-bdc4-ee2fca07367a",
+        "4b5187ef-6563-4eaf-8d8d-6415e52c432d",
+        "afd89eef-d714-4619-92db-f3bbd46dfcb7",
+        "caption",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 12
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"FEELS AMAZING, LOVE THE MODES AND ATTACHMENTS, PREMIUM PRODUCT AND OVERALL I'VE SEEN GREAT IMPROVEMENTS 5 STARS!\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Phillipe. D<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 20,
+        "padding_bottom": 16
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Features:",
+            "icon": "lightning_bolt",
+            "row_content": "<p>Ultra Powerful Dental Flosser which removes food residues and stains between teeth and below the gum line thoroughly. keeping your breath fresh and your gum healthy.<\/p><p>Water Flosser has 3 mode options to ensures you can personalise the pressure to your individual mouth.<\/p><p>Soft - Suitable for people with braces or with implants.<\/p><p>Medium - Suitable for daily cleaning, effective remove food debris.<\/p><p>Strong - Strong water pressure effective cleaning oral dental.<\/p><p>Extra large 230ml water reservoir allows you to thoroughly clean the scales and dental plaque without having to constantly refill.. <\/p><p>360 degree rotating nozzle<\/p><p>Waterproof charging port<\/p><p>Guarantees to remove 99.99% of food residue<\/p>",
+            "page": ""
+          }
+        },
+        "4e1e68e5-34de-4433-a8e4-3c411e567aaf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Benefits",
+            "icon": "heart",
+            "row_content": "<ul><li>Clinically proven up to 50% more effective than traditional dental floss and up to 74% more effective than other market Water Flossers.<\/li><\/ul><p><\/p><ul><li>Removes up to 99.9% of plaque from treated areas in just 3 seconds, as proven in laboratory tests.<\/li><\/ul><p><\/p><ul><li>Orthodontic Tip is up to 3 times more effective than dental floss for cleaning around braces and veneers.<\/li><\/ul><p><\/p><ul><li>Reaches deep between teeth and below the gumline, where brushing and traditional flossing can't reach.<\/li><\/ul><p><\/p><ul><li>Provides a gentle massage to stimulate and improve gum circulation.<\/li><\/ul><p><\/p><ul><li>Suitable for individuals with implants, crowns, bridges, and veneers.<\/li><\/ul><p><\/p><ul><li>Leaves your mouth feeling incredibly fresh and clean.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<p>Each package includes:<\/p><p>1x Dental Wireless Water Flosser<\/p><p>4x Advanced Attachments<\/p><p>1x USB Charging Cable<\/p><p>1x Manual<\/p><p>1x Premium Gift Box<\/p>",
+            "page": ""
+          }
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "How to use the electric dental cleaning kit?",
+            "icon": "washing",
+            "row_content": "<p>1. Select your desired attachment based on your oral needs.<\/p><p>2. Turn on the device and alter between modes based on your cleaning needs.<\/p><p>3. Alter between heads if necessary.<\/p><p>4. Clean the device and the tip after use. <\/p>",
+            "page": ""
+          }
+        },
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cautions",
+            "icon": "clipboard",
+            "row_content": "<p>Not recommended for children under the age of 5.<\/p><p>Avoid using hot or boiling water in the water reservoir to prevent potential burns or damage to the device.<\/p><p>Do not direct the water jet at your eyes or ears to avoid injury or discomfort.<\/p><p>Only buy CE & UL certified Water Flossers, luckily we are CE & UL certified<\/p><p>Please make sure to wash your mouth with warm water after use.<\/p><p>Children should use the water flosser under adult supervision to ensure proper usage and prevent accidents.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Cons of not using an Ultra Sonic Tooth Cleaner",
+            "icon": "star",
+            "row_content": "<p>Bad dental hygiene can be devastating on teeth and gums. Not only can it be expensive, but it can also lead to bad breath, gum disease, receding gums, dental decay, and even tooth loss.<\/p><p>This product may also be reffered to as one of the following:<\/p><p><\/p><p><em>Calculus remover, Dental irrigator, Dental scaler, Oral irrigator, Plaque remover, Tartar removal tool, Tartar remover, Tooth cleaner, Tooth stain remover, Ultrasonic dental cleaner, Ultrasonic scaler, Ultrasonic tooth cleaner.<\/em><\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Instructions & Tips",
+            "icon": "question_mark",
+            "row_content": "<p>Simply ensure you have charged your Water Flosser, one quick full charge will last you a few weeks!<\/p><p>1. Place water into the 230ml water tank, we recommend lukewarm. <\/p><p>2. Aim the 360 directly into your mouth.<\/p><p>3. Turn on your device and select the mode you would like, whether it's low, medium or strong!<\/p><p>4. Target those hard to reach areas <\/p><p>We recommend using the Water Flosser <strong>prior to toothbrushing<\/strong>: Removing food and debris enhances the effectiveness of both toothbrushing and toothpaste. Instructing patients to use it first improves compliance.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-3",
+        "4e1e68e5-34de-4433-a8e4-3c411e567aaf",
+        "collapsible-row-1",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975",
+        "collapsible-row-0",
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523"
+      ],
+      "settings": {
+        "caption": "Dental Wireless 4 in 1 Water Flosser",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 16,
+        "padding_bottom": 32
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_aa29138a-e959-4c87-83fd-cf781575941c.png"
+      }
+    },
+    "1664872804da9fcc65": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_YV3BeJ": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_YV3BeJ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664872804da9fcc65",
+    "product-recommendations"
+  ]
+}

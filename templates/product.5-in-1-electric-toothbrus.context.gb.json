@@ -1,0 +1,42 @@
+{
+  "context": {
+    "market": "gb"
+  },
+  "parent": "product.5-in-1-electric-toothbrus.json",
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "7dfde805-884e-4bda-9a20-aaca40ebb42f": {
+          "disabled": false,
+          "settings": {}
+        },
+        "rapi_rapi_bundle_RYQL9": {
+          "type": "shopify:\/\/apps\/rapi\/blocks\/rapi-bundle\/99617c17-a32b-4e70-a883-7a155610d032",
+          "disabled": false,
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_ALHMzM",
+        "price",
+        "b8951347-e4b1-4cff-b7e2-62b23efca59a",
+        "7dfde805-884e-4bda-9a20-aaca40ebb42f",
+        "rapi_rapi_bundle_RYQL9",
+        "caption",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "custom_liquid_XMKrxV",
+        "buy_buttons",
+        "description",
+        "custom_liquid_XkBNGY",
+        "share"
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "parent": "product.ha5-serum.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "1583d093-4524-450d-8e18-5220e338f1df": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET | FREE NETHERLANDS DELIVERY | NO MINIMUM SPEND"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "1583d093-4524-450d-8e18-5220e338f1df",
+        "4740a20e-3758-409b-a8db-ee0d287c0e13",
+        "description",
+        "caption",
+        "rating",
+        "variant_picker",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664870899dbe351d1",
+    "product-recommendations",
+    "multicolumn",
+    "rich-text-1",
+    "image-with-text-0",
+    "image-with-text-1",
+    "image-with-text-2",
+    "newsletter"
+  ]
+}

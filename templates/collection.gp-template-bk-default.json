@@ -1,0 +1,176 @@
+{
+  "order": [
+    "slideshow",
+    "banner",
+    "product-grid",
+    "image-with-text-0",
+    "image-with-text-1",
+    "newsletter"
+  ],
+  "sections": {
+    "banner": {
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "show_collection_description": true,
+        "show_collection_image": false
+      },
+      "type": "main-collection-banner"
+    },
+    "image-with-text-0": {
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "blocks": {
+        "button": {
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          },
+          "type": "button"
+        },
+        "heading": {
+          "settings": {
+            "heading": "We're 100% Vegan!",
+            "heading_size": "h0"
+          },
+          "type": "heading"
+        },
+        "text": {
+          "settings": {
+            "text": "<p>Good for you, good for our furry friends. Good for the world! We ensure all products sold on our website are <strong>100% Vegan<\/strong> so you never have to worry when shopping with Smile Therapy.<\/p>",
+            "text_style": "body"
+          },
+          "type": "text"
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "content_layout": "overlap",
+        "desktop_content_alignment": "center",
+        "desktop_content_position": "middle",
+        "desktop_image_width": "medium",
+        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/Untitled_design_48.png",
+        "layout": "image_first",
+        "mobile_content_alignment": "center",
+        "padding_bottom": 52,
+        "padding_top": 52
+      },
+      "type": "image-with-text"
+    },
+    "image-with-text-1": {
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "blocks": {
+        "button": {
+          "disabled": true,
+          "settings": {
+            "button_label": "Read blog",
+            "button_link": ""
+          },
+          "type": "button"
+        },
+        "heading": {
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          },
+          "type": "heading"
+        },
+        "text": {
+          "settings": {
+            "text": "<p>Feature a blog post where customers can learn more about this collection, or about your brand. <\/p>",
+            "text_style": "body"
+          },
+          "type": "text"
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-2",
+        "content_layout": "no-overlap",
+        "desktop_content_alignment": "left",
+        "desktop_content_position": "middle",
+        "desktop_image_width": "small",
+        "height": "adapt",
+        "layout": "image_first",
+        "mobile_content_alignment": "left",
+        "padding_bottom": 60,
+        "padding_top": 0
+      },
+      "type": "image-with-text"
+    },
+    "newsletter": {
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "blocks": {
+        "email-form": {
+          "settings": {},
+          "type": "email_form"
+        },
+        "heading": {
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          },
+          "type": "heading"
+        },
+        "paragraph": {
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          },
+          "type": "paragraph"
+        }
+      },
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_bottom": 0,
+        "padding_top": 60
+      },
+      "type": "newsletter"
+    },
+    "product-grid": {
+      "settings": {
+        "columns_desktop": 3,
+        "columns_mobile": "2",
+        "enable_filtering": false,
+        "enable_quick_add": false,
+        "enable_sorting": true,
+        "filter_type": "drawer",
+        "image_ratio": "square",
+        "padding_bottom": 0,
+        "padding_top": 20,
+        "products_per_page": 24,
+        "show_rating": true,
+        "show_secondary_image": true,
+        "show_vendor": false
+      },
+      "type": "main-collection-product-grid"
+    },
+    "slideshow": {
+      "settings": {
+        "accessibility_info": "",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "layout": "full_bleed",
+        "show_text_below": true,
+        "slide_height": "small",
+        "slider_visual": "counter"
+      },
+      "type": "slideshow"
+    }
+  }
+}

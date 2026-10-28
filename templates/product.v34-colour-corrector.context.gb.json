@@ -1,0 +1,19 @@
+{
+  "parent": "product.v34-colour-corrector.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "1583d093-4524-450d-8e18-5220e338f1df": {
+          "settings": {
+            "first_tag": "SPECIAL DEAL: BUY 2 FOR £24.99! JUST ADD 2 TO CART!"
+          }
+        }
+      }
+    }
+  }
+}

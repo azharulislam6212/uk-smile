@@ -1,0 +1,184 @@
+<!-- Browse More products -->
+<section id="products">
+  <div class="custom-container">
+    <div class="title">
+      <div class="text">
+        {% if section.settings.heading != blank %}
+            <h2 class="heading" style="color:{{ section.settings.color }}; font-family:{{ section.settings.family }}">{{section.settings.heading}}</h2>
+        {% endif %}
+        {% if section.settings.subheading != blank %}
+            <p>{{section.settings.subheading}}</p>
+        {% endif %}
+      </div>
+      {% if section.settings.btn-txt != blank %}
+          <div class="btn-blk" style="background-color:{{}}">
+            <a href="{{section.settings.collection-btn}}" class="btn">{{section.settings.btn-txt}}</a>
+          </div>
+      {% endif %}
+    </div>
+    <div id="slick-products">
+      {% for block in section.blocks %}
+        <div class="items">
+        <div class="product-block">
+          {% if block.settings.img != blank%}
+            <a href="{{ block.settings.product.url }}">
+            <div class="image-blk">
+                <img data-src="{{ block.settings.img | img_url:'' }}" class="lazyload" alt="">
+            </div>
+            </a>
+          {% endif %}
+          <div class="content-blk">
+            <a href="{{ block.settings.product.url }}">
+              <h4>{{ block.settings.heading }}</h4>
+            </a>
+              <p>{{ block.settings.description }}</p> 
+        
+{% assign product = all_products[block.settings.product] %}        
+  <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm" class="quick-add-to-cart small--hide clearfix">         
+        {% if product.variants.size > 1 %}
+         <select id="product-select-{{ product.id }}" name='id' class="drop_down-prouct">
+            {% for variant in product.variants %}
+              {% if variant.available %}
+                <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }}</option>
+            {% else %}
+              <option disabled="disabled">
+                  {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+              </option>        
+              {% endif %}
+            {% endfor %}
+         </select>
+      {% else %}
+          <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+      {% endif %}
+      {% if block.settings.btn_txt != blank %}
+  <button id="CartDrawer" type="submit" class="btn draw" style="background-color:{{block.settings.btn-color}}">
+              {{ block.settings.btn_txt }}&nbsp{{ block.settings.product.price | money | remove: '.00' }}
+  </button>
+      {% endif %}
+  </form>
+              
+{% comment %}
+    {% if block.settings.btn_txt != blank  %}
+        {% assign added_to_cart_link = '/cart/add?id=' | append:block.settings.product.first_available_variant.id | append: '&amp;quantity=1' %}
+        <a href="{{ added_to_cart_link }}" {% if block.settings.product.first_available_variant == blank %}disabled{% endif %} class="btn">{% if block.settings.product.first_available_variant != blank %}{{block.settings.btn_txt}} {% else %} Sold Out{% endif %} {{ block.settings.product.price | money | remove: '.00' }} </a>
+    {% endif %}
+{% endcomment %}
+            
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Browse More Product",
+    "settings": [
+       {
+        "type": "color",
+        "id": "color",
+        "label": "Select Color"
+      },
+       {
+     "type": "font_picker",
+     "id": "family",
+     "label": "Font Family",
+     "default": "work_sans_n6"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "subheading",
+        "label": "Description"
+      },
+     {
+        "type": "color",
+        "id": "btn-color",
+        "label": "Slect Button Color"
+      },
+      {
+        "type": "text",
+        "id": "btn-txt",
+        "label": "Button Text"
+      },
+      {
+        "type": "url",
+        "id": "collection-btn",
+        "label": "Button link"
+      }
+    ],
+     "blocks":[
+      {
+      "type":"Product",
+      "name":"Add Products",
+      "settings":
+        [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Select Product Image"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+          },
+          {
+            "type": "text",
+            "id": "btn_txt",
+            "label": "Button Text"
+          },
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Select Product",
+            "info":"Select Product to get Product Price"
+          }
+        ]
+      }
+    ],
+"presets": [
+    {
+      "name": "Add Products",
+      "category": "Custom Sections"
+    }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<script>
+//  $(document).ready(function(){
+//   $("button.draw").click(function(){
+//     alert("The paragraph was clicked.");
+//   $('.drawer').on('drawer.opened', function(){});
+//     $('.drawer').drawer('open');
+//   });
+// }); 
+ 
+$(document).ready(function() {
+  // Open cart drawer after add to cart button is clicked
+  $('.draw').one('click', function(){
+    setTimeout(function(){ $('.drawer').open() }, 1500);
+  });
+});
+  
+  </script>
+
+
+  

@@ -1,0 +1,19 @@
+{
+  "parent": "product.water-flosser-pro-heads.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "47c20f18-158d-4364-a174-918b2836d7d4": {
+          "disabled": true,
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET! | FREE UK NEXT DAY DELIVERY"
+          }
+        }
+      }
+    }
+  }
+}

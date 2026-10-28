@@ -1,0 +1,34 @@
+{
+  "parent": "product.toothpaste-tablets-2.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "rich-text-0": {
+      "settings": {},
+      "blocks": {
+        "heading": {
+          "settings": {}
+        }
+      }
+    },
+    "main": {
+      "settings": {},
+      "blocks": {
+        "26ca8973-c087-43a6-a555-d17296f7e2ba": {
+          "disabled": true,
+          "settings": {}
+        },
+        "47c20f18-158d-4364-a174-918b2836d7d4": {
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        }
+      }
+    }
+  }
+}

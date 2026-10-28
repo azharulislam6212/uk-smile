@@ -1,0 +1,29 @@
+{
+  "parent": "page.contact.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "1664801786a6a99521": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "1664801786216c70de-0": {
+          "settings": {
+            "heading": "<p>Neem contact met ons op<\/p>"
+          }
+        },
+        "1664801786216c70de-1": {
+          "settings": {
+            "text": "<p>Vul alsjeblieft het onderstaande formulier in, en we nemen binnen 24 uur contact met je op. Je kunt ons ook bereiken via een van de volgende methoden:<\/p><p>Bedrijfsadres: Smile Therapy, Schillingweg 50, 2153 PL Nieuw-Vennep, Nederland<\/p><p>Email Address: support@smile-therapy.co<\/p>"
+          }
+        }
+      }
+    }
+  }
+}

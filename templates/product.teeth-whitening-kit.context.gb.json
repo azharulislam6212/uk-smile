@@ -1,0 +1,18 @@
+{
+  "parent": "product.teeth-whitening-kit.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "collapsible-content": {
+      "settings": {},
+      "blocks": {
+        "collapsible-row-3": {
+          "settings": {
+            "row_content": "<p>Glycerin, Water\/Aqua, Phthalimidoperoxycaproic Acid (PAP), Ammonium Acryloyldimethyltaurate\/VP Copolymer, PVP (Polyvinylpyrrolidone), Sodium Phosphate, Potassium Citrate, Disodium Phosphate, Hydroxyapatite, Sodium Saccharin, Mentha Piperita (Peppermint) Oil, Sodium Gluconate, Potassium Hydroxide, Pentasodium Triphosphate, t-Butyl Alcohol, PVM\/MA Copolymer, Xerothick Xanthan Gum, C12-15 Pareth-3, Titanium Dioxide (CI 77891), Mica (CI 77019), Iron Oxides (CI 77491).<\/p>"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "parent": "product.teeth-whitening-strips.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "16631668754f796b02": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express Ireland 1-3 Working Day Delivery"
+          }
+        }
+      }
+    },
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "0aa65f75-5b0a-4bed-8504-73c5104500b1": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET! | EXPRESS DELIVERY IN IRELAND!"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_YcM7xW",
+        "price",
+        "0aa65f75-5b0a-4bed-8504-73c5104500b1",
+        "f28c594a-448a-4efc-9d87-769fe6e5f5d2",
+        "caption",
+        "description",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664871129fff89d3f",
+    "product-recommendations",
+    "multicolumn",
+    "rich-text-1",
+    "image-with-text-0",
+    "image-with-text-1",
+    "image-with-text-2",
+    "newsletter"
+  ]
+}

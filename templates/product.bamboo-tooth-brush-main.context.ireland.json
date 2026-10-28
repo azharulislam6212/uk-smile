@@ -1,0 +1,55 @@
+{
+  "parent": "product.bamboo-tooth-brush-main.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "16631668754f796b02": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express 1-3 Working Day Delivery",
+            "sub-title": ""
+          }
+        }
+      }
+    },
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "0ceaf9e4-6823-40be-af96-8ce4a4ee3656": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET! | EXPRESS DELIVERY IN IRELAND!"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_VmqWVx",
+        "price",
+        "0ceaf9e4-6823-40be-af96-8ce4a4ee3656",
+        "b7088e04-7372-473e-9cec-e269f00c66e1",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "loox-product-reviews-app-section",
+    "collapsible-content",
+    "16631668754f796b02",
+    "product-recommendations",
+    "166469373771a677b6"
+  ]
+}

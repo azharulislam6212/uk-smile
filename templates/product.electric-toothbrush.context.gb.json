@@ -1,0 +1,18 @@
+{
+  "parent": "product.electric-toothbrush.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY | NO MINIMUM SPEND"
+          }
+        }
+      }
+    }
+  }
+}

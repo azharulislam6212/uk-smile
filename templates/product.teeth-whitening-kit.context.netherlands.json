@@ -1,0 +1,43 @@
+{
+  "parent": "product.teeth-whitening-kit.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "51096ec4-4ca4-4071-883f-e354594bc6a8": {
+          "disabled": true,
+          "settings": {}
+        },
+        "2d2d503e-227c-4d86-9b1c-b8bdcbf2a139": {
+          "settings": {
+            "first_tag": "GIFT A LOVED ONE! BUY 2 FOR €44.00! - JUST ADD 2 TO CART!"
+          }
+        }
+      }
+    },
+    "16631668754f796b02": {
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Free Delivery In Netherlands"
+          }
+        }
+      }
+    },
+    "collapsible-content": {
+      "settings": {},
+      "blocks": {
+        "collapsible-row-3": {
+          "settings": {
+            "row_content": "<p>Glycerin, Aqua\/ Water,PVP, Ethylcellulose, Alcohol, Sodium<br\/>Polyacrylate, Phthalimidoperoxycaproic Acid (PAP)，Xylitol.<br\/>Potassium Citrate, Hydroxyapatite, Rebaudioside A, Menthol,<br\/>Sodium Citrate,Xanthan Gum, PVM\/ MA Copolymer,<br\/>C12-15 Pareth-3.<\/p>"
+          }
+        }
+      }
+    }
+  }
+}

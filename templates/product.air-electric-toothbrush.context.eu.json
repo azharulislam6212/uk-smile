@@ -1,0 +1,34 @@
+{
+  "parent": "product.air-electric-toothbrush.json",
+  "context": {
+    "market": "eu"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "7dfde805-884e-4bda-9a20-aaca40ebb42f": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET! | SHOP WHILST STOCK LASTS!"
+          }
+        },
+        "b8951347-e4b1-4cff-b7e2-62b23efca59a": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    },
+    "16631668754f796b02": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express 1-3 Working Days Delivery"
+          }
+        }
+      }
+    }
+  }
+}

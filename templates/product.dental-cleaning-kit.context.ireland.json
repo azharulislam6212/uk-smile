@@ -1,0 +1,52 @@
+{
+  "parent": "product.dental-cleaning-kit.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "fa23c5b4-2eed-4884-9e8e-3a54827e4078": {
+          "settings": {
+            "first_tag": "SPECIAL OFFER: BUY 2 FOR €103.99! | SAVE A FURTHER €26.00 | JUST ADD 2 TO CART"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "fa23c5b4-2eed-4884-9e8e-3a54827e4078",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    },
+    "16631668754f796b02": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express 1-3 Working Day Delivery"
+          }
+        }
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a26b587b-dece-4147-9e3f-87a8e6e6a410",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "166487234450a733f6",
+    "product-recommendations"
+  ]
+}

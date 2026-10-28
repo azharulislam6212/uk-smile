@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "collapsible-content": {
+      "settings": {},
+      "blocks": {
+        "collapsible_row_yif9R8": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    }
+  },
+  "context": {
+    "market": "gb"
+  },
+  "parent": "product.360-u-toothbrush-adults.json"
+}

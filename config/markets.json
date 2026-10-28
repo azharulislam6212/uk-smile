@@ -1,0 +1,22 @@
+{
+  "markets": {
+    "ireland": {
+      "parent": "@default"
+    },
+    "eu": {
+      "parent": "@default"
+    },
+    "gb": {
+      "parent": "@default"
+    },
+    "netherlands": {
+      "parent": "@default"
+    },
+    "usa": {
+      "parent": "@default"
+    },
+    "germany": {
+      "parent": "@default"
+    }
+  }
+}

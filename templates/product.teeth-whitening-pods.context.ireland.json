@@ -1,0 +1,53 @@
+{
+  "parent": "product.teeth-whitening-pods.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "16631668754f796b02": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express Ireland 1-3 Working Day Delivery"
+          }
+        }
+      }
+    },
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "5fa707b2-3f69-4db3-a0fe-3d25cf91d7da": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET! | EXPRESS DELIVERY IN IRELAND!"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_VGGeYx",
+        "price",
+        "5fa707b2-3f69-4db3-a0fe-3d25cf91d7da",
+        "24822b25-4ccd-4807-8ba7-d4ed0c40bb40",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664872622d6600e2d",
+    "product-recommendations"
+  ]
+}

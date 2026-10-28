@@ -1,0 +1,18 @@
+{
+  "parent": "product.utc-pro-heads.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "62d52e82-023b-4368-9e1c-7139d71fca48": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY | NO MINIMUM SPEND"
+          }
+        }
+      }
+    }
+  }
+}

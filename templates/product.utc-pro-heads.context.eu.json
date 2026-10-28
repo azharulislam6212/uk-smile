@@ -1,0 +1,22 @@
+{
+  "parent": "product.utc-pro-heads.json",
+  "context": {
+    "market": "eu"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "62d52e82-023b-4368-9e1c-7139d71fca48": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE NOW LIVE!"
+          }
+        },
+        "9f136940-3bf2-4b5b-bf25-1bdfcefc0643": {
+          "disabled": true,
+          "settings": {}
+        }
+      }
+    }
+  }
+}

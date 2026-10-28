@@ -1,0 +1,51 @@
+{
+  "parent": "product.teeth-whitening-kit.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "2d2d503e-227c-4d86-9b1c-b8bdcbf2a139": {
+          "settings": {
+            "first_tag": "GIFT A LOVED ONE! BUY 2 FOR €44.00! - JUST ADD 2 TO CART!"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "2d2d503e-227c-4d86-9b1c-b8bdcbf2a139",
+        "caption",
+        "description",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    },
+    "16631668754f796b02": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express Ireland 1-3 Working Day Delivery"
+          }
+        }
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "16648713477d94ffe9",
+    "product-recommendations"
+  ]
+}

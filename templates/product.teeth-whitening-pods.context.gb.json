@@ -1,0 +1,7 @@
+{
+  "parent": "product.teeth-whitening-pods.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {}
+}

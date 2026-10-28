@@ -1,0 +1,33 @@
+{
+  "parent": "product.teeth-whitening-strips.json",
+  "context": {
+    "market": "eu"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "0c5cf657-a361-46ca-932d-8ff2f8383de6": {
+          "disabled": true,
+          "settings": {}
+        },
+        "0aa65f75-5b0a-4bed-8504-73c5104500b1": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE NOW LIVE!"
+          }
+        }
+      }
+    },
+    "16631668754f796b02": {
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express 1-3 Working Days Delivery"
+          }
+        }
+      }
+    }
+  }
+}

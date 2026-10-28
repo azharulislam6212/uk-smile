@@ -1,0 +1,24 @@
+{
+  "parent": "product.water-flosser.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "629dcd9c-001d-4602-bdc4-ee2fca07367a": {
+          "settings": {
+            "clearpay_text": "or 4 interest-free payments of £7.50 with"
+          }
+        },
+        "4b5187ef-6563-4eaf-8d8d-6415e52c432d": {
+          "settings": {
+            "first_tag": "SPECIAL DEAL: BUY 2 FOR £59.99 BUY 3 FOR 84.99 |<br> BUY 4 FOR £104.99 | JUST ADD TO CART!"
+          }
+        }
+      }
+    }
+  }
+}

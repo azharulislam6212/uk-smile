@@ -1,0 +1,28 @@
+{
+  "parent": "product.pap-powder.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "c65d22aa-93e1-4a2d-b0dd-122b4b3d269f": {
+          "settings": {
+            "first_tag": "SPECIAL DEAL: BUY 2 FOR £29.99! JUST ADD 2 TO CART!"
+          }
+        }
+      }
+    },
+    "16631668754f796b02": {
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Free UK Next Day Delivery"
+          }
+        }
+      }
+    }
+  }
+}

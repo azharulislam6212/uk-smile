@@ -1,0 +1,18 @@
+{
+  "parent": "product.teeth-whitening-kit.json",
+  "context": {
+    "market": "germany"
+  },
+  "sections": {
+    "collapsible-content": {
+      "settings": {},
+      "blocks": {
+        "collapsible-row-3": {
+          "settings": {
+            "row_content": "<p>Glycerin, Aqua\/ Water,PVP, Ethylcellulose, Alcohol, Sodium<br\/>Polyacrylate, Phthalimidoperoxycaproic Acid (PAP)，Xylitol.<br\/>Potassium Citrate, Hydroxyapatite, Rebaudioside A, Menthol,<br\/>Sodium Citrate,Xanthan Gum, PVM\/ MA Copolymer,<br\/>C12-15 Pareth-3.<\/p>"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,474 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_yYfgjW": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "1fc7d345-e3bb-480a-af2c-a56c6cee74e3": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo.png",
+            "clearpay_text": "or 4 interest-free payments with £5.00",
+            "klarna_img": "shopify:\/\/shop_images\/klarna.png",
+            "klarna_text": "or pay later, get it tomorrow with"
+          }
+        },
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "BUY 2 FOR £34.99! JUST ADD 2 TO CART *DISCOUNT APPLIED*",
+            "second_tag": ""
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_yYfgjW",
+        "price",
+        "1fc7d345-e3bb-480a-af2c-a56c6cee74e3",
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 8,
+        "padding_bottom": 20
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"DENTIST SAID MY CHILDRENS TEETH HAVE IMPROVED SO MUCH - THE ONLY CHANGE? THIS WATER FLOSSER!\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Leah. T<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 20,
+        "padding_bottom": 8
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Benefits & Features",
+            "icon": "lightning_bolt",
+            "row_content": "<p>✔️ Gentle cleaning that helps reduce buildup and support daily oral care<br\/>✔️ Recommended for children ages 5 years and older<br\/>✔️ Fun and vibrant design that makes kids excited about oral care<br\/>✔️ Multiple nozzles for tailored cleaning that meets every need<br\/>✔️ High-pressure technology designed for hard-to-reach areas, including around braces<br\/>✔️ Supports a consistent care routine while being gentle on soft gums<br\/>✔️ Encourages positive oral hygiene habits<br\/>✔️ Extra-long battery life — over 4 weeks of use on a single charge<br\/>✔️ User-friendly controls for easy operation<br\/>✔️ Portable and convenient for home or travel<br\/>✔️ Boosts confidence with a fresher mouth and brighter-looking smile<br\/>✔️ Gives parents peace of mind with its kid-friendly, effective design (trusted by 20,000+ parents)<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<p>Each package contains:<\/p><p>1x Kids Sonic Water Flosser<\/p><p>4x Nozzle Heads (Cleaning Nozzle, Pressure Nozzle, Orthodontic Nozzle, Tongue Nozzle)<\/p><p>1x USB Charging Cable<\/p><p>1x Manual<\/p><p>1x Smile Therapy Gift Box<\/p>",
+            "page": ""
+          }
+        },
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Specifications",
+            "icon": "clipboard",
+            "row_content": "<ul><li>Recommended Age: 5-16 years of age<br\/><\/li><li>Tank Size: 230ML<br\/><\/li><li>Material: BPA-Free Plastic<br\/><\/li><li>100% Waterproof<br\/><\/li><li>Up to 1000 pulses per minute (safe for children)<br\/><\/li><li>3 Modes<br\/><\/li><li>1 year warranty<br\/><\/li><li>Charging time: 4 hours<br\/><\/li><li>Certified<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "4629f7ef-2bd9-46e7-a3d7-291adcdb936a": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "How do I deep clean the Electric Toothbrush",
+            "icon": "check_mark",
+            "row_content": "<p>1) Remove the brush head.<\/p><p>2) Rinse the bottom of the brush head with warm water.<\/p><p>3) Rinse the metal shaft area with warm water.<\/p><p>4) Clean the bottom of the toothbrush handle with a damp cotton swab to remove any residue.<\/p><p>5) Wipe the entire surface of the handle with a wet cloth.<\/p>",
+            "page": ""
+          }
+        },
+        "b156cbed-7093-4197-84e3-0ced68818bea": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cautions",
+            "icon": "leaf",
+            "row_content": "<p>✘ Not recommended for children aged 4 or younger.<br\/><br\/>✘ Avoid using hot or boiling water in the water reservoir to prevent potential burns or damage to the device.<br\/><br\/>✘ Do not direct the water jet at your eyes or ears to avoid injury or discomfort.<br\/><br\/>✔ Only buy certified Water Flossers.<br\/><br\/>✔ Please make sure to wash your mouth with warm water after use.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wL8QGg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Instructions & Tips",
+            "icon": "question_mark",
+            "row_content": "<p><strong>Charge Your Flosser<\/strong>: Make sure your Water Flosser is fully charged. A quick full charge will last for several weeks!<br\/><\/p><ol><li><strong>Fill the Tank<\/strong>: Add lukewarm water to the 230 ml water tank for a comfortable experience.<br\/><\/li><li><strong>Aim the Tip<\/strong>: Point the 360-degree tip directly into your mouth for effective cleaning.<br\/><\/li><li><strong>Turn It On<\/strong>: Power up your device and choose your preferred mode—there are three options available. We suggest starting with the lowest setting (to begin with).<br\/><\/li><li><strong>Target Those Tough Spots<\/strong>: Focus on hard-to-reach areas to ensure a thorough clean.<\/li><\/ol><p>For best results, we recommend using the Water Flosser before brushing your teeth. This helps remove food particles and debris, making brushing more effective. Getting kids into this habit will significantly improve their oral hygiene<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-3",
+        "collapsible-row-1",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975",
+        "4629f7ef-2bd9-46e7-a3d7-291adcdb936a",
+        "b156cbed-7093-4197-84e3-0ced68818bea",
+        "collapsible_row_wL8QGg"
+      ],
+      "settings": {
+        "caption": "Kids Sonic 4-in-1 water flosser",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "ss_comparison_table_2_bMN9kz": {
+      "type": "ss-comparison-table-2",
+      "blocks": {
+        "item_VzyLDb": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Gentle high-pressure clean",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "yes"
+          }
+        },
+        "item_nLDknm": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Effortless clean",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_xWCqMN": {
+          "type": "item",
+          "settings": {
+            "row_heading": "4 nozzle options",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_UDUegn": {
+          "type": "item",
+          "settings": {
+            "row_heading": "4+ week battery",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "yes"
+          }
+        },
+        "item_t7Pdwr": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Portable & waterproof",
+            "first_icon": "yes",
+            "second_icon": "yes",
+            "third_icon": "no"
+          }
+        },
+        "item_xQVJkW": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "row_heading": "20 Minutes Treatment",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_7xUiby": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "row_heading": "Ultra Soft Nylon Bristles ",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_RReHkN": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "row_heading": "30K+ Sonic Vibrations\/Minute ",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_wqiQbC": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "row_heading": "30 Sec Daily Clean ",
+            "first_icon": "yes",
+            "second_icon": "yes",
+            "third_icon": "no"
+          }
+        }
+      },
+      "block_order": [
+        "item_VzyLDb",
+        "item_nLDknm",
+        "item_xWCqMN",
+        "item_UDUegn",
+        "item_t7Pdwr",
+        "item_xQVJkW",
+        "item_7xUiby",
+        "item_RReHkN",
+        "item_wqiQbC"
+      ],
+      "name": "SS - Comparison Table #2",
+      "settings": {
+        "heading": "Us vs Them",
+        "heading_custom": true,
+        "heading_font": "archivo_n9",
+        "heading_size": 26,
+        "heading_height": 100,
+        "heading_align": "center",
+        "table_mt": 50,
+        "table_radius": 10,
+        "table_border_thickness": 1,
+        "table_column_active": "1",
+        "table_column_active_radius": 10,
+        "first_heading": "Smile",
+        "second_heading": "Others",
+        "third_heading": "",
+        "table_heading_custom": true,
+        "table_heading_font": "archivo_n6",
+        "table_heading_size": 16,
+        "table_heading_size_mobile": 16,
+        "table_heading_height": 100,
+        "table_heading_align": "center",
+        "table_heading_padding_horizontal": 20,
+        "table_heading_padding_horizontal_mobile": 4,
+        "table_heading_padding_vertical": 20,
+        "table_heading_padding_vertical_mobile": 10,
+        "table_row_padding_horizontal": 20,
+        "table_row_padding_horizontal_mobile": 4,
+        "table_row_padding_vertical": 20,
+        "table_row_padding_vertical_mobile": 10,
+        "table_row_heading_custom": true,
+        "table_row_heading_font": "questrial_n4",
+        "table_row_heading_size": 16,
+        "table_row_heading_size_mobile": 16,
+        "table_row_heading_height": 100,
+        "table_row_heading_align": "left",
+        "table_icon_yes": "shopify:\/\/shop_images\/Check_Mark_WOB_1_c617ae15-7874-456f-a73f-3f24b2494b60.png",
+        "table_icon_no": "shopify:\/\/shop_images\/Close_X_1_a86e08c6-2338-4366-bb6f-6e986329601b.png",
+        "table_icon_size": 32,
+        "table_icon_size_mobile": 20,
+        "heading_color": "#0e1b4d",
+        "table_border_color": "#0e1b4d",
+        "table_heading_color": "#0e1b4d",
+        "table_heading_active_color": "#0e1b4d",
+        "table_column_active_bg_color": "#d3ccff",
+        "table_row_heading_color": "#0e1b4d",
+        "table_icon_color": "#b90505",
+        "table_icon_active_color": "#ffffff",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "rgba(0,0,0,0)",
+        "margin_top": 60,
+        "margin_bottom": 84,
+        "padding_top": 20,
+        "padding_bottom": 24,
+        "padding_horizontal": 1,
+        "padding_horizontal_mobile": 0.5,
+        "full_width": false,
+        "content_width": 150,
+        "border_thickness": 2
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Untitled_design_-_2022-09-15T164940.840_ad0561e3-dd2d-4cad-85c2-a5eaf789cae3.png"
+      }
+    },
+    "1664870774e164b7b9": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_6bbffq": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_6bbffq"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "ss_comparison_table_2_bMN9kz",
+    "16631668754f796b02",
+    "1664870774e164b7b9",
+    "product-recommendations"
+  ]
+}

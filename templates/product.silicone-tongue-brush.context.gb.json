@@ -1,0 +1,23 @@
+{
+  "parent": "product.silicone-tongue-brush.json",
+  "context": {
+    "market": "gb"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "574a5d09-4012-47b3-8f5f-f4edce89f277": {
+          "settings": {
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY | NO MINIMUM SPEND"
+          }
+        },
+        "variant_picker": {
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        }
+      }
+    }
+  }
+}

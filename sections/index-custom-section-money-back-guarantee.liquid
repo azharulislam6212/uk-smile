@@ -1,0 +1,112 @@
+<style>
+  .seller-blk_img1{
+    background-image: url('{{ section.settings.bg-desktop | img_url:'' }}');
+  }
+@media screen and (max-width:767px){
+  .seller-blk_img1{
+    background-image: url('{{ section.settings.bg-mobile | img_url:'' }}');
+  }
+}
+</style>
+<section id="collection" class="asyncLoad seller-blk seller-blk_img1">
+  <div class="custom-container">
+    <div class="content">
+      {% if section.settings.tag1 %}
+        {% if section.settings.tag != blank %}
+          <span class="badge" style="background-color:{{ section.settings.color1 }};">{{ section.settings.tag }}</span>
+        {% endif %}
+      {% endif %}
+      <h1 class="heading">{{ section.settings.heading }}</h1>
+      <p>{{ section.settings.description }}</p>
+      {% if section.settings.btn_show %}
+        <div class="btn-blk">
+          {% for block in section.blocks %}
+            {% if block.settings.btn_txt != blank %}
+              <a href="{{ block.settings.btn_url }}" class="btn btn-white">{{ block.settings.btn_txt }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Money-Back Guarantee",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "bg-desktop",
+          "label": "Select Background-Image[Desktop]"
+        },
+        {
+          "type": "image_picker",
+          "id": "bg-mobile",
+          "label": "Select Background-Image[Mobile]"
+        },
+        {
+          "type": "checkbox",
+          "id": "tag1",
+          "label": "Show/Hide Tag",
+           "default": true
+         },
+         {
+          "type": "color",
+          "id": "color1",
+          "label": "Select Color"
+         },
+         {
+          "type": "text",
+          "id": "tag",
+          "label": "Add Tag Text"
+         },
+         {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+         },
+         {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+         },
+         {
+          "type": "checkbox",
+          "id": "btn_show",
+          "label": "Show/Hide Button",
+           "default": true
+         }
+    ],
+   "blocks":[
+        {
+        "type":"Button",
+        "name":"Add Button",
+        "settings":
+          [
+            {
+              "type": "text",
+              "id": "btn_txt",
+              "label": "Button Text"
+            },
+            {
+              "type": "url",
+              "id": "btn_url",
+              "label": "Button Link"
+            }     
+          ]
+        }
+    ],
+    "presets": [
+      {
+      "name": "Money-Back Guarantee",
+      "category": "Custom Sections"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

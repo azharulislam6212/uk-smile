@@ -1,0 +1,71 @@
+<section id="sale">
+  <div class="custom-container">
+    <div class="sale-bar"  data-aos="fade-left" data-aos-duration="1000" style="background-image: url('{{ section.settings.bg |img_url:'' }}') ;">
+      <div class="content">
+        <div class="txt-blk">
+          <h2><span>{{ section.settings.sale }}</span>{{ section.settings.sale-slogan }}</h2>
+          <div class="date">{{ section.settings.date}}</div>
+          <div id="timer">
+            <div id="days"></div>
+            <div id="hours"></div>
+            <div id="minutes"></div>
+            <div id="seconds"></div>
+          </div>
+        </div>
+        {% if  section.settings.btn-txt != blank %}
+          <div class="btn-blk">
+            <a href="{{ section.settings.btn-url }}" class="btn">{{ section.settings.btn-txt }}</a>
+          </div>
+        {% endif %}
+      </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Sale Banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg",
+        "label": "Select Background Image"
+      },
+      {
+        "type": "text",
+        "id": "sale",
+        "label": "Sale Discount"
+      },
+      {
+        "type": "textarea",
+        "id": "sale-slogan",
+        "label": "Sale Title"
+      },
+      {
+        "type": "text",
+        "id": "date",
+        "label": "Date"
+      },
+      {
+        "type": "text",
+        "id": "btn-txt",
+        "label": "Button Text"
+      },
+      {
+        "type": "url",
+        "id": "btn-url",
+        "label": "Button Link"
+      }
+    ],
+    "presets": [
+      {
+      "name": "Sale Banner",
+      "category": "Custom Sections"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

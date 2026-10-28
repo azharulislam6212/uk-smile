@@ -1,0 +1,327 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_Pc7Hzf": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "methods_VbRkfy": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo_ed12fd8b-bd03-42cc-9ed0-298d311cf203.png",
+            "clearpay_text": "Or 4 interest-free payments of £6.24 with",
+            "klarna_img": "shopify:\/\/shop_images\/klarna_bbbc08fe-de9a-4649-8a7c-cad044e29e84.png",
+            "klarna_text": "Or pay later, get it tomorrow with"
+          }
+        },
+        "2d2d503e-227c-4d86-9b1c-b8bdcbf2a139": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY | NO MINIMUM SPEND",
+            "second_tag": ""
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "custom_liquid_d6gpfx": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"social-proof-badge\">\n  <p id=\"social-proof-text\">\n    <strong class=\"name-block\">\n      <span id=\"full-name\" aria-live=\"polite\">Daniel<\/span>\n      <!-- Blue verified tick -->\n      <svg class=\"verified-tick\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" role=\"img\" aria-label=\"verified\">\n        <circle cx=\"12\" cy=\"12\" r=\"12\" fill=\"#1DA1F2\"\/>\n        <path fill=\"#fff\" d=\"M10.2 15.6l-3.1-3.1 1.1-1.1 2 2 4.7-4.7 1.1 1.1z\"\/>\n      <\/svg>\n    <\/strong>\n    &nbsp;and <strong>600+ others<\/strong> purchased this product more than once last month!\n  <\/p>\n<\/div>\n\n<style>\n  .social-proof-badge {\n    display:flex;\n    align-items:center;\n    padding:8px 12px;\n    margin:12px 0;\n    font-size:14px;\n    line-height:1.4;\n    color:#333;\n    background: transparent;\n  }\n\n  .social-proof-badge p { margin:0; }\n\n  .name-block {\n    display:inline-flex;\n    align-items:center;\n    gap:2px;\n  }\n\n  #full-name {\n    transition: opacity 300ms ease;\n    opacity:1;\n  }\n\n  .verified-tick {\n    display:inline-block;\n    margin:0;\n    vertical-align: middle;\n  }\n<\/style>\n\n<script>\n  (function(){\n    const names = [\n      \"Daniel\", \"Emma\", \"Liam\", \"Olivia\", \"Elijah\",\n      \"Sophia\", \"James\", \"Ava\", \"Lucas\", \"Isabella\",\n      \"Ethan\", \"Mia\", \"Logan\", \"Amelia\", \"Harper\"\n    ];\n\n    const CHANGE_INTERVAL_MS = 3000;\n    const FADE_MS = 300;\n\n    const nameEl = document.getElementById('full-name');\n\n    let idx = 0;\n    nameEl.textContent = names[idx];\n    idx = (idx + 1) % names.length;\n\n    function updateName() {\n      nameEl.style.opacity = '0';\n      setTimeout(() => {\n        nameEl.textContent = names[idx];\n        idx = (idx + 1) % names.length;\n        nameEl.style.opacity = '1';\n      }, FADE_MS);\n    }\n\n    const intervalId = setInterval(updateName, CHANGE_INTERVAL_MS);\n\n    const observer = new MutationObserver(() => {\n      if (!document.body.contains(nameEl)) {\n        clearInterval(intervalId);\n        observer.disconnect();\n      }\n    });\n    observer.observe(document.body, { childList: true, subtree: true });\n  })();\n<\/script>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_Pc7Hzf",
+        "price",
+        "methods_VbRkfy",
+        "2d2d503e-227c-4d86-9b1c-b8bdcbf2a139",
+        "caption",
+        "rating",
+        "variant_picker",
+        "quantity_selector",
+        "custom_liquid_d6gpfx",
+        "buy_buttons",
+        "description",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 12,
+        "padding_bottom": 40
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>“BRUSHING WITH JUST TOOTHPASTE HASN’T CHANGED IN DECADES. SMILE THERAPY IS FINALLY DOING SOMETHING ABOUT MORE THAN JUST TEETH. I LOVE IT!”<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Mian. E<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 12,
+        "padding_bottom": 4
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<p>Each order of Serums Duo Bundle consists of 2 (Serums) (30ml)<\/p><ul><li>1x V34 Serum<\/li><li>1x Enamel Care NH Pro Serum<\/li><li>1x Manual<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "792a2454-8dbe-40ac-ae87-a745eb01fb9b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Your daily smile routine just got easier.",
+            "icon": "clipboard",
+            "row_content": "<p>The <strong>Serums Duo Bundle<\/strong> brings together two of Smile Therapy’s most popular oral care serums in one simple set.<\/p><p>Start with <strong>V34 Serum<\/strong> to help neutralise the look of yellow tones and refresh the appearance of your smile. Then use <strong>Enamel Care NH Pro Serum<\/strong> to support everyday enamel care, comfort, and a cleaner-feeling finish.<\/p><p>No complicated steps. No messy strips. Just two targeted formulas designed to upgrade the way your smile looks and feels.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nbAPbH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why You’ll Love It",
+            "icon": "question_mark",
+            "row_content": "<p><strong>Two-step smile care<\/strong><\/p><p>A simple routine for brightness and enamel support.<\/p><p><strong>Colour-correcting finish<\/strong><\/p><p>V34 Serum helps reduce the appearance of yellow tones for a visibly brighter-looking smile.<\/p><p><strong>Everyday enamel support<\/strong><\/p><p>Enamel Care NH Pro Serum is designed to support daily tooth care and comfort.<\/p><p><strong>Easy to use<\/strong><\/p><p>No strips, trays, or complicated routine.<\/p><p><strong>Perfect bundle saving<\/strong><\/p><p>Get both serums together for a more complete daily smile upgrade.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "List of ingredients (Gels)",
+            "icon": "leaf",
+            "row_content": "<h4><strong>V34 Serum<\/strong><\/h4><p>Glycerin, Aqua\/Water, Sorbitol, Hydrated Silica, Xylitol, Polysorbate 80, Cellulose Gum, Mentha Piperita (Peppermint) Oil, Phenoxyethanol, Sucralose, Tetrasodium Pyrophosphate, CI17200\/D&C Red No.33, CI42090\/FD&C Blue No.1, Ethylhexylglycerin.<\/p><h4><strong>Enamel Care NH Pro Serum<\/strong><\/h4><p>Xylitol, Aqua\/Water, Dicalcium Phosphate Dihydrate, Disodium Phosphate, Glycerin, Hydroxyapatite (Nano), Cellulose Gum, Mentha Piperita (Peppermint) Oil, Potassium Chloride, Phenoxyethanol, Xanthan Gum, Stevioside, Theobromine, Ethylhexylglycerin.<\/p>",
+            "page": ""
+          }
+        },
+        "22779142-8db6-4dbf-93b6-ac3fd9d5b799": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How To Use",
+            "icon": "question_mark",
+            "row_content": "<ol><li>Apply the serum as directed in the manual.<\/li><li>Use consistently as part of your regular oral care routine.<\/li><li>For best results, use alongside regular brushing and good oral hygiene habits.<\/li><\/ol>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KJL7VC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Warnings & Caution",
+            "icon": "check_mark",
+            "row_content": "<ul><li>This product is not recommended for use while pregnant or breastfeeding.<\/li><li>This product is not recommended for children under the age of 12.<\/li><li>Avoid contact with eyes.<\/li><li>Do not use if you are allergic to any listed ingredients.<\/li><li>If irritation occurs, stop use and consult a dental professional.<\/li><li>If a small amount of gel is swallowed during normal use, do not worry. Do not intentionally swallow the product.<\/li><li>Keep out of reach of children.<\/li><\/ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-1",
+        "792a2454-8dbe-40ac-ae87-a745eb01fb9b",
+        "collapsible_row_nbAPbH",
+        "collapsible-row-3",
+        "22779142-8db6-4dbf-93b6-ac3fd9d5b799",
+        "collapsible_row_KJL7VC"
+      ],
+      "settings": {
+        "caption": "Serums Duo Bundle",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 4
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK <br>Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        },
+        "9a9343a9-050d-43c7-bf8d-b821ee82ffc3": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98",
+        "9a9343a9-050d-43c7-bf8d-b821ee82ffc3"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_aa29138a-e959-4c87-83fd-cf781575941c.png"
+      }
+    },
+    "16648713477d94ffe9": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_3dxfR3": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_3dxfR3"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "16648713477d94ffe9",
+    "product-recommendations"
+  ]
+}

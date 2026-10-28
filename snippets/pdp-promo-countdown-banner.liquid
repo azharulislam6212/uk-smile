@@ -1,0 +1,100 @@
+{%- comment -%}
+  PDP promo countdown banner markup.
+  Assets are loaded once from sections/main-product.liquid.
+  Render: {% render 'pdp-promo-countdown-banner', block: block %}
+  Block type: promo_countdown_banner
+{%- endcomment -%}
+ 
+{%- assign promo_settings = block.settings -%}
+{%- assign countdown_end = '' -%}
+{%- assign loop_start = '' -%}
+{%- assign show_timer = false -%}
+{%- assign loop_days = promo_settings.loop_days | default: 0 -%}
+{%- assign loop_hours = promo_settings.loop_hours | default: 0 -%}
+
+{%- if promo_settings.countdown_end_date != blank -%}
+  {%- assign countdown_end = promo_settings.countdown_end_date -%}
+  {%- if promo_settings.countdown_end_time != blank -%}
+    {%- assign countdown_end = countdown_end | append: 'T' | append: promo_settings.countdown_end_time -%}
+  {%- else -%}
+    {%- assign countdown_end = countdown_end | append: 'T23:59:59' -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if promo_settings.enable_countdown_loop and promo_settings.loop_start_date != blank -%}
+  {%- assign loop_start = promo_settings.loop_start_date -%}
+  {%- if promo_settings.loop_start_time != blank -%}
+    {%- assign loop_start = loop_start | append: 'T' | append: promo_settings.loop_start_time -%}
+  {%- else -%}
+    {%- assign loop_start = loop_start | append: 'T00:00:00' -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if promo_settings.show_countdown -%}
+  {%- if promo_settings.enable_countdown_loop -%}
+    {%- if loop_days > 0 or loop_hours > 0 -%}
+      {%- assign show_timer = true -%}
+    {%- endif -%}
+  {%- elsif countdown_end != blank -%}
+    {%- assign show_timer = true -%}
+  {%- endif -%}
+{%- endif -%}
+
+<div
+  class="pdp-promo-banner"
+  data-promo-banner
+  data-promo-banner-id="{{ block.id }}"
+  data-section="pdp-promo-banner"
+  {{ block.shopify_attributes }}
+  style="--pdp-promo-accent: {{ promo_settings.eyebrow_color | default: '#d4a853' }};{% if promo_settings.default_bg_color != blank %} background-color: {{ promo_settings.default_bg_color }};{% endif %}"
+  {% if promo_settings.enable_countdown_loop and show_timer %}
+    data-countdown-loop="true"
+    data-loop-days="{{ loop_days }}"
+    data-loop-hours="{{ loop_hours }}"
+    {% if loop_start != blank %}
+      data-loop-start="{{ loop_start | escape }}"
+    {% endif %}
+  {% elsif show_timer and countdown_end != blank %}
+    data-countdown-end="{{ countdown_end | escape }}"
+  {% endif %}
+  data-accent-color="{{ promo_settings.eyebrow_color | default: '#d4a853' }}"
+>
+  <div class="pdp-promo-banner__inner">
+    <div class="pdp-promo-banner__copy">
+      {%- if promo_settings.eyebrow_text != blank -%}
+        <p class="pdp-promo-banner__eyebrow">{{ promo_settings.eyebrow_text }}</p>
+      {%- endif -%}
+      {%- if promo_settings.heading != blank -%}
+        <p class="pdp-promo-banner__heading">{{ promo_settings.heading }}</p>
+      {%- endif -%}
+    </div>
+
+    {%- if show_timer -%}
+      <div class="pdp-promo-banner__timer-wrap">
+        <div class="pdp-promo-banner__timer" role="timer" aria-live="polite" aria-atomic="true">
+          <div class="pdp-promo-banner__timer-unit">
+            <span class="pdp-promo-banner__timer-value" data-promo-days>00</span>
+            <span class="pdp-promo-banner__timer-label">DAYS</span>
+          </div>
+          <div class="pdp-promo-banner__timer-unit">
+            <span class="pdp-promo-banner__timer-value" data-promo-hours>00</span>
+            <span class="pdp-promo-banner__timer-label">HRS</span>
+          </div>
+          <div class="pdp-promo-banner__timer-unit">
+            <span class="pdp-promo-banner__timer-value" data-promo-minutes>00</span>
+            <span class="pdp-promo-banner__timer-label">MIN</span>
+          </div>
+          <div class="pdp-promo-banner__timer-unit">
+            <span class="pdp-promo-banner__timer-value" data-promo-seconds>00</span>
+            <span class="pdp-promo-banner__timer-label">SEC</span>
+          </div>
+        </div>
+        {%- if promo_settings.shipping_line != blank -%}
+          <p class="pdp-promo-banner__shipping">{{ promo_settings.shipping_line }}</p>
+        {%- endif -%}
+      </div>
+    {%- elsif promo_settings.shipping_line != blank -%}
+      <p class="pdp-promo-banner__shipping pdp-promo-banner__shipping--solo">{{ promo_settings.shipping_line }}</p>
+    {%- endif -%}
+  </div>
+</div>

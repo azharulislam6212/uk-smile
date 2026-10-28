@@ -1,0 +1,23 @@
+{
+  "parent": "product.electric-toothbrush.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a": {
+          "settings": {
+            "first_tag": "SPECIAL OFFER: BUY 2 FOR €74.00 | BUY 3 FOR €105.00 | BUY 4 FOR €130.00 - JUST ADD TO CART"
+          }
+        },
+        "variant_picker": {
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        }
+      }
+    }
+  }
+}

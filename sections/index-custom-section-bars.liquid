@@ -1,0 +1,72 @@
+  <!-- Bars -->
+  <section class="lazyload" id="static-feats">
+    <div class="custom-container">
+      {% if section.settings.bg != blank %}
+        <div class="static-feats-bar"  data-aos="fade-right" data-aos-duration="1000" style="background-image: url('{{ section.settings.bg | img_url:'' }}') ;">
+      {% endif %}      
+        <ul>
+          {% for block in section.blocks %}
+            <li>
+              {% if block.settings.icon_img != blank %}
+                <div class="icon">
+                  <img src="{{ block.settings.icon_img | img_url: 'small' }}">
+                </div>
+              {% endif %}
+              <div class="text">
+                <h4>{{ block.settings.title }}</h4>
+                <p>{{ block.settings.sub-title }}</p>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+{% schema %}
+{
+  "name": "Bars",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "bg",
+          "label": "Upload the background Image"
+        }
+    ],
+   "blocks":[
+        {
+        "type":"Bars",
+        "name":"Bars",
+        "settings":
+          [
+              {
+                "type": "image_picker",
+                "id": "icon_img",
+                "label": "Icon Image"
+              },
+              {
+                "type": "text",
+                "id": "title",
+                "label": "Icon Title"
+              },
+              {
+                "type": "text",
+                "id": "sub-title",
+                "label": "Icon sub-title"
+              }
+          ]
+        }
+    ],
+    "presets": [
+      {
+      "name": "Bars",
+      "category": "Custom Sections"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

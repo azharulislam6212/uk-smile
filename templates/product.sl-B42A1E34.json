@@ -1,0 +1,838 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_8qH8px": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        },
+        "1565b6ad-81f6-4f79-94bd-64648b4653f8": {
+          "type": "price",
+          "settings": {}
+        },
+        "c69768a2-854d-47fb-b1f8-e8f4f2d9404a": {
+          "type": "methods",
+          "settings": {
+            "clearpay_img": "shopify:\/\/shop_images\/CP_logo.png",
+            "clearpay_text": "Or 4 interest-free payments of £3.25 with",
+            "klarna_img": "shopify:\/\/shop_images\/klarna.png",
+            "klarna_text": "Or pay later, get it tomorrow with"
+          }
+        },
+        "ec2dee85-24ba-43f8-bd23-1beee0845fba": {
+          "type": "shopify:\/\/apps\/clearpay-on-site-messaging\/blocks\/payments-messaging\/5d763983-d3e6-4888-9966-4e1170b26ae9",
+          "disabled": true,
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 12,
+            "margin_bottom": 12,
+            "color": "#151414",
+            "size": "md",
+            "intro_text": "Or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": false,
+            "show_upper_limit": false,
+            "show_if_outside_limits": true,
+            "product": "ultrasonic-tooth-cleaner"
+          }
+        },
+        "c65d22aa-93e1-4a2d-b0dd-122b4b3d269f": {
+          "type": "custom_tags",
+          "settings": {
+            "tag_icon_1": "shopify:\/\/shop_images\/Untitled_design_88.png",
+            "first_tag": "OUR BIGGEST SALE YET | FREE UK NEXT DAY DELIVERY",
+            "second_tag": ""
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "8dbfdafb-8960-486d-a698-4d5bc5532efb": {
+          "type": "custom_tags",
+          "settings": {
+            "first_tag": "",
+            "second_tag": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_8qH8px",
+        "1565b6ad-81f6-4f79-94bd-64648b4653f8",
+        "c69768a2-854d-47fb-b1f8-e8f4f2d9404a",
+        "ec2dee85-24ba-43f8-bd23-1beee0845fba",
+        "c65d22aa-93e1-4a2d-b0dd-122b4b3d269f",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share",
+        "8dbfdafb-8960-486d-a698-4d5bc5532efb"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail_slider",
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 20,
+        "padding_bottom": 36
+      }
+    },
+    "rich-text-0": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"BEST TOOTHPASTE EVER! MY TEETH FEEL AMAZING ALL DAY, AND I WAKE UP TO FRESH BREATH AND A CLEAN MOUTH, IT'S CRAZY GOOD\" <\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>- Sara. T<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": false,
+        "padding_top": 24,
+        "padding_bottom": 16
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible-row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Benefits & Features",
+            "icon": "lightning_bolt",
+            "row_content": "<p>✔ Wake up with fresher breath and cleaner-feeling teeth<br\/>✔ Day formula gently cleans, brightens, and helps lift stains<br\/>✔ Night formula supports enamel care and comforts the mouth<br\/>✔ Helps reduce surface stains from coffee, wine & smoking<br\/>✔ Round-the-clock freshness and care for a brighter-looking smile<br\/>✔ Helps reduce buildup and supports daily oral hygiene<br\/>✔ Supports enamel maintenance while you sleep<br\/>✔ Gentle on sensitive teeth<br\/>✔ A great upgrade to your daily toothpaste<br\/>✔ Carefully crafted ingredients<\/p>",
+            "page": ""
+          }
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What makes our toothpaste different?",
+            "icon": "question_mark",
+            "row_content": "<p>During the day, your teeth are constantly exposed to food, drinks, and acids, which can lead to stains and buildup. Our day formula uses advanced care to help address these challenges, keeping your teeth looking bright, feeling clean, and well-cared for. At night, as you rest and breathe, your mouth dries out, making your teeth more prone to dryness and surface buildup. That’s where the science of our night formula steps in—comforting the mouth, supporting enamel care, and delivering targeted freshness while you sleep. Each formula is carefully developed to give your smile what it needs, when it needs it.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "row_content": "<p>Each order of Day & Night Toothpaste consists of:<\/p><p>1x Day Toothpaste<\/p><p>1x Night Toothpaste<\/p><p>1x Premium Box Packaging<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "List of ingredients",
+            "icon": "leaf",
+            "row_content": "<p><strong>Day Toothpaste:<br\/><\/strong>Sorbitol, Aqua, Hydrated Silica, Glycerin,<br\/>Sodium Lauroyl Sarcosinate, Cellulose Gum, Calcium Carbonate, Sodium Saccharin, Dicalcium Phosphate Dihydrate, Sodium Benzoate, Aloe Barbadensis Leaf Extract, Potassium Chloride, Mentha Piperita Oil, Aroma, Menthol, Magnesium Carbonate,<br\/>Copernicia Cerifera Cera.<br\/><br\/><br\/><strong>Night Toothpaste<\/strong><br\/>Sorbitol, Aqua (Water), Hydrated Silica, Glycerin, Sodium Lauroyl Sarcosinate, Cellulose Gum, Calcium Carbonate, Charcoal Powder, Sodium Saccharin, Dicalcium Phosphate Dihydrate, Sodium Benzoate, Aloe Barbadensis Leaf Extract, Potassium Chloride, Citrus Grandis (Grapefruit) Seed Extract, Perilla Ocymoides Seed Extract, Bentonite, Mentha Piperita (Peppermint) Oil, Flavour (Aroma), Menthol, Copernicia Cerifera (Carnauba) Wax, Magnesium Carbonate.<\/p>",
+            "page": ""
+          }
+        },
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Cautions",
+            "icon": "lightning_bolt",
+            "row_content": "<p>Avoid Ingestion: Though safe, avoid swallowing the toothpaste. Rinse thoroughly after brushing.<\/p><p>Quantity: Use only a pea-sized amount for optimal cleaning. Too much can lead to excess foaming and waste.<\/p><p>Storage: Keep the toothpaste in a cool, dry place with the cap tightly sealed to prevent drying or contamination.<\/p><p>Children: This product is intended for ages 16+. Keep out of reach of children.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KKYEnU": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Can the Day & Night Toothpaste be used on composite bonding, veneers or fillings?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes, the Day & Night Toothpaste is safe to use on composite bonding, veneers, and fillings. Its gentle yet effective formula is designed to clean and protect your teeth without damaging or scratching dental work. It helps maintain the health and appearance of your smile while providing complete care for natural and treated teeth. For any specific concerns, it’s always best to consult with your dentist.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible-row-3",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "collapsible-row-1",
+        "collapsible-row-0",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975",
+        "collapsible_row_KKYEnU"
+      ],
+      "settings": {
+        "caption": "Day & Night Toothpaste",
+        "heading": "Everything you need to know",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ss_comparison_table_2_Vgpkgc": {
+      "type": "ss-comparison-table-2",
+      "blocks": {
+        "item_WfVwAr": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Day: lifts stains, brightens",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "yes"
+          }
+        },
+        "item_gTr4hM": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Night: repairs enamel",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_HizNa3": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Gentle on sensitive teeth",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_9MW3rg": {
+          "type": "item",
+          "settings": {
+            "row_heading": "24\/7 protection",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "yes"
+          }
+        },
+        "item_8Liabm": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Gentle on Gums & Teeth",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_heUaWQ": {
+          "type": "item",
+          "settings": {
+            "row_heading": "Clean ingredients",
+            "first_icon": "yes",
+            "second_icon": "yes",
+            "third_icon": "no"
+          }
+        },
+        "item_yFw8RK": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "row_heading": "Ultra Soft Nylon Bristles ",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_7Rc9aF": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "row_heading": "30K+ Sonic Vibrations\/Minute ",
+            "first_icon": "yes",
+            "second_icon": "no",
+            "third_icon": "no"
+          }
+        },
+        "item_w7Qepp": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "row_heading": "30 Sec Daily Clean ",
+            "first_icon": "yes",
+            "second_icon": "yes",
+            "third_icon": "no"
+          }
+        }
+      },
+      "block_order": [
+        "item_WfVwAr",
+        "item_gTr4hM",
+        "item_HizNa3",
+        "item_9MW3rg",
+        "item_8Liabm",
+        "item_heUaWQ",
+        "item_yFw8RK",
+        "item_7Rc9aF",
+        "item_w7Qepp"
+      ],
+      "name": "SS - Comparison Table #2",
+      "settings": {
+        "heading": "Us vs Them",
+        "heading_custom": true,
+        "heading_font": "archivo_n9",
+        "heading_size": 26,
+        "heading_height": 100,
+        "heading_align": "center",
+        "table_mt": 50,
+        "table_radius": 10,
+        "table_border_thickness": 1,
+        "table_column_active": "1",
+        "table_column_active_radius": 10,
+        "first_heading": "Smile",
+        "second_heading": "Others",
+        "third_heading": "",
+        "table_heading_custom": true,
+        "table_heading_font": "archivo_n6",
+        "table_heading_size": 16,
+        "table_heading_size_mobile": 16,
+        "table_heading_height": 100,
+        "table_heading_align": "center",
+        "table_heading_padding_horizontal": 20,
+        "table_heading_padding_horizontal_mobile": 4,
+        "table_heading_padding_vertical": 20,
+        "table_heading_padding_vertical_mobile": 10,
+        "table_row_padding_horizontal": 20,
+        "table_row_padding_horizontal_mobile": 4,
+        "table_row_padding_vertical": 20,
+        "table_row_padding_vertical_mobile": 10,
+        "table_row_heading_custom": true,
+        "table_row_heading_font": "questrial_n4",
+        "table_row_heading_size": 16,
+        "table_row_heading_size_mobile": 16,
+        "table_row_heading_height": 100,
+        "table_row_heading_align": "left",
+        "table_icon_yes": "shopify:\/\/shop_images\/Check_Mark_WOB_1_c617ae15-7874-456f-a73f-3f24b2494b60.png",
+        "table_icon_no": "shopify:\/\/shop_images\/Close_X_1_a86e08c6-2338-4366-bb6f-6e986329601b.png",
+        "table_icon_size": 32,
+        "table_icon_size_mobile": 20,
+        "heading_color": "#0e1b4d",
+        "table_border_color": "#0e1b4d",
+        "table_heading_color": "#0e1b4d",
+        "table_heading_active_color": "#0e1b4d",
+        "table_column_active_bg_color": "#d3ccff",
+        "table_row_heading_color": "#0e1b4d",
+        "table_icon_color": "#b90505",
+        "table_icon_active_color": "#ffffff",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "rgba(0,0,0,0)",
+        "margin_top": 60,
+        "margin_bottom": 84,
+        "padding_top": 20,
+        "padding_bottom": 24,
+        "padding_horizontal": 1,
+        "padding_horizontal_mobile": 0.5,
+        "full_width": false,
+        "content_width": 150,
+        "border_thickness": 2
+      }
+    },
+    "16631668754f796b02": {
+      "type": "index-custom-section-bars",
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "title": "Free UK Delivery",
+            "sub-title": ""
+          }
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "title": "Safe, Tested <br>& Certified!",
+            "sub-title": ""
+          }
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "type": "Bars",
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "title": "100% Vegan<br> Certified",
+            "sub-title": ""
+          }
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "title": "30 Day Money Back  Guarantee",
+            "sub-title": ""
+          }
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "type": "Bars",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "title": "250,000+ Brighter Smiles",
+            "sub-title": ""
+          }
+        }
+      },
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Untitled_design_-_2022-09-15T164940.840_ad0561e3-dd2d-4cad-85c2-a5eaf789cae3.png"
+      }
+    },
+    "1684170805803e96bc": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_TzNKJp": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_TzNKJp"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Use a combination of images and text to share information about this product, and your brand. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Consider adding information about your shipping and return policies. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Consider highlighting your environmental  commitments. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Multicolumn",
+            "text": "<p>Consider describing a money-back guarantee or highlighting your customer service. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2",
+        "column-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "rich-text-1": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>AN<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>DESCRIBE HOW TO PAIR PRODUCTS TOGETHER <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-0": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image-with-text-2": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "16631908844b141995": {
+      "type": "index-custom-section-reviews",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "review_all": true,
+        "rating": "",
+        "Total_Review": ""
+      }
+    },
+    "16631915046fd0af22": {
+      "type": "rich-text",
+      "blocks": {
+        "166319150475c40769-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>\"REMOVES ALL PLAQUE EVEN THOSE WHICH SEEM VERY DIFFICULT. SAVES TRIPS TO THE DENTIST ALL AT THE COMFORT OF YOUR OWN HOME\"<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "166319150475c40769-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "166319150475c40769-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "166319150475c40769-0",
+        "166319150475c40769-1",
+        "166319150475c40769-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "16648716444036e5ca": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "ss_comparison_table_2_Vgpkgc",
+    "16631668754f796b02",
+    "1684170805803e96bc",
+    "product-recommendations",
+    "multicolumn",
+    "rich-text-1",
+    "image-with-text-0",
+    "image-with-text-1",
+    "image-with-text-2",
+    "newsletter",
+    "16631908844b141995",
+    "16631915046fd0af22",
+    "16648716444036e5ca"
+  ]
+}

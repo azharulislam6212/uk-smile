@@ -1,0 +1,39 @@
+{
+  "parent": "product.water-flosser.json",
+  "context": {
+    "market": "netherlands"
+  },
+  "sections": {
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "629dcd9c-001d-4602-bdc4-ee2fca07367a": {
+          "disabled": true,
+          "settings": {}
+        },
+        "4b5187ef-6563-4eaf-8d8d-6415e52c432d": {
+          "settings": {
+            "first_tag": "SPECIAL OFFER: BUY 2 FOR €84.99! | BUY 3 FOR - €114.00 BUY 4 FOR €141.00! JUST ADD TO CART"
+          }
+        },
+        "variant_picker": {
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        }
+      }
+    },
+    "16631668754f796b02": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Free Netherlands Delivery"
+          }
+        }
+      }
+    }
+  }
+}

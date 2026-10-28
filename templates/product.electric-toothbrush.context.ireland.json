@@ -1,0 +1,57 @@
+{
+  "parent": "product.electric-toothbrush.json",
+  "context": {
+    "market": "ireland"
+  },
+  "sections": {
+    "16631668754f796b02": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "title": "Express Ireland 1-3 Working Day Delivery"
+          }
+        }
+      }
+    },
+    "main": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a": {
+          "settings": {
+            "first_tag": "SPECIAL OFFER:  BUY 2 FOR €74.00 | Buy 3 for €105.00 | Buy 4 for €130.00 - JUST ADD TO CART"
+          }
+        },
+        "variant_picker": {
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_yYfgjW",
+        "price",
+        "3fd99447-9c34-4710-81a7-aeab6ee6126a",
+        "caption",
+        "rating",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "share"
+      ]
+    }
+  },
+  "order": [
+    "main",
+    "rich-text-0",
+    "collapsible-content",
+    "16631668754f796b02",
+    "1664870774e164b7b9",
+    "product-recommendations"
+  ]
+}

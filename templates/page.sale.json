@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "index_custom_section_sale_banner_7VY9kd": {
+      "type": "index-custom-section-sale-banner",
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/pastel_sale_4434525e-91ab-40ce-8ad8-316cf253edd0.jpg",
+        "sale": "UP TO 60% OFF SALE NOW LIVE",
+        "sale-slogan": "ENDS IN",
+        "date": "23 NOVEMBER 2024",
+        "btn-txt": "test",
+        "btn-url": ""
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "index_custom_section_money_back_guarantee_LPcwaK": {
+      "type": "index-custom-section-money-back-guarantee",
+      "blocks": {
+        "button_xUkqAK": {
+          "type": "Button",
+          "settings": {
+            "btn_txt": "",
+            "btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_xUkqAK"
+      ],
+      "settings": {
+        "tag1": true,
+        "color1": "",
+        "tag": "",
+        "heading": "",
+        "description": "",
+        "btn_show": true
+      }
+    },
+    "newsletter_Ep3zrX": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_xFggFe": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_TrhEyP": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email_form_36dPx9": {
+          "type": "email_form",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_xFggFe",
+        "paragraph_TrhEyP",
+        "email_form_36dPx9"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "index_custom_section_banner_CHAyAk": {
+      "type": "index-custom-section-banner",
+      "settings": {
+        "color1": "",
+        "badge": "New",
+        "subtitle": "Colour Corrector",
+        "title": "Voted #1 Plaque, Stains & Tartar Remover",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor.<\/p>",
+        "btn-color1": "",
+        "btn_text_1": "Buy Now",
+        "btn_link_1": "",
+        "btn-color2": "",
+        "btn_text_2": "View All Products",
+        "btn_link_2": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "index_custom_section_sale_banner_7VY9kd",
+    "newsletter",
+    "index_custom_section_money_back_guarantee_LPcwaK",
+    "newsletter_Ep3zrX",
+    "index_custom_section_banner_CHAyAk"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "blocks_NQLUby": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c67a3aa_c39fea": {
+          "type": "ai_gen_block_c67a3aa",
+          "settings": {
+            "layout": "2_column",
+            "container_width": 1000,
+            "heading": "Frequently Asked Questions",
+            "heading_size": 36,
+            "heading_color": "#0e1b4d",
+            "subheading": "",
+            "subheading_size": 16,
+            "subheading_color": "#0e1b4d",
+            "question_1": "How often should I update my oral care tools?",
+            "answer_1": "Most people refresh their tools every few months to keep their routine feeling clean and comfortable.",
+            "question_2": "Can I combine different Smile Therapy products in my routine? ",
+            "answer_2": "Yes. Our products are designed to work well together as part of a simple everyday oral care routine.",
+            "question_3": "What is a good daily oral hygiene habit?",
+            "answer_3": "Sticking to a consistent routine helps. Regular brushing and using tools that fit your needs keeps things feeling fresh.",
+            "question_4": "Are your products suitable for sensitive users?",
+            "answer_4": "Yes. Many Smile Therapy items include gentler settings or softer materials for a more comfortable experience.",
+            "question_5": "What can I use for spots that are hard to clean?",
+            "answer_5": "Precision style tools can make it easier to reach areas that feel difficult to clean with a regular brush alone.",
+            "question_6": "What if my smile looks dull or not as bright?",
+            "answer_6": "Simple habits like consistent cleaning and paying attention to stain prone areas can help your smile feel fresher over time.",
+            "question_7": "",
+            "answer_7": "",
+            "question_8": "",
+            "answer_8": "",
+            "question_size": 18,
+            "question_color": "#0e1b4d",
+            "question_hover_color": "#536cae",
+            "answer_size": 15,
+            "answer_color": "#0e1b4d",
+            "item_background_color": "#ffffff",
+            "item_border_color": "#e5e5e5",
+            "item_border_thickness": 1,
+            "item_border_radius": 12,
+            "icon_color": "#536cae"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c67a3aa_c39fea"
+      ],
+      "settings": {}
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email-form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email-form"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "1781256686c08bc397": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "blocks_NQLUby",
+    "newsletter",
+    "1781256686c08bc397"
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "order": [
+    "main",
+    "collapsible-content",
+    "16631668754f796b02",
+    "product-recommendations",
+    "rich-text-0",
+    "166469373771a677b6",
+    "loox-product-reviews-app-section"
+  ],
+  "sections": {
+    "16631668754f796b02": {
+      "block_order": [
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70",
+        "af983e68-10ac-4309-949d-5ca21cea51e7",
+        "526109f0-884e-4674-800b-e3b3f978d9a5",
+        "9518564d-3948-4496-b9b7-11e23a5ef137",
+        "fd363c03-b8d7-47ef-9260-25049ad70c98"
+      ],
+      "blocks": {
+        "42c5c8eb-46a3-40e2-9cd3-8751e1f84e70": {
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-2.png",
+            "sub-title": "",
+            "title": "Next Working Day Delivery"
+          },
+          "type": "Bars"
+        },
+        "526109f0-884e-4674-800b-e3b3f978d9a5": {
+          "disabled": true,
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-3.png",
+            "sub-title": "",
+            "title": "100% Vegan<br> Certified"
+          },
+          "type": "Bars"
+        },
+        "9518564d-3948-4496-b9b7-11e23a5ef137": {
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-4.png",
+            "sub-title": "",
+            "title": "28 Day Money Back <br> Guarantee"
+          },
+          "type": "Bars"
+        },
+        "af983e68-10ac-4309-949d-5ca21cea51e7": {
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-1.png",
+            "sub-title": "",
+            "title": "Safe, Tested <br>& Certified!"
+          },
+          "type": "Bars"
+        },
+        "fd363c03-b8d7-47ef-9260-25049ad70c98": {
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/feat-icon-5.png",
+            "sub-title": "",
+            "title": "100,000+ Brighter Smiles"
+          },
+          "type": "Bars"
+        }
+      },
+      "settings": {
+        "bg": "shopify:\/\/shop_images\/Background_2_e40e6e56-055c-4095-a302-866afec82237.png"
+      },
+      "type": "index-custom-section-bars"
+    },
+    "166469373771a677b6": {
+      "settings": {
+        "include_margins": true
+      },
+      "type": "apps"
+    },
+    "collapsible-content": {
+      "block_order": [
+        "collapsible-row-3",
+        "collapsible-row-1",
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523",
+        "2eef6090-250f-48ad-a4ec-4aacca83c975",
+        "dc156c5a-46c9-43e5-acbd-475340353fc0",
+        "collapsible-row-0"
+      ],
+      "blocks": {
+        "2eef6090-250f-48ad-a4ec-4aacca83c975": {
+          "disabled": true,
+          "settings": {
+            "heading": "Cautions",
+            "icon": "clipboard",
+            "page": "",
+            "row_content": "<p>✘ Do not force into tight spaces between teeth. <\/p><p>✔ Children require adult supervision.<\/p><p>✔ Please make sure to wash your mouth with warm water after use.<\/p>"
+          },
+          "type": "collapsible_row"
+        },
+        "3442c9b0-dbb6-4dd7-b615-9313ba45f523": {
+          "settings": {
+            "heading": "How to Use?",
+            "icon": "ruler",
+            "page": "",
+            "row_content": "<p><strong>Apply:<\/strong> Add a small amount of toothpaste to the mouthpiece.<\/p><p><strong>Insert:<\/strong> Place the brush in your mouth, fitting it around your teeth.<\/p><p><strong>Bite:<\/strong> Gently bite down to hold it in place.<\/p><p><strong>Clean:<\/strong> Press the button, relax, and let it clean in 30 seconds.<\/p>"
+          },
+          "type": "collapsible_row"
+        },
+        "collapsible-row-0": {
+          "settings": {
+            "heading": "What are the different modes on the 360° U-Toothbrush and how do they work?",
+            "icon": "question_mark",
+            "page": "",
+            "row_content": "<p>The 360° U-Toothbrush offers <strong>2 dynamic brushing modes <\/strong>and a<strong> massage mode <\/strong>to suit your needs:<\/p><p><strong>Deep Clean:<\/strong> For a thorough, powerful clean that removes build-up and refreshes your entire mouth.<\/p><p><strong>Gentle Clean: <\/strong>A softer mode, ideal for sensitive teeth and gums, offering a gentle yet effective clean.<\/p><p><strong>Gum Massage: <\/strong>A soothing, massaging action designed to gently stimulate and care for your gums.<\/p><p>Switch between these modes easily to customise your brushing experience based on your preferences.<\/p>"
+          },
+          "type": "collapsible_row"
+        },
+        "collapsible-row-1": {
+          "settings": {
+            "heading": "What's in the box?",
+            "icon": "box",
+            "page": "",
+            "row_content": "<ul><li>1× 360° Sonic Electric U-Toothbrush<br\/><\/li><li>1× Charging Dock<br\/><\/li><li>1× USB Charging Cable<br\/><\/li><li>1× Attachment Head<br\/><\/li><li>1× User Manual<\/li><\/ul>"
+          },
+          "type": "collapsible_row"
+        },
+        "collapsible-row-3": {
+          "settings": {
+            "heading": "Features",
+            "icon": "lightning_bolt",
+            "page": "",
+            "row_content": "<p>✔ Removes up to 99.8% of plaque<\/p><p>✔ Full-mouth 360° sonic cleaning in just 30 seconds<\/p><p>✔ Ultra-soft silicone mouthpiece, gentle on teeth<\/p><p>✔ Hands-free brushing with even quadrant coverage<\/p><p>✔ 3 Smart Modes: Deep Clean, Gentle Clean, Gum Massage<\/p><p>✔ Built-in memory, remembers your preferred setting<\/p><p>✔ IPX7 water-resistant, safe to rinse or use in the shower<\/p><p>✔ Fast charging and long-lasting battery (1+ week per charge)<\/p>"
+          },
+          "type": "collapsible_row"
+        },
+        "dc156c5a-46c9-43e5-acbd-475340353fc0": {
+          "disabled": true,
+          "settings": {
+            "heading": "How to use the electric dental cleaning kit?",
+            "icon": "washing",
+            "page": "",
+            "row_content": "<p>1. Select your desired attachment based on your oral needs.<\/p><p>2. Turn on the device and alter between modes based on your cleaning needs.<\/p><p>3. Alter between heads if necessary.<\/p><p>4. Clean the device and the tip after use. <\/p>"
+          },
+          "type": "collapsible_row"
+        }
+      },
+      "settings": {
+        "caption": "Sonic Electric 360° U-Toothbrush",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "desktop_layout": "image_second",
+        "heading": "Everything you need to know",
+        "heading_alignment": "left",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "layout": "section",
+        "open_first_collapsible_row": true,
+        "padding_bottom": 32,
+        "padding_top": 16
+      },
+      "type": "collapsible-content"
+    },
+    "loox-product-reviews-app-section": {
+      "settings": {
+        "include_margins": false
+      },
+      "type": "apps"
+    },
+    "main": {
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "rating",
+        "description",
+        "price",
+        "loox-rating",
+        "variant_picker",
+        "quantity_selector",
+        "custom_liquid_YybET8",
+        "buy_buttons",
+        "a9b4a6b1-0510-4a35-9585-e3c2b9c417d2"
+      ],
+      "blocks": {
+        "a9b4a6b1-0510-4a35-9585-e3c2b9c417d2": {
+          "disabled": true,
+          "settings": {
+            "aggregated": false,
+            "hide_thumbnails": false,
+            "is_sample": true,
+            "limit": 20,
+            "maxwidth": 1080,
+            "only_photos": false
+          },
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e"
+        },
+        "buy_buttons": {
+          "settings": {
+            "show_dynamic_checkout": true
+          },
+          "type": "buy_buttons"
+        },
+        "caption": {
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          },
+          "type": "text"
+        },
+        "custom_liquid_YybET8": {
+          "settings": {
+            "custom_liquid": "<div class=\"social-proof-badge\">\n  <p id=\"social-proof-text\">\n    <strong class=\"name-block\">\n      <span id=\"full-name\" aria-live=\"polite\">Hannah<\/span>\n      <!-- Blue verified tick -->\n      <svg class=\"verified-tick\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" role=\"img\" aria-label=\"verified\">\n        <circle cx=\"12\" cy=\"12\" r=\"12\" fill=\"#1DA1F2\"\/>\n        <path fill=\"#fff\" d=\"M10.2 15.6l-3.1-3.1 1.1-1.1 2 2 4.7-4.7 1.1 1.1z\"\/>\n      <\/svg>\n    <\/strong>\n    &nbsp;and <strong>1,200+ others<\/strong> purchased this product more than once last month!\n  <\/p>\n<\/div>\n\n<style>\n  .social-proof-badge {\n    display:flex;\n    align-items:center;\n    padding:8px 12px;\n    margin:12px 0;\n    font-size:14px;\n    line-height:1.4;\n    color:#333;\n    background: transparent;\n  }\n\n  .social-proof-badge p { margin:0; }\n\n  .name-block {\n    display:inline-flex;\n    align-items:center;\n    gap:2px;\n  }\n\n  #full-name {\n    transition: opacity 300ms ease;\n    opacity:1;\n  }\n\n  .verified-tick {\n    display:inline-block;\n    margin:0;\n    vertical-align: middle;\n  }\n<\/style>\n\n<script>\n  (function(){\n    const names = [\n      \"Hannah\", \"Liam Carter\", \"Ava Bennett\", \"Noah James\",\n      \"Isabella Moore\", \"Logan Kelly\", \"Mia Rivera\", \"Elijah Brooks\",\n      \"Amelia Watson\", \"James Murphy\", \"Emily Cox\", \"Lucas Reed\",\n      \"Sophia Patterson\", \"Mason Ward\", \"Ella Torres\"\n    ];\n\n    const CHANGE_INTERVAL_MS = 3000;\n    const FADE_MS = 300;\n\n    const nameEl = document.getElementById('full-name');\n\n    let idx = 0;\n    nameEl.textContent = names[idx];\n    idx = (idx + 1) % names.length;\n\n    function updateName() {\n      nameEl.style.opacity = '0';\n      setTimeout(() => {\n        nameEl.textContent = names[idx];\n        idx = (idx + 1) % names.length;\n        nameEl.style.opacity = '1';\n      }, FADE_MS);\n    }\n\n    const intervalId = setInterval(updateName, CHANGE_INTERVAL_MS);\n\n    const observer = new MutationObserver(() => {\n      if (!document.body.contains(nameEl)) {\n        clearInterval(intervalId);\n        observer.disconnect();\n      }\n    });\n    observer.observe(document.body, { childList: true, subtree: true });\n  })();\n<\/script>"
+          },
+          "type": "custom_liquid"
+        },
+        "description": {
+          "settings": {},
+          "type": "description"
+        },
+        "loox-rating": {
+          "settings": {
+            "alignment": "",
+            "contentSize": 16,
+            "emptyRatingWidget": false,
+            "hideText": false,
+            "layout": "",
+            "looxOpenFloatingWidget": false,
+            "pattern": "",
+            "showAllReviews": false,
+            "starColor": "",
+            "textColor": ""
+          },
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e"
+        },
+        "price": {
+          "settings": {},
+          "type": "price"
+        },
+        "quantity_selector": {
+          "settings": {},
+          "type": "quantity_selector"
+        },
+        "rating": {
+          "disabled": true,
+          "settings": {},
+          "type": "rating"
+        },
+        "title": {
+          "settings": {},
+          "type": "title"
+        },
+        "variant_picker": {
+          "settings": {
+            "picker_type": "button"
+          },
+          "type": "variant_picker"
+        },
+        "vendor": {
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "body"
+          },
+          "type": "text"
+        }
+      },
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false,
+        "gallery_layout": "thumbnail_slider",
+        "hide_variants": true,
+        "media_size": "small",
+        "mobile_thumbnails": "hide",
+        "padding_bottom": 0,
+        "padding_top": 60
+      },
+      "type": "main-product"
+    },
+    "product-recommendations": {
+      "settings": {},
+      "type": "product-recommendations"
+    },
+    "rich-text-0": {
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "blocks": {
+        "heading": {
+          "settings": {
+            "heading": "<p>It is a game-changer! It’s quick, easy to use, and my teeth feel so much cleaner. The gentle modes are perfect for my sensitive gums, and the battery life is amazing. Highly recommend!<br\/><\/p><p>- Nathan M.<br\/><br\/><\/p>",
+            "heading_size": "h2"
+          },
+          "type": "heading"
+        },
+        "text": {
+          "settings": {
+            "text": "<p>- Mikaila. S<\/p>"
+          },
+          "type": "text"
+        }
+      },
+      "settings": {
+        "color_scheme": "accent-1",
+        "content_alignment": "center",
+        "desktop_content_position": "center",
+        "full_width": true,
+        "padding_bottom": 16,
+        "padding_top": 60
+      },
+      "type": "rich-text"
+    }
+  }
+}
